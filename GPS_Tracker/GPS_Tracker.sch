@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sparkfun~Artemis:SPARKFUN_WRL-15376 MD?
+U 1 1 5E6EE6CF
+P 4700 650
+F 0 "MD?" H 5350 526 50  0000 C CNN
+F 1 "SPARKFUN_WRL-15376" H 4700 650 50  0001 L BNN
+F 2 "SPARKFUN_WRL-15376_0" H 4700 650 50  0001 L BNN
+F 3 "" H 4700 650 50  0001 C CNN
+	1    4700 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 5E6FB5C0
+P 2600 4250
+F 0 "J?" H 2157 4296 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 2157 4205 50  0000 R CNN
+F 2 "" H 2600 4250 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2250 3000 50  0001 C CNN
+	1    2600 4250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 9200 5400 1350 500 
+U 5E6FE21E
+F0 "Artemis" 50
+F1 "artemis.sch" 50
+$EndSheet
+$Sheet
+S 9150 4500 1350 500 
+U 5E70A48E
+F0 "Transmitter" 50
+F1 "Transmitter.sch" 50
+$EndSheet
+$Sheet
+S 9150 3800 1350 500 
+U 5E70A878
+F0 "GPS" 50
+F1 "GPS.sch" 50
+$EndSheet
+$Sheet
+S 9150 3000 1350 450 
+U 5E70B79C
+F0 "Sheet5E70B79B" 50
+F1 "Power.sch" 50
+$EndSheet
+$Sheet
+S 9100 2100 1450 550 
+U 5E70BD5E
+F0 "Sheet5E70BD5D" 50
+F1 "Sensor.sch" 50
+$EndSheet
+$Comp
+L Device:Crystal Y?
+U 1 1 5E71B215
+P 3850 1700
+F 0 "Y?" V 3804 1831 50  0000 L CNN
+F 1 "Crystal" V 3895 1831 50  0000 L CNN
+F 2 "" H 3850 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E71C516
+P 3150 1500
+F 0 "C?" V 2835 1500 50  0000 C CNN
+F 1 "CAP" V 2926 1500 50  0000 C CNN
+F 2 "" H 3150 1500 50  0001 C CNN
+F 3 "~" H 3150 1500 50  0001 C CNN
+	1    3150 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E71EB7F
+P 3150 1900
+F 0 "C?" V 2835 1900 50  0000 C CNN
+F 1 "CAP" V 2926 1900 50  0000 C CNN
+F 2 "" H 3150 1900 50  0001 C CNN
+F 3 "~" H 3150 1900 50  0001 C CNN
+	1    3150 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E71F955
+P 2550 2100
+F 0 "#PWR?" H 2550 1850 50  0001 C CNN
+F 1 "GND" H 2555 1927 50  0000 C CNN
+F 2 "" H 2550 2100 50  0001 C CNN
+F 3 "" H 2550 2100 50  0001 C CNN
+	1    2550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1650 4450 1650
+Wire Wire Line
+	4450 1650 4450 1550
+Wire Wire Line
+	4450 1550 3850 1550
+Wire Wire Line
+	4600 1750 4450 1750
+Wire Wire Line
+	4450 1750 4450 1850
+Wire Wire Line
+	4450 1850 3850 1850
+Wire Wire Line
+	3400 1900 3850 1900
+Wire Wire Line
+	3850 1900 3850 1850
+Connection ~ 3850 1850
+Wire Wire Line
+	3400 1500 3850 1500
+Wire Wire Line
+	3850 1500 3850 1550
+Connection ~ 3850 1550
+Wire Wire Line
+	2550 1500 2900 1500
+Wire Wire Line
+	2550 1500 2550 1900
+Wire Wire Line
+	2900 1900 2550 1900
+Connection ~ 2550 1900
+Wire Wire Line
+	2550 1900 2550 2100
+Text GLabel 3300 3950 2    50   Input ~ 0
+nReset
+Text GLabel 4350 1250 0    50   Input ~ 0
+nReset
+Wire Wire Line
+	3100 3950 3300 3950
+Wire Wire Line
+	4350 1250 4600 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5E724718
+P 2600 5050
+F 0 "#PWR?" H 2600 4800 50  0001 C CNN
+F 1 "GND" H 2605 4877 50  0000 C CNN
+F 2 "" H 2600 5050 50  0001 C CNN
+F 3 "" H 2600 5050 50  0001 C CNN
+	1    2600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4850 2600 5050
+Text GLabel 3300 4250 2    50   Input ~ 0
+SWDIO
+Text GLabel 3300 4150 2    50   Input ~ 0
+SWDCK
+Wire Wire Line
+	3100 4150 3300 4150
+Wire Wire Line
+	3100 4250 3300 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E725E33
+P 2600 3450
+F 0 "#PWR?" H 2600 3300 50  0001 C CNN
+F 1 "+3.3V" H 2615 3623 50  0000 C CNN
+F 2 "" H 2600 3450 50  0001 C CNN
+F 3 "" H 2600 3450 50  0001 C CNN
+	1    2600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3650 2600 3450
+$EndSCHEMATC

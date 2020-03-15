@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,95 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U?
+U 1 1 5E6E6EA8
+P 2750 1900
+F 0 "U?" H 2750 2142 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 2750 2051 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2750 2100 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 2850 1650 50  0001 C CNN
+	1    2750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6E846B
+P 2750 2650
+F 0 "#PWR?" H 2750 2400 50  0001 C CNN
+F 1 "GND" H 2755 2477 50  0000 C CNN
+F 2 "" H 2750 2650 50  0001 C CNN
+F 3 "" H 2750 2650 50  0001 C CNN
+	1    2750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5E6E8EEF
+P 2050 1350
+F 0 "#PWR?" H 2050 1200 50  0001 C CNN
+F 1 "VBUS" H 2065 1523 50  0000 C CNN
+F 2 "" H 2050 1350 50  0001 C CNN
+F 3 "" H 2050 1350 50  0001 C CNN
+	1    2050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E6EAADE
+P 2050 2250
+F 0 "C?" H 2228 2296 50  0000 L CNN
+F 1 "100nF" H 2228 2205 50  0000 L CNN
+F 2 "" H 2050 2250 50  0001 C CNN
+F 3 "~" H 2050 2250 50  0001 C CNN
+	1    2050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E6EB3FA
+P 3550 2250
+F 0 "C?" H 3728 2296 50  0000 L CNN
+F 1 "100nF" H 3728 2205 50  0000 L CNN
+F 2 "" H 3550 2250 50  0001 C CNN
+F 3 "~" H 3550 2250 50  0001 C CNN
+	1    3550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E6E8A06
+P 3550 1350
+F 0 "#PWR?" H 3550 1200 50  0001 C CNN
+F 1 "+3.3V" H 3565 1523 50  0000 C CNN
+F 2 "" H 3550 1350 50  0001 C CNN
+F 3 "" H 3550 1350 50  0001 C CNN
+	1    3550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1350 2050 1900
+Wire Wire Line
+	2450 1900 2050 1900
+Connection ~ 2050 1900
+Wire Wire Line
+	2050 1900 2050 2000
+Wire Wire Line
+	3050 1900 3550 1900
+Wire Wire Line
+	3550 1350 3550 1900
+Connection ~ 3550 1900
+Wire Wire Line
+	3550 1900 3550 2000
+Wire Wire Line
+	2050 2500 2050 2650
+Wire Wire Line
+	2050 2650 2750 2650
+Wire Wire Line
+	3550 2500 3550 2650
+Wire Wire Line
+	3550 2650 2750 2650
+Connection ~ 2750 2650
+Wire Wire Line
+	2750 2200 2750 2650
 $EndSCHEMATC

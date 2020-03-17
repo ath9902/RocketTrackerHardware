@@ -182,4 +182,10 @@ F 3 "" H 2600 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2600 3650 2600 3450
+$Sheet
+S 9150 1400 1350 450 
+U 5E714987
+F0 "Pyro" 50
+F1 "Pyro.sch" 50
+$EndSheet
 $EndSCHEMATC

@@ -130,12 +130,12 @@ Wire Wire Line
 	6750 2050 5150 2050
 Wire Wire Line
 	5150 2050 5150 3250
-Text GLabel 3700 3450 0    50   Input ~ 0
-Trans_TX
-Text GLabel 3700 3550 0    50   Input ~ 0
-Trans_RX
 Wire Wire Line
 	4050 3450 3700 3450
 Wire Wire Line
 	4050 3550 3700 3550
+Text HLabel 3700 3450 0    50   Input ~ 0
+TX
+Text HLabel 3700 3550 0    50   Input ~ 0
+RX
 $EndSCHEMATC

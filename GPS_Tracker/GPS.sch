@@ -72,10 +72,6 @@ F 3 "~" H 4400 3550 50  0001 C CNN
 	1    4400 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 4950 3050 0    50   Input ~ 0
-RX
-Text GLabel 4950 3150 0    50   Input ~ 0
-TX
 Wire Wire Line
 	4950 3150 5150 3150
 Wire Wire Line
@@ -106,4 +102,8 @@ Wire Wire Line
 Wire Wire Line
 	5750 2700 5650 2700
 Connection ~ 5650 2700
+Text HLabel 4950 3150 0    50   Input ~ 0
+TX
+Text HLabel 4950 3050 0    50   Input ~ 0
+RX
 $EndSCHEMATC

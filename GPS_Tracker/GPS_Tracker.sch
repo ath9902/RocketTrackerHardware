@@ -36,34 +36,40 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresigh
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 9200 5400 1350 500 
+S 8950 5350 1350 500 
 U 5E6FE21E
 F0 "Artemis" 50
 F1 "artemis.sch" 50
 $EndSheet
 $Sheet
-S 9150 4500 1350 500 
+S 8900 4450 1350 500 
 U 5E70A48E
 F0 "Transmitter" 50
 F1 "Transmitter.sch" 50
+F2 "TX" I R 10250 4550 50 
+F3 "RX" I R 10250 4650 50 
 $EndSheet
 $Sheet
-S 9150 3800 1350 500 
+S 8900 3750 1350 500 
 U 5E70A878
 F0 "GPS" 50
 F1 "GPS.sch" 50
+F2 "TX" I R 10250 3850 50 
+F3 "RX" I R 10250 3950 50 
 $EndSheet
 $Sheet
-S 9150 3000 1350 450 
+S 8900 2950 1350 450 
 U 5E70B79C
 F0 "Sheet5E70B79B" 50
 F1 "Power.sch" 50
 $EndSheet
 $Sheet
-S 9100 2100 1450 550 
+S 8850 2050 1450 550 
 U 5E70BD5E
 F0 "Sheet5E70BD5D" 50
 F1 "Sensor.sch" 50
+F2 "SCL" I R 10300 2200 50 
+F3 "SDA" I R 10300 2300 50 
 $EndSheet
 $Comp
 L Device:Crystal Y?
@@ -183,7 +189,7 @@ $EndComp
 Wire Wire Line
 	2650 3000 2650 2800
 $Sheet
-S 9150 1400 1350 450 
+S 8900 1350 1350 450 
 U 5E714987
 F0 "Pyro" 50
 F1 "Pyro.sch" 50
@@ -424,4 +430,28 @@ Wire Wire Line
 Connection ~ 6200 5950
 Wire Wire Line
 	6200 5950 6200 6050
+Text GLabel 10500 3850 2    50   Input ~ 0
+GPS_TX
+Text GLabel 10500 3950 2    50   Input ~ 0
+GPS_RX
+Wire Wire Line
+	10250 3850 10500 3850
+Wire Wire Line
+	10250 3950 10500 3950
+Text GLabel 10450 4550 2    50   Input ~ 0
+TRANS_TX
+Text GLabel 10450 4650 2    50   Input ~ 0
+TRANS_RX
+Wire Wire Line
+	10250 4550 10450 4550
+Wire Wire Line
+	10250 4650 10450 4650
+Text GLabel 10350 2200 2    50   Input ~ 0
+Pressure_SCL
+Text GLabel 10350 2300 2    50   Input ~ 0
+Pressure_SDA
+Wire Wire Line
+	10300 2200 10350 2200
+Wire Wire Line
+	10300 2300 10350 2300
 $EndSCHEMATC

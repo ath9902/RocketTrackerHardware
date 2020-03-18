@@ -24,10 +24,6 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&
 	1    2450 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 3050 0    50   Input ~ 0
-SCL
-Text GLabel 1650 2950 0    50   Input ~ 0
-SDA
 Wire Wire Line
 	1650 3050 2050 3050
 Wire Wire Line
@@ -101,4 +97,8 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2
 	1    7650 2900
 	1    0    0    -1  
 $EndComp
+Text HLabel 1650 3050 0    50   Input ~ 0
+SCL
+Text HLabel 1650 2950 0    50   Input ~ 0
+SDA
 $EndSCHEMATC

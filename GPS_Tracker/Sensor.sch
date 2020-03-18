@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -90,4 +90,15 @@ Wire Wire Line
 Connection ~ 2450 2350
 Wire Wire Line
 	2450 2350 2450 2200
+$Comp
+L Sensor_Motion:LSM9DS1 U?
+U 1 1 5E729015
+P 7650 2900
+F 0 "U?" H 7650 2011 50  0000 C CNN
+F 1 "LSM9DS1" H 7650 1920 50  0000 C CNN
+F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 9150 3650 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 7650 3000 50  0001 C CNN
+	1    7650 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

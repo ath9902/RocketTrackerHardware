@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -86,19 +86,148 @@ Wire Wire Line
 Connection ~ 2450 2350
 Wire Wire Line
 	2450 2350 2450 2200
-$Comp
-L Sensor_Motion:LSM9DS1 U?
-U 1 1 5E729015
-P 7650 2900
-F 0 "U?" H 7650 2011 50  0000 C CNN
-F 1 "LSM9DS1" H 7650 1920 50  0000 C CNN
-F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 9150 3650 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 7650 3000 50  0001 C CNN
-	1    7650 2900
-	1    0    0    -1  
-$EndComp
 Text HLabel 1650 3050 0    50   Input ~ 0
 SCL
 Text HLabel 1650 2950 0    50   Input ~ 0
 SDA
+$Comp
+L Sensor_Motion:ICM-20948 U?
+U 1 1 5E72C53E
+P 7600 3250
+F 0 "U?" H 7600 2461 50  0000 C CNN
+F 1 "ICM-20948" H 7600 2370 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 7600 2250 50  0001 C CNN
+F 3 "http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf" H 7600 3100 50  0001 C CNN
+	1    7600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E72EA31
+P 7600 4300
+F 0 "#PWR?" H 7600 4050 50  0001 C CNN
+F 1 "GND" H 7605 4127 50  0000 C CNN
+F 2 "" H 7600 4300 50  0001 C CNN
+F 3 "" H 7600 4300 50  0001 C CNN
+	1    7600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3950 7600 4300
+Text GLabel 6900 3050 0    50   Input ~ 0
+SDI
+Text GLabel 6900 3150 0    50   Input ~ 0
+SCLK
+Text GLabel 6900 3250 0    50   Input ~ 0
+nCS
+Wire Wire Line
+	6900 3050 7100 3050
+Wire Wire Line
+	6900 3150 7100 3150
+Wire Wire Line
+	6900 3250 7100 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5E7302D3
+P 8300 2400
+F 0 "#PWR?" H 8300 2150 50  0001 C CNN
+F 1 "GND" H 8305 2227 50  0000 C CNN
+F 2 "" H 8300 2400 50  0001 C CNN
+F 3 "" H 8300 2400 50  0001 C CNN
+	1    8300 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E730942
+P 6900 2400
+F 0 "#PWR?" H 6900 2150 50  0001 C CNN
+F 1 "GND" H 6905 2227 50  0000 C CNN
+F 2 "" H 6900 2400 50  0001 C CNN
+F 3 "" H 6900 2400 50  0001 C CNN
+	1    6900 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E731644
+P 7250 2400
+F 0 "C?" V 7565 2400 50  0000 C CNN
+F 1 "0.1uF" V 7474 2400 50  0000 C CNN
+F 2 "" H 7250 2400 50  0001 C CNN
+F 3 "~" H 7250 2400 50  0001 C CNN
+	1    7250 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E731D9C
+P 7950 2400
+F 0 "C?" H 8128 2446 50  0000 L CNN
+F 1 "CAP" H 8128 2355 50  0000 L CNN
+F 2 "" H 7950 2400 50  0001 C CNN
+F 3 "~" H 7950 2400 50  0001 C CNN
+	1    7950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E733708
+P 7500 2300
+F 0 "#PWR?" H 7500 2150 50  0001 C CNN
+F 1 "+3.3V" H 7515 2473 50  0000 C CNN
+F 2 "" H 7500 2300 50  0001 C CNN
+F 3 "" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E733BE9
+P 7700 2300
+F 0 "#PWR?" H 7700 2150 50  0001 C CNN
+F 1 "+3.3V" H 7715 2473 50  0000 C CNN
+F 2 "" H 7700 2300 50  0001 C CNN
+F 3 "" H 7700 2300 50  0001 C CNN
+	1    7700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2300 7500 2400
+Wire Wire Line
+	7700 2300 7700 2400
+Connection ~ 7500 2400
+Wire Wire Line
+	7500 2400 7500 2550
+Connection ~ 7700 2400
+Wire Wire Line
+	7700 2400 7700 2550
+Wire Wire Line
+	8200 2400 8300 2400
+$Comp
+L pspice:CAP C?
+U 1 1 5E73B2C6
+P 8500 3450
+F 0 "C?" V 8185 3450 50  0000 C CNN
+F 1 "0.1uF" V 8276 3450 50  0000 C CNN
+F 2 "" H 8500 3450 50  0001 C CNN
+F 3 "~" H 8500 3450 50  0001 C CNN
+	1    8500 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E73BEE0
+P 8950 3450
+F 0 "#PWR?" H 8950 3200 50  0001 C CNN
+F 1 "GND" V 8955 3322 50  0000 R CNN
+F 2 "" H 8950 3450 50  0001 C CNN
+F 3 "" H 8950 3450 50  0001 C CNN
+	1    8950 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 3450 8250 3450
+Wire Wire Line
+	8750 3450 8950 3450
 $EndSCHEMATC

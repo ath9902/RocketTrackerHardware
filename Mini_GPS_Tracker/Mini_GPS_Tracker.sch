@@ -13,28 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 8950 4950 1350 500 
-U 5E70A48E
-F0 "Transmitter" 50
-F1 "Transmitter.sch" 50
-F2 "TX" I R 10300 5050 50 
-F3 "RX" I R 10300 5150 50 
-$EndSheet
-$Sheet
-S 8950 4250 1350 500 
-U 5E70A878
-F0 "GPS" 50
-F1 "GPS.sch" 50
-F2 "TX" I R 10300 4350 50 
-F3 "RX" I R 10300 4450 50 
-$EndSheet
-$Sheet
-S 8950 3450 1350 450 
-U 5E70B79C
-F0 "Sheet5E70B79B" 50
-F1 "Power.sch" 50
-$EndSheet
 $Comp
 L Device:Crystal Y1
 U 1 1 5E71B215
@@ -299,22 +277,6 @@ Wire Wire Line
 Connection ~ 5950 950 
 Wire Wire Line
 	5950 950  5950 1050
-Text GLabel 10500 5050 2    50   Input ~ 0
-TRANS_TX
-Text GLabel 10500 5150 2    50   Input ~ 0
-TRANS_RX
-Wire Wire Line
-	10300 5050 10500 5050
-Wire Wire Line
-	10300 5150 10500 5150
-Text GLabel 10400 2700 2    50   Input ~ 0
-Pressure_SCL
-Text GLabel 10400 2800 2    50   Input ~ 0
-Pressure_SDA
-Wire Wire Line
-	10350 2700 10400 2700
-Wire Wire Line
-	10350 2800 10400 2800
 $Comp
 L Sparkfun~Artemis:CH340E U1
 U 1 1 5E73596B
@@ -541,14 +503,6 @@ Wire Wire Line
 	4450 4050 4450 3950
 Wire Wire Line
 	4450 4450 4450 4350
-$Sheet
-S 8900 2550 1450 550 
-U 5E70BD5E
-F0 "Sheet5E70BD5D" 50
-F1 "Sensor.sch" 50
-F2 "SCL" I R 10350 2700 50 
-F3 "SDA" I R 10350 2800 50 
-$EndSheet
 $Comp
 L Sparkfun~Artemis:SPARKFUN_WRL-15376 MD1
 U 1 1 5E6EE6CF
@@ -623,14 +577,6 @@ Text GLabel 7650 3150 2    50   Input ~ 0
 TRANS_TX
 Text GLabel 7650 3250 2    50   Input ~ 0
 TRANS_RX
-Wire Wire Line
-	10300 4350 10550 4350
-Wire Wire Line
-	10300 4450 10550 4450
-Text GLabel 10550 4450 2    50   Input ~ 0
-GPS_RX
-Text GLabel 10550 4350 2    50   Input ~ 0
-GPS_TX
 Text GLabel 7800 4750 2    50   Input ~ 0
 GPS_RX
 Text GLabel 7800 4650 2    50   Input ~ 0
@@ -639,4 +585,66 @@ Wire Wire Line
 	7650 4650 7800 4650
 Wire Wire Line
 	7650 4750 7800 4750
+Text GLabel 7850 1550 2    50   Input ~ 0
+Pressure_SDA
+Text GLabel 7850 1450 2    50   Input ~ 0
+Pressure_SCL
+Wire Wire Line
+	7650 1450 7850 1450
+Wire Wire Line
+	7650 1550 7850 1550
+Text GLabel 10650 4250 2    50   Input ~ 0
+GPS_TX
+Text GLabel 10650 4350 2    50   Input ~ 0
+GPS_RX
+Wire Wire Line
+	10400 4350 10650 4350
+Wire Wire Line
+	10400 4250 10650 4250
+$Sheet
+S 9000 2450 1450 550 
+U 5E70BD5E
+F0 "Sheet5E70BD5D" 50
+F1 "Sensor.sch" 50
+F2 "SCL" I R 10450 2600 50 
+F3 "SDA" I R 10450 2700 50 
+$EndSheet
+Wire Wire Line
+	10450 2700 10500 2700
+Wire Wire Line
+	10450 2600 10500 2600
+Text GLabel 10500 2700 2    50   Input ~ 0
+Pressure_SDA
+Text GLabel 10500 2600 2    50   Input ~ 0
+Pressure_SCL
+Wire Wire Line
+	10400 5050 10600 5050
+Wire Wire Line
+	10400 4950 10600 4950
+Text GLabel 10600 5050 2    50   Input ~ 0
+TRANS_RX
+Text GLabel 10600 4950 2    50   Input ~ 0
+TRANS_TX
+$Sheet
+S 9050 3350 1350 450 
+U 5E70B79C
+F0 "Sheet5E70B79B" 50
+F1 "Power.sch" 50
+$EndSheet
+$Sheet
+S 9050 4150 1350 500 
+U 5E70A878
+F0 "GPS" 50
+F1 "GPS.sch" 50
+F2 "TX" I R 10400 4250 50 
+F3 "RX" I R 10400 4350 50 
+$EndSheet
+$Sheet
+S 9050 4850 1350 500 
+U 5E70A48E
+F0 "Transmitter" 50
+F1 "Transmitter.sch" 50
+F2 "TX" I R 10400 4950 50 
+F3 "RX" I R 10400 5050 50 
+$EndSheet
 $EndSCHEMATC

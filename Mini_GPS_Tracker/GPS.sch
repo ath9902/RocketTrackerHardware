@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_GPS:MAX-8Q U3
+U 1 1 5E6E6DC2
+P 5750 3450
+F 0 "U3" H 5750 2661 50  0000 C CNN
+F 1 "MAX-8Q" H 5750 2570 50  0000 C CNN
+F 2 "RF_GPS:ublox_MAX" H 6150 2800 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf" H 5750 3450 50  0001 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5E6E7D04
+P 4400 4400
+F 0 "#PWR0119" H 4400 4150 50  0001 C CNN
+F 1 "GND" H 4405 4227 50  0000 C CNN
+F 2 "" H 4400 4400 50  0001 C CNN
+F 3 "" H 4400 4400 50  0001 C CNN
+	1    4400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 5E6E8495
+P 4400 2500
+F 0 "#PWR0120" H 4400 2350 50  0001 C CNN
+F 1 "+3.3V" H 4415 2673 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3450 6700 3450
+$Comp
+L pspice:CAP C10
+U 1 1 5E6EAF56
+P 4400 3550
+F 0 "C10" H 4578 3596 50  0000 L CNN
+F 1 "0.1uF" H 4578 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 3550 50  0001 C CNN
+F 3 "~" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3300 4400 2700
+Wire Wire Line
+	4400 3800 4400 4150
+Wire Wire Line
+	5750 4150 4400 4150
+Connection ~ 4400 4150
+Wire Wire Line
+	4400 4150 4400 4400
+Wire Wire Line
+	5550 2750 5550 2700
+Wire Wire Line
+	5550 2700 4400 2700
+Connection ~ 4400 2700
+Wire Wire Line
+	4400 2700 4400 2500
+Wire Wire Line
+	5650 2750 5650 2700
+Wire Wire Line
+	5650 2700 5550 2700
+Connection ~ 5550 2700
+Wire Wire Line
+	5750 2750 5750 2700
+Wire Wire Line
+	5750 2700 5650 2700
+Connection ~ 5650 2700
+Text HLabel 4600 3150 0    50   Input ~ 0
+TX
+Text HLabel 4600 3050 0    50   Input ~ 0
+RX
+$Comp
+L CGGBP.35.6.A.02:CGGBP.35.6.A.02 AE1
+U 1 1 5E756F28
+P 6900 3100
+F 0 "AE1" H 7168 3135 50  0000 L CNN
+F 1 "CGGBP.35.6.A.02" H 7168 3044 50  0000 L CNN
+F 2 "Sparkfun-Artemis:XCVR_CGGBP.35.6.A.02" H 6900 3100 50  0001 L BNN
+F 3 "Taoglas" H 6900 3100 50  0001 L BNN
+	1    6900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3100 6800 3100
+Wire Wire Line
+	6700 3100 6700 3450
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5E75AD21
+P 5000 3050
+F 0 "FB1" V 4763 3050 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 4854 3050 50  0000 C CNN
+F 2 "" V 4930 3050 50  0001 C CNN
+F 3 "~" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5E75B78C
+P 5000 3150
+F 0 "FB2" V 4763 3150 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 4854 3150 50  0000 C CNN
+F 2 "" V 4930 3150 50  0001 C CNN
+F 3 "~" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3050 4900 3050
+Wire Wire Line
+	4600 3150 4900 3150
+Wire Wire Line
+	5100 3150 5150 3150
+Wire Wire Line
+	5100 3050 5150 3050
+$EndSCHEMATC

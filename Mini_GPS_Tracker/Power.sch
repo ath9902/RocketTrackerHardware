@@ -1,0 +1,135 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U4
+U 1 1 5E6E6EA8
+P 5250 4250
+F 0 "U4" H 5250 4492 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 5250 4401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5250 4450 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5350 4000 50  0001 C CNN
+	1    5250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5E6E846B
+P 5250 5000
+F 0 "#PWR0121" H 5250 4750 50  0001 C CNN
+F 1 "GND" H 5255 4827 50  0000 C CNN
+F 2 "" H 5250 5000 50  0001 C CNN
+F 3 "" H 5250 5000 50  0001 C CNN
+	1    5250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C11
+U 1 1 5E6EAADE
+P 4550 4600
+F 0 "C11" H 4728 4646 50  0000 L CNN
+F 1 "100nF" H 4728 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4550 4600 50  0001 C CNN
+F 3 "~" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C12
+U 1 1 5E6EB3FA
+P 6050 4600
+F 0 "C12" H 6228 4646 50  0000 L CNN
+F 1 "100nF" H 6228 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 4600 50  0001 C CNN
+F 3 "~" H 6050 4600 50  0001 C CNN
+	1    6050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 5E6E8A06
+P 6050 2750
+F 0 "#PWR0123" H 6050 2600 50  0001 C CNN
+F 1 "+3.3V" H 6065 2923 50  0000 C CNN
+F 2 "" H 6050 2750 50  0001 C CNN
+F 3 "" H 6050 2750 50  0001 C CNN
+	1    6050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4250 4550 4250
+Connection ~ 4550 4250
+Wire Wire Line
+	4550 4250 4550 4350
+Wire Wire Line
+	5550 4250 6050 4250
+Wire Wire Line
+	6050 4250 6050 4350
+Wire Wire Line
+	4550 4850 4550 5000
+Wire Wire Line
+	4550 5000 5250 5000
+Wire Wire Line
+	6050 4850 6050 5000
+Wire Wire Line
+	6050 5000 5250 5000
+Connection ~ 5250 5000
+Wire Wire Line
+	5250 4550 5250 5000
+$Comp
+L pspice:DIODE D3
+U 1 1 5E7589B4
+P 6050 3750
+F 0 "D3" V 6096 3622 50  0000 R CNN
+F 1 "DIODE" V 6005 3622 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 3750 50  0001 C CNN
+F 3 "~" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2750 6050 3550
+Wire Wire Line
+	6050 4250 6050 3950
+Connection ~ 6050 4250
+$Comp
+L XT60-M:XT60-M J3
+U 1 1 5E759DF8
+P 4450 2850
+F 0 "J3" V 4389 2620 50  0000 R CNN
+F 1 "XT60-M" V 4298 2620 50  0000 R CNN
+F 2 "Sparkfun-Artemis:AMASS_XT60-M" H 4450 2850 50  0001 L BNN
+F 3 "1.2" H 4450 2850 50  0001 L BNN
+F 4 "IPC-7251" H 4450 2850 50  0001 L BNN "Field4"
+F 5 "AMASS" H 4450 2850 50  0001 L BNN "Field5"
+	1    4450 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E75AA69
+P 4350 3350
+F 0 "#PWR02" H 4350 3100 50  0001 C CNN
+F 1 "GND" H 4355 3177 50  0000 C CNN
+F 2 "" H 4350 3350 50  0001 C CNN
+F 3 "" H 4350 3350 50  0001 C CNN
+	1    4350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3150 4550 4250
+Wire Wire Line
+	4350 3350 4350 3150
+$EndSCHEMATC

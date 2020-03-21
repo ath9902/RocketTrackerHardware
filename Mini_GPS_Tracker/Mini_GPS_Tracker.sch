@@ -299,14 +299,6 @@ Wire Wire Line
 Connection ~ 5950 950 
 Wire Wire Line
 	5950 950  5950 1050
-Text GLabel 10550 4350 2    50   Input ~ 0
-GPS_TX
-Text GLabel 10550 4450 2    50   Input ~ 0
-GPS_RX
-Wire Wire Line
-	10300 4350 10550 4350
-Wire Wire Line
-	10300 4450 10550 4450
 Text GLabel 10500 5050 2    50   Input ~ 0
 TRANS_TX
 Text GLabel 10500 5150 2    50   Input ~ 0
@@ -631,4 +623,20 @@ Text GLabel 7650 3150 2    50   Input ~ 0
 TRANS_TX
 Text GLabel 7650 3250 2    50   Input ~ 0
 TRANS_RX
+Wire Wire Line
+	10300 4350 10550 4350
+Wire Wire Line
+	10300 4450 10550 4450
+Text GLabel 10550 4450 2    50   Input ~ 0
+GPS_RX
+Text GLabel 10550 4350 2    50   Input ~ 0
+GPS_TX
+Text GLabel 7800 4750 2    50   Input ~ 0
+GPS_RX
+Text GLabel 7800 4650 2    50   Input ~ 0
+GPS_TX
+Wire Wire Line
+	7650 4650 7800 4650
+Wire Wire Line
+	7650 4750 7800 4750
 $EndSCHEMATC

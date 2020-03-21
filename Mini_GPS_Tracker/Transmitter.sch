@@ -58,8 +58,6 @@ Wire Wire Line
 	5250 5850 5350 5850
 Wire Wire Line
 	6250 4250 7200 4250
-Wire Wire Line
-	7200 4250 7200 4200
 $Comp
 L pspice:CAP C12
 U 1 1 5E6EA76B
@@ -128,30 +126,31 @@ TX
 Text HLabel 3700 3550 0    50   Input ~ 0
 RX
 $Comp
-L 5-1814400-1:5-1814400-1 J3
-U 1 1 5E7573FC
-P 7300 3800
-F 0 "J3" V 7361 4030 50  0000 L CNN
-F 1 "5-1814400-1" V 7452 4030 50  0000 L CNN
-F 2 "Sparkfun-Artemis:CONN_5-1814400-1" H 7350 4350 50  0001 L BNN
-F 3 "Compliant" H 7300 3800 50  0001 L BNN
-F 4 "5-1814400-1" H 7350 4350 50  0001 L BNN "Field4"
-F 5 "https://www.te.com/usa-en/product-5-1814400-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 7300 4100 50  0001 L BNN "Field5"
-F 6 "1" H 7300 3800 50  0001 L BNN "Field6"
-	1    7300 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR028
 U 1 1 5E75D5B2
-P 7300 4300
-F 0 "#PWR028" H 7300 4050 50  0001 C CNN
-F 1 "GND" H 7305 4127 50  0000 C CNN
-F 2 "" H 7300 4300 50  0001 C CNN
-F 3 "" H 7300 4300 50  0001 C CNN
-	1    7300 4300
-	1    0    0    -1  
+P 7200 3800
+F 0 "#PWR028" H 7200 3550 50  0001 C CNN
+F 1 "GND" H 7205 3627 50  0000 C CNN
+F 2 "" H 7200 3800 50  0001 C CNN
+F 3 "" H 7200 3800 50  0001 C CNN
+	1    7200 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sparkfun~Artemis:901-10512-1 J3
+U 1 1 5E766430
+P 7600 4050
+F 0 "J3" H 7370 4004 50  0000 R CNN
+F 1 "901-10512-1" H 7370 4095 50  0000 R CNN
+F 2 "Sparkfun-Artemis:AMPHENOL_901-10512-1" H 7600 4050 50  0001 L BNN
+F 3 "A" H 7600 4050 50  0001 L BNN
+F 4 "MANUFACTURER RECOMMENDATION" H 7600 4050 50  0001 L BNN "Field4"
+F 5 "Amphenol RF Division" H 7600 4050 50  0001 L BNN "Field5"
+	1    7600 4050
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7300 4200 7300 4300
+	7200 3800 7200 3950
+Wire Wire Line
+	7200 4150 7200 4250
 $EndSCHEMATC

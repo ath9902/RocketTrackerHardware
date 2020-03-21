@@ -93,7 +93,7 @@ nReset
 Wire Wire Line
 	5900 1250 6150 1250
 Text GLabel 1000 1000 0    50   Input ~ 0
-DTR
+RTS
 Text GLabel 1900 1000 2    50   Input ~ 0
 BOOT
 $Comp
@@ -166,7 +166,7 @@ Wire Wire Line
 	1800 1000 1900 1000
 Connection ~ 1800 1000
 Text GLabel 850  2700 0    50   Input ~ 0
-DTR
+RTS
 Text GLabel 2300 2700 2    50   Input ~ 0
 RESET
 $Comp
@@ -651,4 +651,82 @@ Wire Wire Line
 	7650 4650 7800 4650
 Text GLabel 7800 4750 2    50   Input ~ 0
 GPS_TX
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J4
+U 1 1 5E76D592
+P 4950 6900
+F 0 "J4" H 4507 6946 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 4507 6855 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x05_P1.00mm_Vertical" H 4950 6900 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4600 5650 50  0001 C CNN
+	1    4950 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR030
+U 1 1 5E76F259
+P 4950 6150
+F 0 "#PWR030" H 4950 6000 50  0001 C CNN
+F 1 "+3.3V" H 4965 6323 50  0000 C CNN
+F 2 "" H 4950 6150 50  0001 C CNN
+F 3 "" H 4950 6150 50  0001 C CNN
+	1    4950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5E76F975
+P 4950 7600
+F 0 "#PWR031" H 4950 7350 50  0001 C CNN
+F 1 "GND" H 4955 7427 50  0000 C CNN
+F 2 "" H 4950 7600 50  0001 C CNN
+F 3 "" H 4950 7600 50  0001 C CNN
+	1    4950 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 7500 4950 7550
+Wire Wire Line
+	4850 7500 4850 7550
+Wire Wire Line
+	4850 7550 4950 7550
+Connection ~ 4950 7550
+Wire Wire Line
+	4950 7550 4950 7600
+Wire Wire Line
+	4950 6300 4950 6150
+Text GLabel 5600 7000 2    50   Input ~ 0
+A1
+Text GLabel 5550 6600 2    50   Input ~ 0
+RESET_2
+Text GLabel 5600 6900 2    50   Input ~ 0
+SWDIO
+Text GLabel 5600 6800 2    50   Input ~ 0
+SWDCK
+Wire Wire Line
+	5450 6600 5550 6600
+Wire Wire Line
+	5450 6800 5600 6800
+Wire Wire Line
+	5450 6900 5600 6900
+Wire Wire Line
+	5450 7000 5600 7000
+Wire Wire Line
+	4950 7550 5550 7550
+Wire Wire Line
+	5550 7550 5550 7100
+Wire Wire Line
+	5550 7100 5450 7100
+Text GLabel 7850 2950 2    50   Input ~ 0
+SWDIO
+Text GLabel 7850 3050 2    50   Input ~ 0
+SWDCK
+Wire Wire Line
+	7650 2950 7850 2950
+Wire Wire Line
+	7650 3050 7850 3050
+Text GLabel 7800 3850 2    50   Input ~ 0
+A1
+Wire Wire Line
+	7650 3850 7800 3850
 $EndSCHEMATC

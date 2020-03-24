@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -88,83 +88,8 @@ Wire Wire Line
 Connection ~ 4100 1900
 Wire Wire Line
 	4100 1900 4100 2100
-Text GLabel 5900 1250 0    50   Input ~ 0
-nReset
 Wire Wire Line
 	5900 1250 6150 1250
-Text GLabel 1000 1000 0    50   Input ~ 0
-RTS
-Text GLabel 1900 1000 2    50   Input ~ 0
-BOOT
-$Comp
-L pspice:CAP C2
-U 1 1 5E72BBB4
-P 1450 1000
-F 0 "C2" V 1135 1000 50  0000 C CNN
-F 1 "CAP" V 1226 1000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1450 1000 50  0001 C CNN
-F 3 "~" H 1450 1000 50  0001 C CNN
-	1    1450 1000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5E72C86A
-P 1100 1400
-F 0 "#PWR01" H 1100 1150 50  0001 C CNN
-F 1 "GND" H 1105 1227 50  0000 C CNN
-F 2 "" H 1100 1400 50  0001 C CNN
-F 3 "" H 1100 1400 50  0001 C CNN
-	1    1100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5E72D50D
-P 1800 1400
-F 0 "#PWR05" H 1800 1150 50  0001 C CNN
-F 1 "GND" H 1805 1227 50  0000 C CNN
-F 2 "" H 1800 1400 50  0001 C CNN
-F 3 "" H 1800 1400 50  0001 C CNN
-	1    1800 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5E72FC2F
-P 1100 1150
-F 0 "R1" H 1170 1196 50  0000 L CNN
-F 1 "DNP" H 1170 1105 50  0000 L CNN
-F 2 "" V 1030 1150 50  0001 C CNN
-F 3 "~" H 1100 1150 50  0001 C CNN
-	1    1100 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5E73039F
-P 1800 1150
-F 0 "R3" H 1870 1196 50  0000 L CNN
-F 1 "220K" H 1870 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1730 1150 50  0001 C CNN
-F 3 "~" H 1800 1150 50  0001 C CNN
-	1    1800 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 1000 1100 1000
-Wire Wire Line
-	1100 1000 1200 1000
-Connection ~ 1100 1000
-Wire Wire Line
-	1100 1300 1100 1400
-Wire Wire Line
-	1800 1300 1800 1400
-Wire Wire Line
-	1700 1000 1800 1000
-Wire Wire Line
-	1800 1000 1900 1000
-Connection ~ 1800 1000
 Text GLabel 850  2700 0    50   Input ~ 0
 RTS
 Text GLabel 2300 2700 2    50   Input ~ 0
@@ -197,7 +122,7 @@ U 1 1 5E735815
 P 1600 2900
 F 0 "SW1" V 1646 2852 50  0000 R CNN
 F 1 "SW_Push" V 1555 2852 50  0000 R CNN
-F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 1600 3100 50  0001 C CNN
+F 2 "Sparkfun-Artemis:SW_TL1015AF160QG" H 1600 3100 50  0001 C CNN
 F 3 "~" H 1600 3100 50  0001 C CNN
 	1    1600 2900
 	0    -1   -1   0   
@@ -253,10 +178,6 @@ Wire Wire Line
 	1600 3100 1600 3400
 Wire Wire Line
 	2200 3200 2200 3400
-Text GLabel 5950 1450 0    50   Input ~ 0
-BOOT
-Wire Wire Line
-	5950 1450 6150 1450
 $Comp
 L power:+3.3V #PWR014
 U 1 1 5E73F797
@@ -272,8 +193,6 @@ Wire Wire Line
 	6150 1050 5950 1050
 Wire Wire Line
 	6150 950  5950 950 
-Wire Wire Line
-	5950 750  5950 950 
 Connection ~ 5950 950 
 Wire Wire Line
 	5950 950  5950 1050
@@ -361,7 +280,7 @@ F 3 "" H 1200 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 7350 1200 7250
+	1200 7350 1200 7300
 Wire Wire Line
 	1800 5150 3150 5150
 Wire Wire Line
@@ -555,7 +474,7 @@ Connection ~ 7750 6350
 Wire Wire Line
 	7750 6350 7750 6400
 Text GLabel 7800 1050 2    50   Input ~ 0
-TXO
+TX0
 Text GLabel 7800 1150 2    50   Input ~ 0
 RXI
 Wire Wire Line
@@ -604,6 +523,8 @@ F0 "Sheet5E70BD5D" 50
 F1 "Sensor.sch" 50
 F2 "SCL" I R 10450 2600 50 
 F3 "SDA" I R 10450 2700 50 
+F4 "9_SDA" I R 10450 2800 50 
+F5 "9_SCL" I R 10450 2900 50 
 $EndSheet
 Wire Wire Line
 	10450 2700 10500 2700
@@ -626,6 +547,7 @@ S 9050 3350 1350 450
 U 5E70B79C
 F0 "Sheet5E70B79B" 50
 F1 "Power.sch" 50
+F2 "V_Bat_Measure" I R 10400 3500 50 
 $EndSheet
 $Sheet
 S 9050 4150 1350 500 
@@ -634,6 +556,7 @@ F0 "GPS" 50
 F1 "GPS.sch" 50
 F2 "TX" I R 10400 4250 50 
 F3 "RX" I R 10400 4350 50 
+F4 "RESET" I R 10400 4450 50 
 $EndSheet
 $Sheet
 S 9050 4850 1350 500 
@@ -652,71 +575,54 @@ Wire Wire Line
 Text GLabel 7800 4750 2    50   Input ~ 0
 GPS_TX
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J4
-U 1 1 5E76D592
-P 4950 6900
-F 0 "J4" H 4507 6946 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 4507 6855 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x05_P1.00mm_Vertical" H 4950 6900 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4600 5650 50  0001 C CNN
-	1    4950 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR030
 U 1 1 5E76F259
-P 4950 6150
-F 0 "#PWR030" H 4950 6000 50  0001 C CNN
-F 1 "+3.3V" H 4965 6323 50  0000 C CNN
-F 2 "" H 4950 6150 50  0001 C CNN
-F 3 "" H 4950 6150 50  0001 C CNN
-	1    4950 6150
+P 5050 5850
+F 0 "#PWR030" H 5050 5700 50  0001 C CNN
+F 1 "+3.3V" H 5065 6023 50  0000 C CNN
+F 2 "" H 5050 5850 50  0001 C CNN
+F 3 "" H 5050 5850 50  0001 C CNN
+	1    5050 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR031
 U 1 1 5E76F975
-P 4950 7600
-F 0 "#PWR031" H 4950 7350 50  0001 C CNN
-F 1 "GND" H 4955 7427 50  0000 C CNN
-F 2 "" H 4950 7600 50  0001 C CNN
-F 3 "" H 4950 7600 50  0001 C CNN
-	1    4950 7600
+P 5050 7300
+F 0 "#PWR031" H 5050 7050 50  0001 C CNN
+F 1 "GND" H 5055 7127 50  0000 C CNN
+F 2 "" H 5050 7300 50  0001 C CNN
+F 3 "" H 5050 7300 50  0001 C CNN
+	1    5050 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 7500 4950 7550
+	5050 7200 5050 7250
 Wire Wire Line
-	4850 7500 4850 7550
+	4950 7200 4950 7250
 Wire Wire Line
-	4850 7550 4950 7550
-Connection ~ 4950 7550
+	4950 7250 5050 7250
+Connection ~ 5050 7250
 Wire Wire Line
-	4950 7550 4950 7600
+	5050 7250 5050 7300
 Wire Wire Line
-	4950 6300 4950 6150
-Text GLabel 5600 7000 2    50   Input ~ 0
+	5050 6000 5050 5850
+Text GLabel 5700 6700 2    50   Input ~ 0
 A1
-Text GLabel 5550 6600 2    50   Input ~ 0
-RESET_2
-Text GLabel 5600 6900 2    50   Input ~ 0
+Text GLabel 5650 6300 2    50   Input ~ 0
+RESET
+Text GLabel 5700 6600 2    50   Input ~ 0
 SWDIO
-Text GLabel 5600 6800 2    50   Input ~ 0
+Text GLabel 5700 6500 2    50   Input ~ 0
 SWDCK
 Wire Wire Line
-	5450 6600 5550 6600
+	5550 6300 5650 6300
 Wire Wire Line
-	5450 6800 5600 6800
+	5550 6500 5700 6500
 Wire Wire Line
-	5450 6900 5600 6900
+	5550 6600 5700 6600
 Wire Wire Line
-	5450 7000 5600 7000
-Wire Wire Line
-	4950 7550 5550 7550
-Wire Wire Line
-	5550 7550 5550 7100
-Wire Wire Line
-	5550 7100 5450 7100
+	5550 6700 5700 6700
 Text GLabel 7850 2950 2    50   Input ~ 0
 SWDIO
 Text GLabel 7850 3050 2    50   Input ~ 0
@@ -729,4 +635,243 @@ Text GLabel 7800 3850 2    50   Input ~ 0
 A1
 Wire Wire Line
 	7650 3850 7800 3850
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J4
+U 1 1 5E76D592
+P 5050 6600
+F 0 "J4" H 4607 6646 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 4607 6555 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x05_P1.00mm_Vertical" H 5050 6600 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4700 5350 50  0001 C CNN
+	1    5050 6600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6150 1450
+NoConn ~ 3950 5450
+NoConn ~ 3950 5250
+Text GLabel 10600 3500 2    50   Input ~ 0
+v_measure
+Text GLabel 10650 4450 2    50   Input ~ 0
+gps_reset
+Wire Wire Line
+	10400 3500 10600 3500
+Wire Wire Line
+	10400 4450 10650 4450
+Wire Wire Line
+	900  7250 900  7300
+Wire Wire Line
+	900  7300 1200 7300
+Connection ~ 1200 7300
+Wire Wire Line
+	1200 7300 1200 7250
+NoConn ~ 1800 4850
+NoConn ~ 1800 4950
+NoConn ~ 1800 5350
+NoConn ~ 1800 5450
+NoConn ~ 1800 5650
+NoConn ~ 1800 5750
+NoConn ~ 1800 5950
+NoConn ~ 1800 6050
+NoConn ~ 1800 6250
+NoConn ~ 1800 6350
+NoConn ~ 1800 6550
+NoConn ~ 1800 6650
+NoConn ~ 1800 6850
+NoConn ~ 1800 6950
+Text GLabel 10550 2800 2    50   Input ~ 0
+9_SDA
+Text GLabel 10550 2900 2    50   Input ~ 0
+9_SCL
+Wire Wire Line
+	10450 2800 10550 2800
+Wire Wire Line
+	10450 2900 10550 2900
+Text GLabel 7800 2550 2    50   Input ~ 0
+v_measure
+Wire Wire Line
+	7650 2550 7800 2550
+Text GLabel 7800 5050 2    50   Input ~ 0
+9_SCL
+Text GLabel 7800 5150 2    50   Input ~ 0
+9_SDA
+Wire Wire Line
+	7650 5050 7800 5050
+Wire Wire Line
+	7650 5150 7800 5150
+Text GLabel 7800 5250 2    50   Input ~ 0
+gps_reset
+Wire Wire Line
+	7650 5250 7800 5250
+NoConn ~ 7650 5550
+NoConn ~ 7650 5450
+NoConn ~ 7650 4950
+NoConn ~ 7650 4850
+NoConn ~ 7650 4550
+NoConn ~ 7650 4450
+NoConn ~ 7650 4350
+NoConn ~ 7650 4250
+NoConn ~ 7650 4150
+NoConn ~ 7650 4050
+NoConn ~ 7650 3950
+NoConn ~ 7650 3750
+NoConn ~ 7650 3650
+NoConn ~ 7650 3550
+NoConn ~ 7650 3450
+NoConn ~ 7650 3350
+NoConn ~ 7650 2850
+NoConn ~ 7650 2750
+NoConn ~ 7650 2650
+NoConn ~ 7650 2450
+NoConn ~ 7650 2350
+NoConn ~ 7650 2250
+NoConn ~ 7650 2150
+NoConn ~ 7650 2050
+NoConn ~ 7650 1350
+NoConn ~ 7650 1250
+NoConn ~ 7650 950 
+Text GLabel 5900 1250 0    50   Input ~ 0
+RESET
+NoConn ~ 1800 4650
+NoConn ~ 7650 5350
+Wire Wire Line
+	5950 750  5950 950 
+NoConn ~ 5550 6800
+$Comp
+L power:GND #PWR0108
+U 1 1 5E7A6B23
+P 1000 600
+F 0 "#PWR0108" H 1000 350 50  0001 C CNN
+F 1 "GND" V 1005 472 50  0000 R CNN
+F 2 "" H 1000 600 50  0001 C CNN
+F 3 "" H 1000 600 50  0001 C CNN
+	1    1000 600 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E7A74FC
+P 1000 800
+F 0 "#PWR0109" H 1000 550 50  0001 C CNN
+F 1 "GND" V 1005 672 50  0000 R CNN
+F 2 "" H 1000 800 50  0001 C CNN
+F 3 "" H 1000 800 50  0001 C CNN
+	1    1000 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5E7A7F1B
+P 1000 1000
+F 0 "#PWR0110" H 1000 750 50  0001 C CNN
+F 1 "GND" V 1005 872 50  0000 R CNN
+F 2 "" H 1000 1000 50  0001 C CNN
+F 3 "" H 1000 1000 50  0001 C CNN
+	1    1000 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5E7A87E7
+P 1000 1200
+F 0 "#PWR0111" H 1000 950 50  0001 C CNN
+F 1 "GND" V 1005 1072 50  0000 R CNN
+F 2 "" H 1000 1200 50  0001 C CNN
+F 3 "" H 1000 1200 50  0001 C CNN
+	1    1000 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E7AC44A
+P 1250 600
+F 0 "H1" V 1204 750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1295 750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1250 600 50  0001 C CNN
+F 3 "~" H 1250 600 50  0001 C CNN
+	1    1250 600 
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E7AD0D3
+P 1250 800
+F 0 "H2" V 1204 950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1295 950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1250 800 50  0001 C CNN
+F 3 "~" H 1250 800 50  0001 C CNN
+	1    1250 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E7B04B9
+P 1250 1000
+F 0 "H3" V 1204 1150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1295 1150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1250 1000 50  0001 C CNN
+F 3 "~" H 1250 1000 50  0001 C CNN
+	1    1250 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E7B04BF
+P 1250 1200
+F 0 "H4" V 1204 1350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1295 1350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1250 1200 50  0001 C CNN
+F 3 "~" H 1250 1200 50  0001 C CNN
+	1    1250 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 600  1150 600 
+Wire Wire Line
+	1000 800  1150 800 
+Wire Wire Line
+	1000 1000 1150 1000
+Wire Wire Line
+	1000 1200 1150 1200
+$Sheet
+S 9050 5600 1400 400 
+U 5E7CBED1
+F0 "Sheet5E7CBED0" 50
+F1 "Storage.sch" 50
+F2 "cs_flash" I R 10450 5700 50 
+F3 "clk_flash" I R 10450 5800 50 
+F4 "MOSI_Flash" I R 10450 5900 50 
+F5 "MISO_Flash" I L 9050 5700 50 
+$EndSheet
+Text GLabel 8900 5700 0    50   Input ~ 0
+MISO_Flash
+Text GLabel 10600 5900 2    50   Input ~ 0
+MOSI_Flash
+Text GLabel 10600 5800 2    50   Input ~ 0
+clk_flash
+Text GLabel 10600 5700 2    50   Input ~ 0
+cs_flash
+Wire Wire Line
+	8900 5700 9050 5700
+Wire Wire Line
+	10450 5700 10600 5700
+Wire Wire Line
+	10450 5800 10600 5800
+Wire Wire Line
+	10450 5900 10600 5900
+Text GLabel 7800 1950 2    50   Input ~ 0
+MOSI_Flash
+Text GLabel 7800 1850 2    50   Input ~ 0
+MISO_Flash
+Wire Wire Line
+	7650 1850 7800 1850
+Wire Wire Line
+	7650 1950 7800 1950
+Text GLabel 7850 1750 2    50   Input ~ 0
+cs_flash
+Text GLabel 7850 1650 2    50   Input ~ 0
+clk_flash
+Wire Wire Line
+	7650 1650 7850 1650
+Wire Wire Line
+	7650 1750 7850 1750
 $EndSCHEMATC

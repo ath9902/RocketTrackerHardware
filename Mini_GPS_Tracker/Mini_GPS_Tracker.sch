@@ -717,7 +717,6 @@ NoConn ~ 7650 3750
 NoConn ~ 7650 3650
 NoConn ~ 7650 3550
 NoConn ~ 7650 3450
-NoConn ~ 7650 3350
 NoConn ~ 7650 2850
 NoConn ~ 7650 2750
 NoConn ~ 7650 2650
@@ -874,4 +873,54 @@ Wire Wire Line
 	7650 1650 7850 1650
 Wire Wire Line
 	7650 1750 7850 1750
+$Comp
+L Sparkfun~Artemis:CSS-J4D20-SMT LS1
+U 1 1 5E7E01A2
+P 5300 3750
+F 0 "LS1" H 5405 3796 50  0000 L CNN
+F 1 "CSS-J4D20-SMT" H 5405 3705 50  0000 L CNN
+F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 5300 3750 50  0001 L BNN
+F 3 "CUI" H 5300 3750 50  0001 L BNN
+F 4 "None" H 5300 3750 50  0001 L BNN "Field4"
+F 5 "CSS-J4D20-SMT" H 5300 3750 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 5300 3750 50  0001 L BNN "Field6"
+F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 5300 3750 50  0001 L BNN "Field7"
+F 8 "None" H 5300 3750 50  0001 L BNN "Field8"
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E7E2738
+P 5300 3300
+F 0 "R7" H 5370 3346 50  0000 L CNN
+F 1 "R" H 5370 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 3300 50  0001 C CNN
+F 3 "~" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5E7E36E3
+P 5300 4050
+F 0 "#PWR0116" H 5300 3800 50  0001 C CNN
+F 1 "GND" H 5305 3877 50  0000 C CNN
+F 2 "" H 5300 4050 50  0001 C CNN
+F 3 "" H 5300 4050 50  0001 C CNN
+	1    5300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3950 5300 4050
+Wire Wire Line
+	5300 3550 5300 3450
+Text GLabel 5300 3000 1    50   Input ~ 0
+buzzer
+Wire Wire Line
+	5300 3000 5300 3150
+Text GLabel 7850 3350 2    50   Input ~ 0
+buzzer
+Wire Wire Line
+	7650 3350 7850 3350
 $EndSCHEMATC

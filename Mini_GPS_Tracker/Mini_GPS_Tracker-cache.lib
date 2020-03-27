@@ -498,6 +498,39 @@ X RXI 9 400 200 100 L 40 40 0 0 B
 ENDDRAW
 ENDDEF
 #
+# Sparkfun_Artemis_CSS-J4D20-SMT
+#
+DEF Sparkfun_Artemis_CSS-J4D20-SMT LS 0 40 N N 1 L N
+F0 "LS" -151 351 50 H V L BNN
+F1 "Sparkfun_Artemis_CSS-J4D20-SMT" -151 -452 50 H V L BNN
+F2 "CUI_CSS-J4D20-SMT" 0 0 50 H I L BNN
+F3 "CUI" 0 0 50 H I L BNN
+F4 "None" 0 0 50 H I L BNN
+F5 "CSS-J4D20-SMT" 0 0 50 H I L BNN
+F6 "Unavailable" 0 0 50 H I L BNN
+F7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" 0 0 50 H I L BNN
+F8 "None" 0 0 50 H I L BNN
+DRAW
+T 0 -75 50 70 0 0 0 + Normal 0 L B
+T 0 -75 -150 70 0 0 0 - Normal 0 L B
+P 2 0 0 10 -25 -50 -25 50 N
+P 2 0 0 10 -25 50 0 50 N
+P 2 0 0 10 0 -50 -25 -50 N
+P 2 0 0 10 0 -50 0 -100 N
+P 2 0 0 10 0 50 0 100 N
+P 2 0 0 10 0 50 25 50 N
+P 2 0 0 10 25 -50 0 -50 N
+P 2 0 0 10 25 50 25 -50 N
+P 2 0 0 10 25 50 75 125 N
+P 2 0 0 10 75 -125 25 -50 N
+P 2 0 0 10 75 125 75 -125 N
+X M M1 0 -200 100 U 40 40 0 0 P
+X M M2 0 -200 100 U 40 40 0 0 P
+X P P1 0 200 100 D 40 40 0 0 P
+X P P2 0 200 100 D 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
 # Sparkfun_Artemis_MAX2686
 #
 DEF Sparkfun_Artemis_MAX2686 U 0 40 Y Y 1 F N

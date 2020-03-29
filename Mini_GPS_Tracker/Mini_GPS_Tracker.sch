@@ -473,14 +473,6 @@ Wire Wire Line
 Connection ~ 7750 6350
 Wire Wire Line
 	7750 6350 7750 6400
-Text GLabel 7800 1050 2    50   Input ~ 0
-TX0
-Text GLabel 7800 1150 2    50   Input ~ 0
-RXI
-Wire Wire Line
-	7650 1150 7800 1150
-Wire Wire Line
-	7650 1050 7800 1050
 $Comp
 L power:+3.3V #PWR03
 U 1 1 5E7FD57A
@@ -492,18 +484,12 @@ F 3 "" H 1600 1950 50  0001 C CNN
 	1    1600 1950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7850 3250 2    50   Input ~ 0
-TRANS_TX
-Text GLabel 7850 3150 2    50   Input ~ 0
+Text GLabel 7800 3550 2    50   Input ~ 0
 TRANS_RX
-Text GLabel 7800 4650 2    50   Input ~ 0
+Text GLabel 7850 3150 2    50   Input ~ 0
 GPS_RX
-Wire Wire Line
-	7650 4750 7800 4750
-Text GLabel 7850 1550 2    50   Input ~ 0
+Text GLabel 7800 3450 2    50   Input ~ 0
 Pressure_SDA
-Text GLabel 7850 1450 2    50   Input ~ 0
-Pressure_SCL
 Wire Wire Line
 	7650 1450 7850 1450
 Wire Wire Line
@@ -572,7 +558,7 @@ Wire Wire Line
 	7650 3250 7850 3250
 Wire Wire Line
 	7650 4650 7800 4650
-Text GLabel 7800 4750 2    50   Input ~ 0
+Text GLabel 7850 3250 2    50   Input ~ 0
 GPS_TX
 $Comp
 L power:+3.3V #PWR030
@@ -690,44 +676,30 @@ Text GLabel 7800 2550 2    50   Input ~ 0
 v_measure
 Wire Wire Line
 	7650 2550 7800 2550
-Text GLabel 7800 5050 2    50   Input ~ 0
+Text GLabel 7850 1450 2    50   Input ~ 0
 9_SCL
-Text GLabel 7800 5150 2    50   Input ~ 0
+Text GLabel 7850 1550 2    50   Input ~ 0
 9_SDA
-Wire Wire Line
-	7650 5050 7800 5050
-Wire Wire Line
-	7650 5150 7800 5150
-Text GLabel 7800 5250 2    50   Input ~ 0
+Text GLabel 7800 2450 2    50   Input ~ 0
 gps_reset
-Wire Wire Line
-	7650 5250 7800 5250
-NoConn ~ 7650 5550
 NoConn ~ 7650 5450
 NoConn ~ 7650 4950
 NoConn ~ 7650 4850
 NoConn ~ 7650 4550
-NoConn ~ 7650 4450
 NoConn ~ 7650 4350
 NoConn ~ 7650 4250
 NoConn ~ 7650 4150
 NoConn ~ 7650 4050
 NoConn ~ 7650 3950
 NoConn ~ 7650 3750
-NoConn ~ 7650 3650
-NoConn ~ 7650 3550
-NoConn ~ 7650 3450
 NoConn ~ 7650 2850
 NoConn ~ 7650 2750
 NoConn ~ 7650 2650
-NoConn ~ 7650 2450
 NoConn ~ 7650 2350
-NoConn ~ 7650 2250
 NoConn ~ 7650 2150
 NoConn ~ 7650 2050
 NoConn ~ 7650 1350
 NoConn ~ 7650 1250
-NoConn ~ 7650 950 
 Text GLabel 5900 1250 0    50   Input ~ 0
 RESET
 NoConn ~ 1800 4650
@@ -857,22 +829,14 @@ Wire Wire Line
 	10450 5800 10600 5800
 Wire Wire Line
 	10450 5900 10600 5900
-Text GLabel 7800 1950 2    50   Input ~ 0
+Text GLabel 7800 4650 2    50   Input ~ 0
 MOSI_Flash
-Text GLabel 7800 1850 2    50   Input ~ 0
+Text GLabel 7800 5150 2    50   Input ~ 0
 MISO_Flash
-Wire Wire Line
-	7650 1850 7800 1850
-Wire Wire Line
-	7650 1950 7800 1950
-Text GLabel 7850 1750 2    50   Input ~ 0
+Text GLabel 7800 950  2    50   Input ~ 0
 cs_flash
-Text GLabel 7850 1650 2    50   Input ~ 0
+Text GLabel 7800 5050 2    50   Input ~ 0
 clk_flash
-Wire Wire Line
-	7650 1650 7850 1650
-Wire Wire Line
-	7650 1750 7850 1750
 $Comp
 L Sparkfun~Artemis:CSS-J4D20-SMT LS1
 U 1 1 5E7E01A2
@@ -919,8 +883,44 @@ Text GLabel 5300 3000 1    50   Input ~ 0
 buzzer
 Wire Wire Line
 	5300 3000 5300 3150
-Text GLabel 7850 3350 2    50   Input ~ 0
+Text GLabel 7800 5550 2    50   Input ~ 0
 buzzer
 Wire Wire Line
-	7650 3350 7850 3350
+	7650 1050 7800 1050
+Wire Wire Line
+	7650 1150 7800 1150
+Text GLabel 7800 1150 2    50   Input ~ 0
+RXI
+Text GLabel 7800 1050 2    50   Input ~ 0
+TX0
+NoConn ~ 7650 3350
+Wire Wire Line
+	7650 5550 7800 5550
+NoConn ~ 7650 5250
+Text GLabel 7800 3650 2    50   Input ~ 0
+Pressure_SCL
+Text GLabel 7750 2250 2    50   Input ~ 0
+TRANS_TX
+Wire Wire Line
+	7750 2250 7650 2250
+Wire Wire Line
+	7800 2450 7650 2450
+Wire Wire Line
+	7800 3450 7650 3450
+Wire Wire Line
+	7650 3550 7800 3550
+Wire Wire Line
+	7800 3650 7650 3650
+Wire Wire Line
+	7650 5050 7800 5050
+Wire Wire Line
+	7650 5150 7800 5150
+NoConn ~ 7650 4750
+NoConn ~ 7650 1650
+NoConn ~ 7650 1750
+NoConn ~ 7650 1850
+NoConn ~ 7650 1950
+NoConn ~ 7650 4450
+Wire Wire Line
+	7650 950  7800 950 
 $EndSCHEMATC

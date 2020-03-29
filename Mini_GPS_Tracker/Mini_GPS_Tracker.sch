@@ -484,7 +484,7 @@ F 3 "" H 1600 1950 50  0001 C CNN
 	1    1600 1950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 3550 2    50   Input ~ 0
+Text GLabel 7750 2150 2    50   Input ~ 0
 TRANS_RX
 Text GLabel 7850 3150 2    50   Input ~ 0
 GPS_RX
@@ -696,7 +696,6 @@ NoConn ~ 7650 2850
 NoConn ~ 7650 2750
 NoConn ~ 7650 2650
 NoConn ~ 7650 2350
-NoConn ~ 7650 2150
 NoConn ~ 7650 2050
 NoConn ~ 7650 1350
 NoConn ~ 7650 1250
@@ -908,8 +907,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 3450 7650 3450
 Wire Wire Line
-	7650 3550 7800 3550
-Wire Wire Line
 	7800 3650 7650 3650
 Wire Wire Line
 	7650 5050 7800 5050
@@ -923,4 +920,7 @@ NoConn ~ 7650 1950
 NoConn ~ 7650 4450
 Wire Wire Line
 	7650 950  7800 950 
+NoConn ~ 7650 3550
+Wire Wire Line
+	7650 2150 7750 2150
 $EndSCHEMATC

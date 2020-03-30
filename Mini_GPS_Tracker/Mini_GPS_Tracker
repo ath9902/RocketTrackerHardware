@@ -1,18 +1,57 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
-    <h1>/Users/austinheisey/Documents/RocketTrackerHardware/Mini_GPS_Tracker/Mini_GPS_Tracker.sch</h1>
-    <p>Sunday, March 29, 2020 at 05:45:31 PM</p>
-    <p>Eeschema (5.1.5-0-10_14)</p>
-    <p><b>Component Count:</b>56</p>
-    <table>
-    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>C1, C3, C11, C15, C16, C18</td><td>6</td><td>0.1uF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C2, C6, C7, C19</td><td>4</td><td>CAP</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C4</td><td>1</td><td>1nF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C5, C17</td><td>2</td><td>10nF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C8, C9</td><td>2</td><td>100nF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C10, C14</td><td>2</td><td>10uF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C12</td><td>1</td><td>100pF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>C13</td><td>1</td><td>1.0uF</td><td>pspice:CAP</td><td>~</td><td>Capacitor symbol for simulation only</td><td></td></tr><tr><td>D1, D2, D4</td><td>3</td><td>LED</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>D3</td><td>1</td><td>DIODE</td><td>pspice:DIODE</td><td>~</td><td>Diode symbol for simulation only. Pin order incompatible with official kicad footprints</td><td></td></tr><tr><td>FB1, FB2</td><td>2</td><td>Ferrite_Bead_Small</td><td>Device:Ferrite_Bead_Small</td><td>~</td><td>Ferrite bead, small symbol</td><td></td></tr><tr><td>FL1</td><td>1</td><td>SAFFA1G58KA0F0A</td><td>Filter:SAFFA1G58KA0F0A</td><td>https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en</td><td>Murata 1575.42/1602MHz SAW filter, SMD 1411</td><td></td></tr><tr><td>H1, H2, H3, H4</td><td>4</td><td>MountingHole_Pad</td><td>Mechanical:MountingHole_Pad</td><td>~</td><td>Mounting Hole with connection</td><td></td></tr><tr><td>J1</td><td>1</td><td>USB_C_Receptacle</td><td>Connector:USB_C_Receptacle</td><td>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</td><td>USB Full-Featured Type-C Receptacle connector</td><td></td></tr><tr><td>J2</td><td>1</td><td>Screw_Terminal_01x02</td><td>Connector:Screw_Terminal_01x02</td><td>~</td><td>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J3</td><td>1</td><td>901-10512-1</td><td>Sparkfun Artemis:901-10512-1</td><td>A</td><td></td><td></td></tr><tr><td>J4</td><td>1</td><td>Conn_ARM_JTAG_SWD_10</td><td>Connector:Conn_ARM_JTAG_SWD_10</td><td>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</td><td>Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</td><td></td></tr><tr><td>L1</td><td>1</td><td>INDUCTOR</td><td>pspice:INDUCTOR</td><td>~</td><td>Inductor symbol for simulation only</td><td></td></tr><tr><td>LS1</td><td>1</td><td>CSS-J4D20-SMT</td><td>Sparkfun Artemis:CSS-J4D20-SMT</td><td>CUI</td><td></td><td></td></tr><tr><td>MD1</td><td>1</td><td>SPARKFUN_WRL-15376</td><td>Sparkfun Artemis:SPARKFUN_WRL-15376</td><td></td><td></td><td></td></tr><tr><td>R1</td><td>1</td><td>10k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R2</td><td>1</td><td>100K</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R3</td><td>1</td><td>3k</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R4, R5</td><td>2</td><td>1K</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>R6, R7</td><td>2</td><td>R</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><tr><td>SW1</td><td>1</td><td>SW_Push</td><td>Switch:SW_Push</td><td>~</td><td>Push button switch, generic, two pins</td><td></td></tr><tr><td>SW2</td><td>1</td><td>MLL1200S</td><td>Sparkfun Artemis:MLL1200S</td><td>1437575-1</td><td></td><td></td></tr><tr><td>U1</td><td>1</td><td>CH340E</td><td>Sparkfun Artemis:CH340E</td><td>IC-14135</td><td></td><td></td></tr><tr><td>U2</td><td>1</td><td>MS5611-01BA</td><td>Sensor_Pressure:MS5611-01BA</td><td>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English</td><td>Barometric pressure sensor, 10cm resolution, 10 to 1200 mbar, I2C and SPI interface up to 20MHz, LGA-8</td><td></td></tr><tr><td>U3</td><td>1</td><td>LD1117S33TR_SOT223</td><td>Regulator_Linear:LD1117S33TR_SOT223</td><td>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</td><td>800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223</td><td></td></tr><tr><td>U4</td><td>1</td><td>MAX-8Q</td><td>RF_GPS:MAX-8Q</td><td>https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf</td><td>GNSS Module M8, VCC 2.7V to 3.6V</td><td></td></tr><tr><td>U5</td><td>1</td><td>SGGP.12.4.A.02</td><td>Sparkfun Artemis:SGGP.12.4.A.02</td><td></td><td></td><td></td></tr><tr><td>U6</td><td>1</td><td>XBee_SMT</td><td>RF_ZigBee:XBee_SMT</td><td>http://www.digi.com/resources/documentation/digidocs/pdfs/90002126.pdf</td><td>Digi Xbee SMT RF module</td><td></td></tr><tr><td>U7</td><td>1</td><td>LSM9DS1</td><td>Sensor_Motion:LSM9DS1</td><td>http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf</td><td>I2C SPI 9 axis IMU accelerometer gyroscope magnetometer</td><td></td></tr><tr><td>U8</td><td>1</td><td>W25Q128JVS</td><td>Memory_Flash:W25Q128JVS</td><td>http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf</td><td>128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8</td><td></td></tr><tr><td>U9</td><td>1</td><td>MAX2686</td><td>Sparkfun Artemis:MAX2686</td><td></td><td></td><td></td></tr><tr><td>Y1</td><td>1</td><td>Crystal</td><td>Device:Crystal</td><td>~</td><td>Two pin crystal</td><td></td></tr><!--TABLEROW-->
-    </table>
-    </body>
-</html>
-    
+Reference, Value, Footprint, Datasheet, Field4, Field5, Field6, Field7, Field8
+"Y1","Crystal","Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering","~"
+"C6","CAP","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C7","CAP","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C1","0.1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C4","1nF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"SW1","SW_Push","Sparkfun-Artemis:SW_TL1015AF160QG","~"
+"R2","100K","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"U1","CH340E","Sparkfun-Artemis:MSOP10","IC-14135"
+"J1","USB_C_Receptacle","Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A","https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+"C5","10nF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C3","0.1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"R4","1K","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"R5","1K","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"D2","LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"D1","LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"MD1","SPARKFUN_WRL-15376","Sparkfun-Artemis:SPARKFUN_WRL-15376",""
+"J4","Conn_ARM_JTAG_SWD_10","Connector_PinHeader_1.00mm:PinHeader_2x05_P1.00mm_Vertical","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf"
+"H1","MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3","~"
+"H2","MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3","~"
+"H3","MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3","~"
+"H4","MountingHole_Pad","MountingHole:MountingHole_3.2mm_M3","~"
+"LS1","CSS-J4D20-SMT","Sparkfun-Artemis:CUI_CSS-J4D20-SMT","CUI","None","CSS-J4D20-SMT","Unavailable","8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer","None"
+"R7","R","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"U2","MS5611-01BA","Package_LGA:LGA-8_3x5mm_P1.25mm","https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English"
+"C8","100nF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"U7","LSM9DS1","Package_LGA:LGA-24L_3x3.5mm_P0.43mm","http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf"
+"C18","0.1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C17","10nF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C16","0.1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C15","0.1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C14","10uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"J2","Screw_Terminal_01x02","Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical","~"
+"D3","DIODE","Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C10","10uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C9","100nF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"U3","LD1117S33TR_SOT223","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
+"R3","3k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"R1","10k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"SW2","MLL1200S","Sparkfun-Artemis:SW_MLL1200S","1437575-1","https://www.te.com/usa-en/product-1437575-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493","","","",""
+"U4","MAX-8Q","RF_GPS:ublox_MAX","https://www.u-blox.com/sites/default/files/MAX-8_DataSheet_%28UBX-16000093%29.pdf"
+"C11","0.1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"FB1","Ferrite_Bead_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"FB2","Ferrite_Bead_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"U5","SGGP.12.4.A.02","RF_Antenna:SGGP.12.4.A.02",""
+"R6","R","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"D4","LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"FL1","SAFFA1G58KA0F0A","Filter:Filter_1411-5_1.4x1.1mm","https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en"
+"U9","MAX2686","Package_BGA:WLP-4_0.86x0.86mm_P0.4mm",""
+"L1","INDUCTOR","Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C2","CAP","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C19","CAP","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"U6","XBee_SMT","RF_Module:Digi_XBee_SMT","http://www.digi.com/resources/documentation/digidocs/pdfs/90002126.pdf"
+"C12","100pF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"C13","1.0uF","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"J3","901-10512-1","Sparkfun-Artemis:AMPHENOL_901-10512-1","A","MANUFACTURER RECOMMENDATION","Amphenol RF Division","","",""
+"U8","W25Q128JVS","Package_SO:SOIC-8_5.23x5.23mm_P1.27mm","http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf"

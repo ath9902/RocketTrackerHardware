@@ -356,7 +356,6 @@ Connection ~ 6550 2900
 Wire Wire Line
 	6550 2900 5000 2900
 NoConn ~ 1450 3800
-NoConn ~ 1450 4100
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5E790634
@@ -386,4 +385,5 @@ F 3 "" H 8050 3650 50  0001 C CNN
 	1    8050 3650
 	0    1    1    0   
 $EndComp
+NoConn ~ 1450 4100
 $EndSCHEMATC

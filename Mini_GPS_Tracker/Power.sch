@@ -18,8 +18,6 @@ Wire Wire Line
 	5250 3500 5250 3600
 Wire Wire Line
 	5250 1900 5250 2000
-Wire Wire Line
-	6750 2450 6750 2950
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E7654CA
@@ -180,20 +178,6 @@ Connection ~ 4050 3950
 Wire Wire Line
 	4050 3950 4050 4000
 $Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5E78C7E9
-P 6750 2950
-F 0 "#FLG0101" H 6750 3025 50  0001 C CNN
-F 1 "PWR_FLAG" V 6750 3078 50  0000 L CNN
-F 2 "" H 6750 2950 50  0001 C CNN
-F 3 "~" H 6750 2950 50  0001 C CNN
-	1    6750 2950
-	0    1    1    0   
-$EndComp
-Connection ~ 6750 2950
-Wire Wire Line
-	6750 2950 6750 3950
-$Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5E78D09D
 P 5250 2000
@@ -204,7 +188,6 @@ F 3 "~" H 5250 2000 50  0001 C CNN
 	1    5250 2000
 	0    1    1    0   
 $EndComp
-Connection ~ 5250 2000
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5E78D7F6
@@ -220,7 +203,7 @@ Connection ~ 5150 2000
 Wire Wire Line
 	5150 2000 5150 1900
 $Comp
-L Sparkfun~Artemis:MLL1200S SW2
+L Mini_GPS_Tracker-rescue:MLL1200S-Sparkfun_Artemis-Mini_GPS_Tracker-rescue SW2
 U 1 1 5E7E93B5
 P 5650 2800
 F 0 "SW2" H 5650 3265 50  0000 C CNN
@@ -231,8 +214,6 @@ F 4 "https://www.te.com/usa-en/product-1437575-1.html?te_bu=Cor&te_type=disp&te_
 	1    5650 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 2000 5250 2600
 Wire Wire Line
 	5250 2800 5250 3100
 $Comp
@@ -248,4 +229,29 @@ F 3 "" H 6050 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 2900 6050 3050
+Wire Wire Line
+	5250 2000 5250 2150
+Wire Wire Line
+	5250 2150 6050 2150
+Wire Wire Line
+	6050 2150 6050 2700
+Connection ~ 5250 2000
+NoConn ~ 5250 2600
+Wire Wire Line
+	6750 2450 6750 3950
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E83E3CB
+P 5650 3450
+F 0 "#FLG0101" H 5650 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 3623 50  0000 C CNN
+F 2 "" H 5650 3450 50  0001 C CNN
+F 3 "~" H 5650 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3600 5650 3600
+Wire Wire Line
+	5650 3600 5650 3450
 $EndSCHEMATC

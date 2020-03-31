@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Mini_GPS_Tracker-rescue)(type Legacy)(uri ${KIPRJMOD}/Mini_GPS_Tracker-rescue.lib)(options "")(descr ""))
+)

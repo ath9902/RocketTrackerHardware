@@ -1,0 +1,77 @@
+** Drc report for /Users/austinheisey/Documents/RocketTrackerHardware/Mini_GPS_Tracker/Mini_GPS_Tracker.kicad_pcb **
+** Created on 2020-03-29 21:24:24 **
+
+** Found 23 DRC errors **
+ErrType(19): Pad too close to pad
+    @(122.990 mm, 112.576 mm): Pad B1 of U9 on F.Cu and others
+    @(122.990 mm, 112.976 mm): Pad B2 of U9 on F.Cu and others
+ErrType(19): Pad too close to pad
+    @(122.990 mm, 112.976 mm): Pad B2 of U9 on F.Cu and others
+    @(123.390 mm, 112.976 mm): Pad A2 of U9 on F.Cu and others
+ErrType(19): Pad too close to pad
+    @(123.390 mm, 112.576 mm): Pad A1 of U9 on F.Cu and others
+    @(123.390 mm, 112.976 mm): Pad A2 of U9 on F.Cu and others
+ErrType(19): Pad too close to pad
+    @(134.741 mm, 140.816 mm): Pad B12 of J1 on All copper layers
+    @(135.141 mm, 141.516 mm): Pad B11 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(135.141 mm, 141.516 mm): Pad B11 of J1 on All copper layers
+    @(135.941 mm, 141.516 mm): Pad B10 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(135.941 mm, 141.516 mm): Pad B10 of J1 on All copper layers
+    @(136.341 mm, 140.816 mm): Pad B9 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(136.341 mm, 140.816 mm): Pad B9 of J1 on All copper layers
+    @(136.741 mm, 141.516 mm): Pad B8 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(136.741 mm, 141.516 mm): Pad B8 of J1 on All copper layers
+    @(137.141 mm, 140.816 mm): Pad B7 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(137.141 mm, 140.816 mm): Pad B7 of J1 on All copper layers
+    @(137.941 mm, 140.816 mm): Pad B6 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(137.941 mm, 140.816 mm): Pad B6 of J1 on All copper layers
+    @(138.341 mm, 141.516 mm): Pad B5 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(138.341 mm, 141.516 mm): Pad B5 of J1 on All copper layers
+    @(138.741 mm, 140.816 mm): Pad B4 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(138.741 mm, 140.816 mm): Pad B4 of J1 on All copper layers
+    @(139.141 mm, 141.516 mm): Pad B3 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(139.141 mm, 141.516 mm): Pad B3 of J1 on All copper layers
+    @(139.941 mm, 141.516 mm): Pad B2 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(139.941 mm, 141.516 mm): Pad B2 of J1 on All copper layers
+    @(140.341 mm, 140.816 mm): Pad B1 of J1 on All copper layers
+ErrType(19): Pad too close to pad
+    @(140.145 mm, 95.377 mm): Pad 9 of J4 on All copper layers
+    @(140.145 mm, 96.377 mm): Pad 10 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(140.145 mm, 96.377 mm): Pad 10 of J4 on All copper layers
+    @(141.145 mm, 96.377 mm): Pad 8 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(141.145 mm, 95.377 mm): Pad 7 of J4 on All copper layers
+    @(141.145 mm, 96.377 mm): Pad 8 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(141.145 mm, 96.377 mm): Pad 8 of J4 on All copper layers
+    @(142.145 mm, 96.377 mm): Pad 6 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(142.145 mm, 95.377 mm): Pad 5 of J4 on All copper layers
+    @(142.145 mm, 96.377 mm): Pad 6 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(142.145 mm, 96.377 mm): Pad 6 of J4 on All copper layers
+    @(143.145 mm, 96.377 mm): Pad 4 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(143.145 mm, 95.377 mm): Pad 3 of J4 on All copper layers
+    @(143.145 mm, 96.377 mm): Pad 4 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(143.145 mm, 96.377 mm): Pad 4 of J4 on All copper layers
+    @(144.145 mm, 96.377 mm): Pad 2 of J4 on All copper layers
+ErrType(19): Pad too close to pad
+    @(144.145 mm, 95.377 mm): Pad 1 of J4 on All copper layers
+    @(144.145 mm, 96.377 mm): Pad 2 of J4 on All copper layers
+
+** Found 0 unconnected pads **
+
+** End of Report **

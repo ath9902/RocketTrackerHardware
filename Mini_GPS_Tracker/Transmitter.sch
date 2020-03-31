@@ -133,7 +133,7 @@ F 3 "" H 7200 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Sparkfun~Artemis:901-10512-1 J3
+L Mini_GPS_Tracker-rescue:901-10512-1-Sparkfun_Artemis-Mini_GPS_Tracker-rescue J3
 U 1 1 5E766430
 P 7600 4050
 F 0 "J3" H 7370 4004 50  0000 R CNN

@@ -14,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Memory_Flash:W25Q128JVS U8
+L Mini_GPS_Tracker-rescue:W25Q128JVS-Memory_Flash-Mini_GPS_Tracker-rescue U8
 U 1 1 5E7A9464
 P 5700 3900
+AR Path="/5E7A9464" Ref="U8"  Part="1" 
+AR Path="/5E7CBED1/5E7A9464" Ref="U8"  Part="1" 
 F 0 "U8" H 5700 4481 50  0000 C CNN
 F 1 "W25Q128JVS" H 5700 4390 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 5700 3900 50  0001 C CNN

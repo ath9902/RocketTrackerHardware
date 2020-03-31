@@ -310,12 +310,12 @@ $EndComp
 $Comp
 L Sensor_Motion:BNO055 U?
 U 1 1 5E8555C8
-P 9300 2950
-F 0 "U?" H 9300 3831 50  0000 C CNN
-F 1 "BNO055" H 9300 3740 50  0000 C CNN
-F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 9550 2300 50  0001 L CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 9300 3150 50  0001 C CNN
-	1    9300 2950
+P 8300 4850
+F 0 "U?" H 8300 5731 50  0000 C CNN
+F 1 "BNO055" H 8300 5640 50  0000 C CNN
+F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 8550 4200 50  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 8300 5050 50  0001 C CNN
+	1    8300 4850
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1400 4000
@@ -408,4 +408,102 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343
 	1    5450 2300
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8951BC
+P 5450 3300
+F 0 "#PWR?" H 5450 3050 50  0001 C CNN
+F 1 "GND" H 5455 3127 50  0000 C CNN
+F 2 "" H 5450 3300 50  0001 C CNN
+F 3 "" H 5450 3300 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2800 5450 2900
+Text HLabel 4400 2500 0    50   Input ~ 0
+accel_cs
+Text HLabel 4400 2400 0    50   Input ~ 0
+accel_scl
+Text HLabel 4400 2300 0    50   Input ~ 0
+accel_sda
+Text HLabel 4400 2200 0    50   Input ~ 0
+accel_sdo
+Wire Wire Line
+	4400 2400 4950 2400
+Wire Wire Line
+	4400 2500 4950 2500
+Wire Wire Line
+	4400 2300 4950 2300
+Wire Wire Line
+	4400 2200 4950 2200
+$Comp
+L pspice:CAP C?
+U 1 1 5E89F2A3
+P 6650 2300
+F 0 "C?" H 6828 2346 50  0000 L CNN
+F 1 "0.1uF" H 6828 2255 50  0000 L CNN
+F 2 "" H 6650 2300 50  0001 C CNN
+F 3 "~" H 6650 2300 50  0001 C CNN
+	1    6650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E89F917
+P 7150 2300
+F 0 "C?" H 7328 2346 50  0000 L CNN
+F 1 "0.1uF" H 7328 2255 50  0000 L CNN
+F 2 "" H 7150 2300 50  0001 C CNN
+F 3 "~" H 7150 2300 50  0001 C CNN
+	1    7150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1800 6650 1800
+Wire Wire Line
+	6650 1800 6650 2050
+Wire Wire Line
+	6650 2550 6650 2900
+Wire Wire Line
+	6650 2900 5450 2900
+Connection ~ 5450 2900
+Wire Wire Line
+	5450 2900 5450 3150
+$Comp
+L pspice:CAP C?
+U 1 1 5E8A3F23
+P 7650 2300
+F 0 "C?" H 7828 2346 50  0000 L CNN
+F 1 "10uF" H 7828 2255 50  0000 L CNN
+F 2 "" H 7650 2300 50  0001 C CNN
+F 3 "~" H 7650 2300 50  0001 C CNN
+	1    7650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3150 7150 3150
+Wire Wire Line
+	7650 3150 7650 2550
+Connection ~ 5450 3150
+Wire Wire Line
+	5450 3150 5450 3300
+Wire Wire Line
+	7150 2550 7150 3150
+Connection ~ 7150 3150
+Wire Wire Line
+	7150 3150 7650 3150
+Wire Wire Line
+	5450 1750 7150 1750
+Wire Wire Line
+	7650 1750 7650 2050
+Wire Wire Line
+	5450 1750 5450 1800
+Wire Wire Line
+	7150 2050 7150 1750
+Connection ~ 7150 1750
+Wire Wire Line
+	7150 1750 7650 1750
+NoConn ~ 5250 1800
+NoConn ~ 5650 2800
 $EndSCHEMATC

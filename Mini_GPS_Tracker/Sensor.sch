@@ -308,10 +308,10 @@ F 3 "" H 5050 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Sensor_Motion:BNO055 U?
+L Sensor_Motion:BNO055 U12
 U 1 1 5E8555C8
 P 8300 4850
-F 0 "U?" H 8300 5731 50  0000 C CNN
+F 0 "U12" H 8300 5731 50  0000 C CNN
 F 1 "BNO055" H 8300 5640 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 8550 4200 50  0001 L CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 8300 5050 50  0001 C CNN
@@ -398,10 +398,10 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Motion:ADXL343 U?
+L Sensor_Motion:ADXL343 U11
 U 1 1 5E8940BD
 P 5450 2300
-F 0 "U?" H 5994 2346 50  0000 L CNN
+F 0 "U11" H 5994 2346 50  0000 L CNN
 F 1 "ADXL343" H 5994 2255 50  0000 L CNN
 F 2 "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y" H 5450 2300 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf" H 5450 2300 50  0001 C CNN
@@ -409,10 +409,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0119
 U 1 1 5E8951BC
 P 5450 3300
-F 0 "#PWR?" H 5450 3050 50  0001 C CNN
+F 0 "#PWR0119" H 5450 3050 50  0001 C CNN
 F 1 "GND" H 5455 3127 50  0000 C CNN
 F 2 "" H 5450 3300 50  0001 C CNN
 F 3 "" H 5450 3300 50  0001 C CNN
@@ -438,10 +438,10 @@ Wire Wire Line
 Wire Wire Line
 	4400 2200 4950 2200
 $Comp
-L pspice:CAP C?
+L pspice:CAP C21
 U 1 1 5E89F2A3
 P 6650 2300
-F 0 "C?" H 6828 2346 50  0000 L CNN
+F 0 "C21" H 6828 2346 50  0000 L CNN
 F 1 "0.1uF" H 6828 2255 50  0000 L CNN
 F 2 "" H 6650 2300 50  0001 C CNN
 F 3 "~" H 6650 2300 50  0001 C CNN
@@ -449,10 +449,10 @@ F 3 "~" H 6650 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:CAP C?
+L pspice:CAP C22
 U 1 1 5E89F917
 P 7150 2300
-F 0 "C?" H 7328 2346 50  0000 L CNN
+F 0 "C22" H 7328 2346 50  0000 L CNN
 F 1 "0.1uF" H 7328 2255 50  0000 L CNN
 F 2 "" H 7150 2300 50  0001 C CNN
 F 3 "~" H 7150 2300 50  0001 C CNN
@@ -471,10 +471,10 @@ Connection ~ 5450 2900
 Wire Wire Line
 	5450 2900 5450 3150
 $Comp
-L pspice:CAP C?
+L pspice:CAP C23
 U 1 1 5E8A3F23
 P 7650 2300
-F 0 "C?" H 7828 2346 50  0000 L CNN
+F 0 "C23" H 7828 2346 50  0000 L CNN
 F 1 "10uF" H 7828 2255 50  0000 L CNN
 F 2 "" H 7650 2300 50  0001 C CNN
 F 3 "~" H 7650 2300 50  0001 C CNN

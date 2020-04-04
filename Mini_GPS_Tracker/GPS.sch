@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -118,7 +119,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 3900 3750 3900
 $Comp
-L Sparkfun~Artemis:SGGP.12.4.A.02 U5
+L Mini_GPS_Tracker-rescue:SGGP.12.4.A.02-Sparkfun_Artemis U5
 U 1 1 5E7667EA
 P 7850 1850
 F 0 "U5" H 7850 1850 50  0001 L BNN
@@ -291,7 +292,7 @@ F 3 "" H 7450 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Sparkfun~Artemis:MAX2686 U9
+L Mini_GPS_Tracker-rescue:MAX2686-Sparkfun_Artemis U9
 U 1 1 5E78E34D
 P 7850 4600
 F 0 "U9" H 7750 4565 50  0000 C CNN

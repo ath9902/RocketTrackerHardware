@@ -181,10 +181,6 @@ F 3 "" H 1200 7350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 7350 1200 7300
-Text GLabel 6850 5950 2    50   Input ~ 0
-TX0
-Text GLabel 6850 6050 2    50   Input ~ 0
-RXI
 $Comp
 L power:+3.3V #PWR03
 U 1 1 5E7FD57A
@@ -215,22 +211,29 @@ Wire Wire Line
 Wire Wire Line
 	10400 4250 10650 4250
 $Sheet
-S 9000 2450 1450 550 
+S 9000 1950 1450 850 
 U 5E70BD5E
 F0 "Sheet5E70BD5D" 50
 F1 "Sensor.sch" 50
-F2 "SCL" I R 10450 2600 50 
-F3 "SDA" I R 10450 2700 50 
-F4 "9_SDA" I R 10450 2800 50 
-F5 "9_SCL" I R 10450 2900 50 
+F2 "SCL" I R 10450 2100 50 
+F3 "SDA" I R 10450 2200 50 
+F4 "9_SDA" I R 10450 2300 50 
+F5 "9_SCL" I R 10450 2400 50 
+F6 "accel_cs" I L 9000 2000 50 
+F7 "accel_scl" I L 9000 2100 50 
+F8 "accel_sda" I L 9000 2200 50 
+F9 "accel_sdo" I L 9000 2300 50 
+F10 "BNO055_SCL" I L 9000 2400 50 
+F11 "BNO055_SDA" I L 9000 2500 50 
+F12 "BNO055_RESET" I L 9000 2600 50 
 $EndSheet
 Wire Wire Line
-	10450 2700 10500 2700
+	10450 2200 10500 2200
 Wire Wire Line
-	10450 2600 10500 2600
-Text GLabel 10500 2700 2    50   Input ~ 0
+	10450 2100 10500 2100
+Text GLabel 10500 2200 2    50   Input ~ 0
 Pressure_SDA
-Text GLabel 10500 2600 2    50   Input ~ 0
+Text GLabel 10500 2100 2    50   Input ~ 0
 Pressure_SCL
 Wire Wire Line
 	10400 5050 10600 5050
@@ -313,14 +316,14 @@ NoConn ~ 1800 6550
 NoConn ~ 1800 6650
 NoConn ~ 1800 6850
 NoConn ~ 1800 6950
-Text GLabel 10550 2800 2    50   Input ~ 0
+Text GLabel 10550 2300 2    50   Input ~ 0
 9_SDA
-Text GLabel 10550 2900 2    50   Input ~ 0
+Text GLabel 10550 2400 2    50   Input ~ 0
 9_SCL
 Wire Wire Line
-	10450 2800 10550 2800
+	10450 2300 10550 2300
 Wire Wire Line
-	10450 2900 10550 2900
+	10450 2400 10550 2400
 Text GLabel 8250 950  2    50   Input ~ 0
 v_measure
 Wire Wire Line
@@ -466,49 +469,49 @@ clk_flash
 $Comp
 L Mini_GPS_Tracker-rescue:CSS-J4D20-SMT-Sparkfun_Artemis-Mini_GPS_Tracker-rescue LS1
 U 1 1 5E7E01A2
-P 5500 3300
-F 0 "LS1" H 5605 3346 50  0000 L CNN
-F 1 "CSS-J4D20-SMT" H 5605 3255 50  0000 L CNN
-F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 5500 3300 50  0001 L BNN
-F 3 "CUI" H 5500 3300 50  0001 L BNN
-F 4 "None" H 5500 3300 50  0001 L BNN "Field4"
-F 5 "CSS-J4D20-SMT" H 5500 3300 50  0001 L BNN "Field5"
-F 6 "Unavailable" H 5500 3300 50  0001 L BNN "Field6"
-F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 5500 3300 50  0001 L BNN "Field7"
-F 8 "None" H 5500 3300 50  0001 L BNN "Field8"
-	1    5500 3300
+P 2850 7050
+F 0 "LS1" H 2955 7096 50  0000 L CNN
+F 1 "CSS-J4D20-SMT" H 2955 7005 50  0000 L CNN
+F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 2850 7050 50  0001 L BNN
+F 3 "CUI" H 2850 7050 50  0001 L BNN
+F 4 "None" H 2850 7050 50  0001 L BNN "Field4"
+F 5 "CSS-J4D20-SMT" H 2850 7050 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 2850 7050 50  0001 L BNN "Field6"
+F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 2850 7050 50  0001 L BNN "Field7"
+F 8 "None" H 2850 7050 50  0001 L BNN "Field8"
+	1    2850 7050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5E7E2738
-P 5500 2850
-F 0 "R7" H 5570 2896 50  0000 L CNN
-F 1 "0 ohm" H 5570 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 2850 50  0001 C CNN
-F 3 "~" H 5500 2850 50  0001 C CNN
-	1    5500 2850
+P 2850 6600
+F 0 "R7" H 2920 6646 50  0000 L CNN
+F 1 "0 ohm" H 2920 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 6600 50  0001 C CNN
+F 3 "~" H 2850 6600 50  0001 C CNN
+	1    2850 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5E7E36E3
-P 5500 3600
-F 0 "#PWR0116" H 5500 3350 50  0001 C CNN
-F 1 "GND" H 5505 3427 50  0000 C CNN
-F 2 "" H 5500 3600 50  0001 C CNN
-F 3 "" H 5500 3600 50  0001 C CNN
-	1    5500 3600
+P 2850 7350
+F 0 "#PWR0116" H 2850 7100 50  0001 C CNN
+F 1 "GND" H 2855 7177 50  0000 C CNN
+F 2 "" H 2850 7350 50  0001 C CNN
+F 3 "" H 2850 7350 50  0001 C CNN
+	1    2850 7350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 3500 5500 3600
+	2850 7250 2850 7350
 Wire Wire Line
-	5500 3100 5500 3000
-Text GLabel 5500 2550 1    50   Input ~ 0
+	2850 6850 2850 6750
+Text GLabel 2850 6300 1    50   Input ~ 0
 buzzer
 Wire Wire Line
-	5500 2550 5500 2700
+	2850 6300 2850 6450
 Text GLabel 8250 3950 2    50   Input ~ 0
 buzzer
 Wire Wire Line

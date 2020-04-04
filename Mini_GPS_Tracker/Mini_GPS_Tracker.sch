@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -197,7 +198,7 @@ Connection ~ 5950 950
 Wire Wire Line
 	5950 950  5950 1050
 $Comp
-L Sparkfun~Artemis:CH340E U1
+L Mini_GPS_Tracker-rescue:CH340E-Sparkfun_Artemis U1
 U 1 1 5E73596B
 P 3550 5150
 F 0 "U1" H 3550 5720 50  0000 C CNN
@@ -423,7 +424,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 4450 4450 4350
 $Comp
-L Sparkfun~Artemis:SPARKFUN_WRL-15376 MD1
+L Mini_GPS_Tracker-rescue:SPARKFUN_WRL-15376-Sparkfun_Artemis MD1
 U 1 1 5E6EE6CF
 P 6250 650
 F 0 "MD1" H 6900 526 50  0000 C CNN
@@ -874,7 +875,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 1750 7850 1750
 $Comp
-L Sparkfun~Artemis:CSS-J4D20-SMT LS1
+L Mini_GPS_Tracker-rescue:CSS-J4D20-SMT-Sparkfun_Artemis LS1
 U 1 1 5E7E01A2
 P 5300 3750
 F 0 "LS1" H 5405 3796 50  0000 L CNN
@@ -923,4 +924,14 @@ Text GLabel 7850 3350 2    50   Input ~ 0
 buzzer
 Wire Wire Line
 	7650 3350 7850 3350
+$Sheet
+S 9350 1350 1300 650 
+U 5E89205A
+F0 "BNO055 motion coprocessor" 50
+F1 "BNO055 motion coprocessor.sch" 50
+F2 "BNO055_reset" I L 9350 1550 50 
+F3 "BNO055_interrupt" I L 9350 1650 50 
+F4 "BNO055_SDA" I L 9350 1750 50 
+F5 "BNO055_SCL" I L 9350 1850 50 
+$EndSheet
 $EndSCHEMATC

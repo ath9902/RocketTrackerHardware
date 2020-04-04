@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Memory_Flash:W25Q128JVS U8
+L Mini_GPS_Tracker-rescue:W25Q128JVS-Memory_Flash U8
 U 1 1 5E7A9464
 P 5700 3900
 F 0 "U8" H 5700 4481 50  0000 C CNN

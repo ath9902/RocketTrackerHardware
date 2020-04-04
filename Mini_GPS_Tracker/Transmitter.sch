@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -133,7 +134,7 @@ F 3 "" H 7200 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Sparkfun~Artemis:901-10512-1 J3
+L Mini_GPS_Tracker-rescue:901-10512-1-Sparkfun_Artemis J3
 U 1 1 5E766430
 P 7600 4050
 F 0 "J3" H 7370 4004 50  0000 R CNN

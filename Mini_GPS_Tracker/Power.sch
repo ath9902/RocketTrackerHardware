@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -220,7 +221,7 @@ Connection ~ 5150 2000
 Wire Wire Line
 	5150 2000 5150 1900
 $Comp
-L Sparkfun~Artemis:MLL1200S SW2
+L Mini_GPS_Tracker-rescue:MLL1200S-Sparkfun_Artemis SW2
 U 1 1 5E7E93B5
 P 5650 2800
 F 0 "SW2" H 5650 3265 50  0000 C CNN

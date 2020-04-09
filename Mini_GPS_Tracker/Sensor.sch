@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -13,497 +13,83 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Sensor_Motion:LSM9DS1 U7
-U 1 1 5E77204E
-P 4150 6200
-F 0 "U7" H 4150 5311 50  0000 C CNN
-F 1 "LSM9DS1" H 4150 5220 50  0000 C CNN
-F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 5650 6950 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 4150 6300 50  0001 C CNN
-	1    4150 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR038
-U 1 1 5E774222
-P 4250 7400
-F 0 "#PWR038" H 4250 7150 50  0001 C CNN
-F 1 "GND" H 4255 7227 50  0000 C CNN
-F 2 "" H 4250 7400 50  0001 C CNN
-F 3 "" H 4250 7400 50  0001 C CNN
-	1    4250 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 7000 4250 7100
-Wire Wire Line
-	4050 7000 4050 7100
-Wire Wire Line
-	4050 7100 4250 7100
-Connection ~ 4250 7100
-Wire Wire Line
-	4250 7100 4250 7350
-Wire Wire Line
-	3350 5800 3450 5800
-Wire Wire Line
-	3350 5900 3450 5900
-Wire Wire Line
-	4850 5900 5050 5900
-$Comp
-L power:GND #PWR039
-U 1 1 5E776D16
-P 5000 5600
-F 0 "#PWR039" H 5000 5350 50  0001 C CNN
-F 1 "GND" H 5005 5427 50  0000 C CNN
-F 2 "" H 5000 5600 50  0001 C CNN
-F 3 "" H 5000 5600 50  0001 C CNN
-	1    5000 5600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4850 5800 5000 5800
-Wire Wire Line
-	5000 5800 5000 5600
-$Comp
-L power:GND #PWR036
-U 1 1 5E778097
-P 3150 6100
-F 0 "#PWR036" H 3150 5850 50  0001 C CNN
-F 1 "GND" V 3155 5972 50  0000 R CNN
-F 2 "" H 3150 6100 50  0001 C CNN
-F 3 "" H 3150 6100 50  0001 C CNN
-	1    3150 6100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3150 6100 3450 6100
-Text HLabel 3350 5900 0    50   Input ~ 0
-9_SDA
-Text HLabel 3350 5800 0    50   Input ~ 0
-9_SCL
-Wire Wire Line
-	4250 7100 4950 7100
-Wire Wire Line
-	4950 6300 4850 6300
-Wire Wire Line
-	4850 6400 4950 6400
-Wire Wire Line
-	4950 6300 4950 6400
-Connection ~ 4950 6400
-Wire Wire Line
-	4950 6600 4850 6600
-Wire Wire Line
-	4950 6400 4950 6500
-Connection ~ 4950 6600
-Wire Wire Line
-	4950 6600 4950 6700
-Wire Wire Line
-	4850 6500 4950 6500
-Connection ~ 4950 6500
-Wire Wire Line
-	4950 6500 4950 6600
-Wire Wire Line
-	4850 6700 4950 6700
-Connection ~ 4950 6700
-Wire Wire Line
-	4950 6700 4950 7100
-$Comp
-L pspice:CAP C18
-U 1 1 5E78256D
-P 3450 7100
-F 0 "C18" H 3628 7146 50  0000 L CNN
-F 1 "0.1uF" H 3628 7055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3450 7100 50  0001 C CNN
-F 3 "~" H 3450 7100 50  0001 C CNN
-	1    3450 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 6800 3450 6850
-Connection ~ 3450 6850
-Wire Wire Line
-	3450 6850 3450 6950
-Wire Wire Line
-	3450 7350 4250 7350
-Connection ~ 4250 7350
-Wire Wire Line
-	4250 7350 4250 7400
-$Comp
-L pspice:CAP C17
-U 1 1 5E7853C7
-P 2950 7100
-F 0 "C17" H 3128 7146 50  0000 L CNN
-F 1 "10nF" H 3128 7055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 7100 50  0001 C CNN
-F 3 "~" H 2950 7100 50  0001 C CNN
-	1    2950 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 6700 2950 6700
-Wire Wire Line
-	2950 6700 2950 6850
-$Comp
-L power:GND #PWR035
-U 1 1 5E7864A8
-P 2950 7500
-F 0 "#PWR035" H 2950 7250 50  0001 C CNN
-F 1 "GND" H 2955 7327 50  0000 C CNN
-F 2 "" H 2950 7500 50  0001 C CNN
-F 3 "" H 2950 7500 50  0001 C CNN
-	1    2950 7500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 7350 2950 7500
-$Comp
-L pspice:CAP C16
-U 1 1 5E7872AF
-P 2450 5900
-F 0 "C16" H 2628 5946 50  0000 L CNN
-F 1 "0.1uF" H 2628 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2450 5900 50  0001 C CNN
-F 3 "~" H 2450 5900 50  0001 C CNN
-	1    2450 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:CAP C15
-U 1 1 5E7886DC
-P 2000 5900
-F 0 "C15" H 2178 5946 50  0000 L CNN
-F 1 "0.1uF" H 2178 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 5900 50  0001 C CNN
-F 3 "~" H 2000 5900 50  0001 C CNN
-	1    2000 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:CAP C14
-U 1 1 5E789A3E
-P 1500 5900
-F 0 "C14" H 1678 5946 50  0000 L CNN
-F 1 "10uF" H 1678 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1500 5900 50  0001 C CNN
-F 3 "~" H 1500 5900 50  0001 C CNN
-	1    1500 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR034
-U 1 1 5E78AC14
-P 2450 6300
-F 0 "#PWR034" H 2450 6050 50  0001 C CNN
-F 1 "GND" H 2455 6127 50  0000 C CNN
-F 2 "" H 2450 6300 50  0001 C CNN
-F 3 "" H 2450 6300 50  0001 C CNN
-	1    2450 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR033
-U 1 1 5E78B20F
-P 2000 6300
-F 0 "#PWR033" H 2000 6050 50  0001 C CNN
-F 1 "GND" H 2005 6127 50  0000 C CNN
-F 2 "" H 2000 6300 50  0001 C CNN
-F 3 "" H 2000 6300 50  0001 C CNN
-	1    2000 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR032
-U 1 1 5E78C139
-P 1500 6300
-F 0 "#PWR032" H 1500 6050 50  0001 C CNN
-F 1 "GND" H 1505 6127 50  0000 C CNN
-F 2 "" H 1500 6300 50  0001 C CNN
-F 3 "" H 1500 6300 50  0001 C CNN
-	1    1500 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 6300 2450 6150
-Wire Wire Line
-	2000 6300 2000 6150
-Wire Wire Line
-	1500 6300 1500 6150
-$Comp
-L power:+3.3V #PWR037
-U 1 1 5E78F733
-P 3550 5000
-F 0 "#PWR037" H 3550 4850 50  0001 C CNN
-F 1 "+3.3V" H 3565 5173 50  0000 C CNN
-F 2 "" H 3550 5000 50  0001 C CNN
-F 3 "" H 3550 5000 50  0001 C CNN
-	1    3550 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 5400 3700 5400
-Wire Wire Line
-	2450 5400 2450 5650
-Wire Wire Line
-	4250 5400 4150 5400
-Connection ~ 4150 5400
-Wire Wire Line
-	4450 5400 4450 5250
-Wire Wire Line
-	4450 5150 3700 5150
-Wire Wire Line
-	1500 5150 1500 5650
-Wire Wire Line
-	4550 5400 4550 5250
-Wire Wire Line
-	4550 5250 4450 5250
-Connection ~ 4450 5250
-Wire Wire Line
-	4450 5250 4450 5150
-Wire Wire Line
-	2000 5650 2000 5150
-Connection ~ 2000 5150
-Wire Wire Line
-	2000 5150 1500 5150
-Wire Wire Line
-	3700 5400 3700 5150
-Connection ~ 3700 5400
-Wire Wire Line
-	3700 5400 2450 5400
-Connection ~ 3700 5150
-Wire Wire Line
-	3700 5150 3550 5150
-Wire Wire Line
-	3550 5000 3550 5150
-Connection ~ 3550 5150
-Wire Wire Line
-	3550 5150 2000 5150
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5E790634
-P 3300 6200
-F 0 "#PWR0101" H 3300 6050 50  0001 C CNN
-F 1 "+3.3V" H 3315 6373 50  0000 C CNN
-F 2 "" H 3300 6200 50  0001 C CNN
-F 3 "" H 3300 6200 50  0001 C CNN
-	1    3300 6200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3300 6200 3450 6200
-NoConn ~ 4850 6100
-NoConn ~ 4850 6000
-NoConn ~ 3450 6300
-NoConn ~ 3450 6400
-NoConn ~ 3450 6500
-$Comp
-L power:+3.3V #PWR0102
-U 1 1 5E7CF71A
-P 5050 5900
-F 0 "#PWR0102" H 5050 5750 50  0001 C CNN
-F 1 "+3.3V" V 5065 6028 50  0000 L CNN
-F 2 "" H 5050 5900 50  0001 C CNN
-F 3 "" H 5050 5900 50  0001 C CNN
-	1    5050 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L Sensor_Motion:BNO055 U?
-U 1 1 5E8555C8
-P 8300 4850
-F 0 "U?" H 8300 5731 50  0000 C CNN
-F 1 "BNO055" H 8300 5640 50  0000 C CNN
-F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 8550 4200 50  0001 L CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 8300 5050 50  0001 C CNN
-	1    8300 4850
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1400 4000
-NoConn ~ 1400 3700
-Text HLabel 1000 3800 0    50   Input ~ 0
+NoConn ~ 5050 3900
+NoConn ~ 5050 3600
+Text HLabel 4650 3700 0    50   Input ~ 0
 SDA
-Text HLabel 1000 3900 0    50   Input ~ 0
+Text HLabel 4650 3800 0    50   Input ~ 0
 SCL
 Wire Wire Line
-	1800 3200 1800 3050
-Connection ~ 1800 3200
+	5450 3100 5450 2950
+Connection ~ 5450 3100
 Wire Wire Line
-	2950 3200 2950 3600
+	6600 3100 6600 3500
 Wire Wire Line
-	1800 3200 2950 3200
+	5450 3100 6600 3100
 Wire Wire Line
-	1800 3350 1800 3200
-Connection ~ 1800 3350
+	5450 3250 5450 3100
+Connection ~ 5450 3250
 Wire Wire Line
-	1400 3350 1800 3350
+	5050 3250 5450 3250
 Wire Wire Line
-	1400 3600 1400 3350
+	5050 3500 5050 3250
 Wire Wire Line
-	1800 3400 1800 3350
+	5450 3300 5450 3250
 Wire Wire Line
-	1800 4350 1800 4450
-Connection ~ 1800 4350
+	5450 4250 5450 4350
+Connection ~ 5450 4250
 Wire Wire Line
-	2950 4350 2950 4100
+	6600 4250 6600 4000
 Wire Wire Line
-	1800 4350 2950 4350
+	5450 4250 6600 4250
 Wire Wire Line
-	1800 4200 1800 4350
+	5450 4100 5450 4250
 $Comp
 L pspice:CAP C8
 U 1 1 5E6E943F
-P 2950 3850
-F 0 "C8" H 3128 3896 50  0000 L CNN
-F 1 "100nF" H 3128 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 3850 50  0001 C CNN
-F 3 "~" H 2950 3850 50  0001 C CNN
-	1    2950 3850
+P 6600 3750
+F 0 "C8" H 6778 3796 50  0000 L CNN
+F 1 "100nF" H 6778 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6600 3750 50  0001 C CNN
+F 3 "~" H 6600 3750 50  0001 C CNN
+	1    6600 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR016
 U 1 1 5E6E8AC2
-P 1800 3050
-F 0 "#PWR016" H 1800 2900 50  0001 C CNN
-F 1 "+3.3V" H 1815 3223 50  0000 C CNN
-F 2 "" H 1800 3050 50  0001 C CNN
-F 3 "" H 1800 3050 50  0001 C CNN
-	1    1800 3050
+P 5450 2950
+F 0 "#PWR016" H 5450 2800 50  0001 C CNN
+F 1 "+3.3V" H 5465 3123 50  0000 C CNN
+F 2 "" H 5450 2950 50  0001 C CNN
+F 3 "" H 5450 2950 50  0001 C CNN
+	1    5450 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR017
 U 1 1 5E6E7BFC
-P 1800 4450
-F 0 "#PWR017" H 1800 4200 50  0001 C CNN
-F 1 "GND" H 1805 4277 50  0000 C CNN
-F 2 "" H 1800 4450 50  0001 C CNN
-F 3 "" H 1800 4450 50  0001 C CNN
-	1    1800 4450
+P 5450 4350
+F 0 "#PWR017" H 5450 4100 50  0001 C CNN
+F 1 "GND" H 5455 4177 50  0000 C CNN
+F 2 "" H 5450 4350 50  0001 C CNN
+F 3 "" H 5450 4350 50  0001 C CNN
+	1    5450 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 3800 1400 3800
+	4650 3700 5050 3700
 Wire Wire Line
-	1000 3900 1400 3900
+	4650 3800 5050 3800
 $Comp
 L Sensor_Pressure:MS5611-01BA U2
 U 1 1 5E6E6D79
-P 1800 3800
-F 0 "U2" H 2130 3846 50  0000 L CNN
-F 1 "MS5611-01BA" H 2130 3755 50  0000 L CNN
-F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 1800 3800 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 1800 3800 50  0001 C CNN
-	1    1800 3800
+P 5450 3700
+F 0 "U2" H 5780 3746 50  0000 L CNN
+F 1 "MS5611-01BA" H 5780 3655 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 5450 3700 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 5450 3700 50  0001 C CNN
+	1    5450 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Sensor_Motion:ADXL343 U?
-U 1 1 5E8940BD
-P 5450 2300
-F 0 "U?" H 5994 2346 50  0000 L CNN
-F 1 "ADXL343" H 5994 2255 50  0000 L CNN
-F 2 "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y" H 5450 2300 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf" H 5450 2300 50  0001 C CNN
-	1    5450 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E8951BC
-P 5450 3300
-F 0 "#PWR?" H 5450 3050 50  0001 C CNN
-F 1 "GND" H 5455 3127 50  0000 C CNN
-F 2 "" H 5450 3300 50  0001 C CNN
-F 3 "" H 5450 3300 50  0001 C CNN
-	1    5450 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2800 5450 2900
-Text HLabel 4400 2500 0    50   Input ~ 0
-accel_cs
-Text HLabel 4400 2400 0    50   Input ~ 0
-accel_scl
-Text HLabel 4400 2300 0    50   Input ~ 0
-accel_sda
-Text HLabel 4400 2200 0    50   Input ~ 0
-accel_sdo
-Wire Wire Line
-	4400 2400 4950 2400
-Wire Wire Line
-	4400 2500 4950 2500
-Wire Wire Line
-	4400 2300 4950 2300
-Wire Wire Line
-	4400 2200 4950 2200
-$Comp
-L pspice:CAP C?
-U 1 1 5E89F2A3
-P 6650 2300
-F 0 "C?" H 6828 2346 50  0000 L CNN
-F 1 "0.1uF" H 6828 2255 50  0000 L CNN
-F 2 "" H 6650 2300 50  0001 C CNN
-F 3 "~" H 6650 2300 50  0001 C CNN
-	1    6650 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:CAP C?
-U 1 1 5E89F917
-P 7150 2300
-F 0 "C?" H 7328 2346 50  0000 L CNN
-F 1 "0.1uF" H 7328 2255 50  0000 L CNN
-F 2 "" H 7150 2300 50  0001 C CNN
-F 3 "~" H 7150 2300 50  0001 C CNN
-	1    7150 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 1800 6650 1800
-Wire Wire Line
-	6650 1800 6650 2050
-Wire Wire Line
-	6650 2550 6650 2900
-Wire Wire Line
-	6650 2900 5450 2900
-Connection ~ 5450 2900
-Wire Wire Line
-	5450 2900 5450 3150
-$Comp
-L pspice:CAP C?
-U 1 1 5E8A3F23
-P 7650 2300
-F 0 "C?" H 7828 2346 50  0000 L CNN
-F 1 "10uF" H 7828 2255 50  0000 L CNN
-F 2 "" H 7650 2300 50  0001 C CNN
-F 3 "~" H 7650 2300 50  0001 C CNN
-	1    7650 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 3150 7150 3150
-Wire Wire Line
-	7650 3150 7650 2550
-Connection ~ 5450 3150
-Wire Wire Line
-	5450 3150 5450 3300
-Wire Wire Line
-	7150 2550 7150 3150
-Connection ~ 7150 3150
-Wire Wire Line
-	7150 3150 7650 3150
-Wire Wire Line
-	5450 1750 7150 1750
-Wire Wire Line
-	7650 1750 7650 2050
-Wire Wire Line
-	5450 1750 5450 1800
-Wire Wire Line
-	7150 2050 7150 1750
-Connection ~ 7150 1750
-Wire Wire Line
-	7150 1750 7650 1750
-NoConn ~ 5250 1800
-NoConn ~ 5650 2800
 $EndSCHEMATC

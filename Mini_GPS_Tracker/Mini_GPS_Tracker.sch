@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -448,10 +448,6 @@ Text GLabel 7850 3150 2    50   Input ~ 0
 GPS_RX
 Text GLabel 7800 3450 2    50   Input ~ 0
 Pressure_SDA
-Wire Wire Line
-	7650 1450 7850 1450
-Wire Wire Line
-	7650 1550 7850 1550
 Text GLabel 10650 4250 2    50   Input ~ 0
 GPS_TX
 Text GLabel 10650 4350 2    50   Input ~ 0
@@ -460,16 +456,6 @@ Wire Wire Line
 	10400 4350 10650 4350
 Wire Wire Line
 	10400 4250 10650 4250
-$Sheet
-S 9000 2450 1450 550 
-U 5E70BD5E
-F0 "Sheet5E70BD5D" 50
-F1 "Sensor.sch" 50
-F2 "SCL" I R 10450 2600 50 
-F3 "SDA" I R 10450 2700 50 
-F4 "9_SDA" I R 10450 2800 50 
-F5 "9_SCL" I R 10450 2900 50 
-$EndSheet
 Wire Wire Line
 	10450 2700 10500 2700
 Wire Wire Line
@@ -514,8 +500,6 @@ Wire Wire Line
 	7650 3150 7850 3150
 Wire Wire Line
 	7650 3250 7850 3250
-Wire Wire Line
-	7650 4650 7800 4650
 Text GLabel 7850 3250 2    50   Input ~ 0
 GPS_TX
 $Comp
@@ -596,22 +580,10 @@ NoConn ~ 1800 6550
 NoConn ~ 1800 6650
 NoConn ~ 1800 6850
 NoConn ~ 1800 6950
-Text GLabel 10550 2800 2    50   Input ~ 0
-9_SDA
-Text GLabel 10550 2900 2    50   Input ~ 0
-9_SCL
-Wire Wire Line
-	10450 2800 10550 2800
-Wire Wire Line
-	10450 2900 10550 2900
 Text GLabel 7800 2550 2    50   Input ~ 0
 v_measure
 Wire Wire Line
 	7650 2550 7800 2550
-Text GLabel 7850 1450 2    50   Input ~ 0
-9_SCL
-Text GLabel 7850 1550 2    50   Input ~ 0
-9_SDA
 Text GLabel 7800 2450 2    50   Input ~ 0
 gps_reset
 NoConn ~ 7650 5450
@@ -734,40 +706,8 @@ Wire Wire Line
 	1000 1000 1150 1000
 Wire Wire Line
 	1000 1200 1150 1200
-$Sheet
-S 9050 5600 1400 400 
-U 5E7CBED1
-F0 "Sheet5E7CBED0" 50
-F1 "Storage.sch" 50
-F2 "cs_flash" I R 10450 5700 50 
-F3 "clk_flash" I R 10450 5800 50 
-F4 "MOSI_Flash" I R 10450 5900 50 
-F5 "MISO_Flash" I L 9050 5700 50 
-$EndSheet
-Text GLabel 8900 5700 0    50   Input ~ 0
-MISO_Flash
-Text GLabel 10600 5900 2    50   Input ~ 0
-MOSI_Flash
-Text GLabel 10600 5800 2    50   Input ~ 0
-clk_flash
-Text GLabel 10600 5700 2    50   Input ~ 0
-cs_flash
-Wire Wire Line
-	8900 5700 9050 5700
-Wire Wire Line
-	10450 5700 10600 5700
-Wire Wire Line
-	10450 5800 10600 5800
-Wire Wire Line
-	10450 5900 10600 5900
-Text GLabel 7800 4650 2    50   Input ~ 0
-MOSI_Flash
-Text GLabel 7800 5150 2    50   Input ~ 0
-MISO_Flash
 Text GLabel 7800 950  2    50   Input ~ 0
 cs_flash
-Text GLabel 7800 5050 2    50   Input ~ 0
-clk_flash
 $Comp
 L Mini_GPS_Tracker-rescue:CSS-J4D20-SMT-Sparkfun_Artemis-Mini_GPS_Tracker-rescue LS1
 U 1 1 5E7E01A2
@@ -842,10 +782,6 @@ Wire Wire Line
 	7650 3550 7800 3550
 Wire Wire Line
 	7800 3650 7650 3650
-Wire Wire Line
-	7650 5050 7800 5050
-Wire Wire Line
-	7650 5150 7800 5150
 NoConn ~ 7650 4750
 NoConn ~ 7650 1650
 NoConn ~ 7650 1750
@@ -996,4 +932,16 @@ NoConn ~ 4500 5550
 NoConn ~ 4500 5450
 NoConn ~ 4500 5350
 NoConn ~ 4500 5150
+$Sheet
+S 9000 2450 1450 550 
+U 5E70BD5E
+F0 "Sheet5E70BD5D" 50
+F1 "Sensor.sch" 50
+F2 "SCL" I R 10450 2600 50 
+F3 "SDA" I R 10450 2700 50 
+$EndSheet
+NoConn ~ 7650 5150
+NoConn ~ 7650 5050
+NoConn ~ 7650 1450
+NoConn ~ 7650 1550
 $EndSCHEMATC

@@ -638,4 +638,15 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5950 -4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Interface_USB:FT230XS U?
+U 1 1 5E9B8EAD
+P 3600 5200
+F 0 "U?" H 3600 6081 50  0000 C CNN
+F 1 "FT230XS" H 3600 5990 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 4600 4600 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 3600 5200 50  0001 C CNN
+	1    3600 5200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

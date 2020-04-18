@@ -469,49 +469,49 @@ clk_flash
 $Comp
 L Mini_GPS_Tracker-rescue:CSS-J4D20-SMT-Sparkfun_Artemis-Mini_GPS_Tracker-rescue LS1
 U 1 1 5E7E01A2
-P 2850 7050
-F 0 "LS1" H 2955 7096 50  0000 L CNN
-F 1 "CSS-J4D20-SMT" H 2955 7005 50  0000 L CNN
-F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 2850 7050 50  0001 L BNN
-F 3 "CUI" H 2850 7050 50  0001 L BNN
-F 4 "None" H 2850 7050 50  0001 L BNN "Field4"
-F 5 "CSS-J4D20-SMT" H 2850 7050 50  0001 L BNN "Field5"
-F 6 "Unavailable" H 2850 7050 50  0001 L BNN "Field6"
-F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 2850 7050 50  0001 L BNN "Field7"
-F 8 "None" H 2850 7050 50  0001 L BNN "Field8"
-	1    2850 7050
+P 6250 5400
+F 0 "LS1" H 6355 5446 50  0000 L CNN
+F 1 "CSS-J4D20-SMT" H 6355 5355 50  0000 L CNN
+F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 6250 5400 50  0001 L BNN
+F 3 "CUI" H 6250 5400 50  0001 L BNN
+F 4 "None" H 6250 5400 50  0001 L BNN "Field4"
+F 5 "CSS-J4D20-SMT" H 6250 5400 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 6250 5400 50  0001 L BNN "Field6"
+F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 6250 5400 50  0001 L BNN "Field7"
+F 8 "None" H 6250 5400 50  0001 L BNN "Field8"
+	1    6250 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5E7E2738
-P 2850 6600
-F 0 "R7" H 2920 6646 50  0000 L CNN
-F 1 "0 ohm" H 2920 6555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 6600 50  0001 C CNN
-F 3 "~" H 2850 6600 50  0001 C CNN
-	1    2850 6600
+P 6250 4950
+F 0 "R7" H 6320 4996 50  0000 L CNN
+F 1 "0 ohm" H 6320 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 4950 50  0001 C CNN
+F 3 "~" H 6250 4950 50  0001 C CNN
+	1    6250 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5E7E36E3
-P 2850 7350
-F 0 "#PWR0116" H 2850 7100 50  0001 C CNN
-F 1 "GND" H 2855 7177 50  0000 C CNN
-F 2 "" H 2850 7350 50  0001 C CNN
-F 3 "" H 2850 7350 50  0001 C CNN
-	1    2850 7350
+P 6250 5700
+F 0 "#PWR0116" H 6250 5450 50  0001 C CNN
+F 1 "GND" H 6255 5527 50  0000 C CNN
+F 2 "" H 6250 5700 50  0001 C CNN
+F 3 "" H 6250 5700 50  0001 C CNN
+	1    6250 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 7250 2850 7350
+	6250 5600 6250 5700
 Wire Wire Line
-	2850 6850 2850 6750
-Text GLabel 2850 6300 1    50   Input ~ 0
+	6250 5200 6250 5100
+Text GLabel 6250 4650 1    50   Input ~ 0
 buzzer
 Wire Wire Line
-	2850 6300 2850 6450
+	6250 4650 6250 4800
 Text GLabel 8250 3950 2    50   Input ~ 0
 buzzer
 Wire Wire Line
@@ -641,12 +641,103 @@ $EndComp
 $Comp
 L Interface_USB:FT230XS U?
 U 1 1 5E9B8EAD
-P 3600 5200
-F 0 "U?" H 3600 6081 50  0000 C CNN
-F 1 "FT230XS" H 3600 5990 50  0000 C CNN
-F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 4600 4600 50  0001 C CNN
-F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 3600 5200 50  0001 C CNN
-	1    3600 5200
+P 3500 5250
+F 0 "U?" H 3500 6131 50  0000 C CNN
+F 1 "FT230XS" H 3500 6040 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 4500 4650 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 3500 5250 50  0001 C CNN
+	1    3500 5250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1800 5150 2800 5150
+Wire Wire Line
+	1800 5250 2800 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E9DAEFA
+P 3500 6100
+F 0 "#PWR?" H 3500 5850 50  0001 C CNN
+F 1 "GND" H 3505 5927 50  0000 C CNN
+F 2 "" H 3500 6100 50  0001 C CNN
+F 3 "" H 3500 6100 50  0001 C CNN
+	1    3500 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5950 3400 6100
+Wire Wire Line
+	3400 6100 3500 6100
+Wire Wire Line
+	3500 6100 3600 6100
+Wire Wire Line
+	3600 6100 3600 5950
+Connection ~ 3500 6100
+Text GLabel 4350 5050 2    50   Input ~ 0
+RTS
+Wire Wire Line
+	4200 5050 4350 5050
+Text GLabel 4550 4950 2    50   Input ~ 0
+RXI
+Text GLabel 4550 4850 2    50   Input ~ 0
+TX0
+Wire Wire Line
+	4200 4850 4550 4850
+Wire Wire Line
+	4200 4950 4550 4950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E9E8361
+P 3400 4350
+F 0 "#PWR?" H 3400 4200 50  0001 C CNN
+F 1 "+3.3V" H 3415 4523 50  0000 C CNN
+F 2 "" H 3400 4350 50  0001 C CNN
+F 3 "" H 3400 4350 50  0001 C CNN
+	1    3400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4550 3400 4350
+$Comp
+L pspice:CAP C?
+U 1 1 5E9EBAC9
+P 4000 4400
+F 0 "C?" V 3685 4400 50  0000 C CNN
+F 1 "100nF" V 3776 4400 50  0000 C CNN
+F 2 "" H 4000 4400 50  0001 C CNN
+F 3 "~" H 4000 4400 50  0001 C CNN
+	1    4000 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9EC72D
+P 4400 4400
+F 0 "#PWR?" H 4400 4150 50  0001 C CNN
+F 1 "GND" V 4405 4272 50  0000 R CNN
+F 2 "" H 4400 4400 50  0001 C CNN
+F 3 "" H 4400 4400 50  0001 C CNN
+	1    4400 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 4400 4400 4400
+Wire Wire Line
+	2800 5450 2550 5450
+Wire Wire Line
+	2550 5450 2550 4850
+Wire Wire Line
+	2550 3950 3600 3950
+Wire Wire Line
+	3600 3950 3600 4400
+Wire Wire Line
+	3750 4400 3600 4400
+Connection ~ 3600 4400
+Wire Wire Line
+	3600 4400 3600 4550
+Wire Wire Line
+	2800 4850 2550 4850
+Connection ~ 2550 4850
+Wire Wire Line
+	2550 4850 2550 3950
 $EndSCHEMATC

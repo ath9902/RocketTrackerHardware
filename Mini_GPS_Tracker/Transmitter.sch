@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 11
 Title ""
 Date ""
 Rev ""
@@ -176,7 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 1100 3750 1300
 $Comp
-L Sparkfun~Artemis:LBEE5KL1DX-TEMP U10
+L Mini_GPS_Tracker-rescue:LBEE5KL1DX-TEMP-Sparkfun_Artemis U10
 U 1 1 5E8A8D4C
 P 8250 3700
 F 0 "U10" H 8250 5167 50  0000 C CNN

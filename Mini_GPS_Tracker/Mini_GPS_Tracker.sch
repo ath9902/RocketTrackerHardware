@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -105,16 +104,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR02
 U 1 1 5E7614F5
-P 1200 7350
-F 0 "#PWR02" H 1200 7100 50  0001 C CNN
-F 1 "GND" H 1205 7177 50  0000 C CNN
-F 2 "" H 1200 7350 50  0001 C CNN
-F 3 "" H 1200 7350 50  0001 C CNN
-	1    1200 7350
+P 1000 5650
+F 0 "#PWR02" H 1000 5400 50  0001 C CNN
+F 1 "GND" H 1005 5477 50  0000 C CNN
+F 2 "" H 1000 5650 50  0001 C CNN
+F 3 "" H 1000 5650 50  0001 C CNN
+	1    1000 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 7350 1200 7300
+	1000 5650 1000 5600
 $Comp
 L power:+3.3V #PWR03
 U 1 1 5E7FD57A
@@ -173,6 +172,7 @@ U 5E70B79C
 F0 "Sheet5E70B79B" 50
 F1 "Power.sch" 50
 F2 "V_Bat_Measure" I R 10400 3500 50 
+F3 "VBUS" I L 9050 3500 50 
 $EndSheet
 $Sheet
 S 9050 4150 1350 500 
@@ -199,27 +199,9 @@ Wire Wire Line
 	10400 3500 10600 3500
 Wire Wire Line
 	10400 4450 10650 4450
+Connection ~ 1000 5600
 Wire Wire Line
-	900  7250 900  7300
-Wire Wire Line
-	900  7300 1200 7300
-Connection ~ 1200 7300
-Wire Wire Line
-	1200 7300 1200 7250
-NoConn ~ 1800 4850
-NoConn ~ 1800 4950
-NoConn ~ 1800 5350
-NoConn ~ 1800 5450
-NoConn ~ 1800 5650
-NoConn ~ 1800 5750
-NoConn ~ 1800 5950
-NoConn ~ 1800 6050
-NoConn ~ 1800 6250
-NoConn ~ 1800 6350
-NoConn ~ 1800 6550
-NoConn ~ 1800 6650
-NoConn ~ 1800 6850
-NoConn ~ 1800 6950
+	1000 5600 1000 5550
 Text GLabel 10550 2300 2    50   Input ~ 0
 9_SDA
 Text GLabel 10550 2400 2    50   Input ~ 0
@@ -397,17 +379,6 @@ buzzer
 Wire Wire Line
 	6250 4650 6250 4800
 $Comp
-L Connector:USB_C_Receptacle J1
-U 1 1 5E74492E
-P 1200 5650
-F 0 "J1" H 1307 6917 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 1307 6826 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401548E4-2A" H 1350 5650 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1350 5650 50  0001 C CNN
-	1    1200 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5E8392C8
 P 1800 4250
@@ -418,8 +389,6 @@ F 3 "~" H 1800 4250 50  0001 C CNN
 	1    1800 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 4250 1800 4650
 $Comp
 L power:+3.3V #PWR030
 U 1 1 5E76F259
@@ -492,10 +461,6 @@ F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 
 	1    3500 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 5150 2800 5150
-Wire Wire Line
-	1800 5250 2800 5250
 $Comp
 L power:GND #PWR0130
 U 1 1 5E9DAEFA
@@ -674,5 +639,65 @@ F0 "Accel" 50
 F1 "Accel.sch" 50
 F2 "Accel_SDA" I L 7800 3400 50 
 F3 "Accel_SCL" I L 7800 3500 50 
+F4 "Accel_CS" I L 7800 3600 50 
+$EndSheet
+Wire Wire Line
+	900  5550 900  5600
+Wire Wire Line
+	900  5600 1000 5600
+Text GLabel 1900 4950 2    50   Input ~ 0
+VBUS
+Wire Wire Line
+	1800 4250 1800 4950
+Connection ~ 1800 4950
+Wire Wire Line
+	1800 4950 1900 4950
+Wire Wire Line
+	1300 4950 1800 4950
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5EA00C58
+P 1000 5150
+F 0 "J?" H 1057 5617 50  0000 C CNN
+F 1 "USB_B_Micro" H 1057 5526 50  0000 C CNN
+F 2 "" H 1150 5100 50  0001 C CNN
+F 3 "~" H 1150 5100 50  0001 C CNN
+	1    1000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EA017A3
+P 1300 5650
+F 0 "#PWR?" H 1300 5400 50  0001 C CNN
+F 1 "GND" H 1305 5477 50  0000 C CNN
+F 2 "" H 1300 5650 50  0001 C CNN
+F 3 "" H 1300 5650 50  0001 C CNN
+	1    1300 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5350 1300 5650
+Wire Wire Line
+	1300 5150 2400 5150
+Wire Wire Line
+	2400 5150 2400 5250
+Wire Wire Line
+	2400 5250 2800 5250
+Wire Wire Line
+	2800 5150 2650 5150
+Wire Wire Line
+	2650 5150 2650 5600
+Wire Wire Line
+	2650 5600 1500 5600
+Wire Wire Line
+	1500 5600 1500 5250
+Wire Wire Line
+	1500 5250 1300 5250
+$Sheet
+S 3400 1350 1000 2300
+U 5EA0B5A0
+F0 "MCU100" 50
+F1 "MCU100.sch" 50
 $EndSheet
 $EndSCHEMATC

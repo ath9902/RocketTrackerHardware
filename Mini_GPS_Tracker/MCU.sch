@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -15,106 +14,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	6200 2850 6550 2850
-Text GLabel 6550 2850 2    50   Input ~ 0
-BOOT1
-Wire Wire Line
 	3550 1150 3800 1150
 Text GLabel 3550 1150 0    50   Input ~ 0
 BOOT0
-Wire Wire Line
-	10000 2250 10100 2250
-Wire Wire Line
-	10000 1950 10000 2250
-Wire Wire Line
-	10000 1200 10000 1100
-Wire Wire Line
-	10000 1550 10100 1550
-Wire Wire Line
-	10000 1500 10000 1550
-$Comp
-L power:+3.3V #PWR035
-U 1 1 5EA164C5
-P 10100 2250
-F 0 "#PWR035" H 10100 2100 50  0001 C CNN
-F 1 "+3.3V" H 10115 2423 50  0000 C CNN
-F 2 "" H 10100 2250 50  0001 C CNN
-F 3 "" H 10100 2250 50  0001 C CNN
-	1    10100 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR034
-U 1 1 5EA164CB
-P 10000 1100
-F 0 "#PWR034" H 10000 950 50  0001 C CNN
-F 1 "+3.3V" H 10015 1273 50  0000 C CNN
-F 2 "" H 10000 1100 50  0001 C CNN
-F 3 "" H 10000 1100 50  0001 C CNN
-	1    10000 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 1650 10100 1650
-$Comp
-L Device:R R10
-U 1 1 5EA164D2
-P 10000 1800
-F 0 "R10" H 10070 1846 50  0000 L CNN
-F 1 "10K" H 10070 1755 50  0000 L CNN
-F 2 "" V 9930 1800 50  0001 C CNN
-F 3 "~" H 10000 1800 50  0001 C CNN
-	1    10000 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R 10K1
-U 1 1 5EA164D8
-P 10000 1350
-F 0 "10K1" H 10070 1396 50  0000 L CNN
-F 1 "R" H 10070 1305 50  0000 L CNN
-F 2 "" V 9930 1350 50  0001 C CNN
-F 3 "~" H 10000 1350 50  0001 C CNN
-	1    10000 1350
-	1    0    0    -1  
-$EndComp
-Connection ~ 10000 1650
-Wire Wire Line
-	9850 1650 10000 1650
-Connection ~ 10000 1550
-Wire Wire Line
-	9850 1550 10000 1550
-Text GLabel 9850 1650 0    50   Input ~ 0
-BOOT1
-Text GLabel 9850 1550 0    50   Input ~ 0
-BOOT0
-$Comp
-L power:GND #PWR036
-U 1 1 5EA164E4
-P 10700 1900
-F 0 "#PWR036" H 10700 1650 50  0001 C CNN
-F 1 "GND" H 10705 1727 50  0000 C CNN
-F 2 "" H 10700 1900 50  0001 C CNN
-F 3 "" H 10700 1900 50  0001 C CNN
-	1    10700 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 1900 10700 1650
-Wire Wire Line
-	10700 1550 10700 1650
-Connection ~ 10700 1650
-$Comp
-L Switch:SW_DIP_x02 SW3
-U 1 1 5EA164ED
-P 10400 1650
-F 0 "SW3" H 10400 2017 50  0000 C CNN
-F 1 "Boot mode" H 10400 1926 50  0000 C CNN
-F 2 "" H 10400 1650 50  0001 C CNN
-F 3 "~" H 10400 1650 50  0001 C CNN
-	1    10400 1650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR016
 U 1 1 5EA164F3
@@ -297,13 +199,7 @@ Connection ~ 3800 4450
 Wire Wire Line
 	6150 1050 6200 1050
 Wire Wire Line
-	6200 1050 6350 1050
-Connection ~ 6200 1050
-Wire Wire Line
 	6150 3750 6200 3750
-Wire Wire Line
-	6200 3750 6450 3750
-Connection ~ 6200 3750
 Wire Wire Line
 	5500 8200 6550 8200
 Wire Wire Line
@@ -371,121 +267,13 @@ Wire Wire Line
 Wire Wire Line
 	4600 7850 4600 8200
 Wire Wire Line
-	6200 3650 6450 3650
-Wire Wire Line
-	6200 1450 6400 1450
-Wire Wire Line
-	6200 1650 6400 1650
-Wire Wire Line
 	3450 950  3800 950 
-Wire Wire Line
-	6200 2750 6350 2750
-Wire Wire Line
-	6200 1550 6350 1550
-Wire Wire Line
-	6200 950  6350 950 
-Wire Wire Line
-	6350 2650 6200 2650
-Wire Wire Line
-	6200 4850 6350 4850
-Wire Wire Line
-	6200 2050 6350 2050
-Wire Wire Line
-	6200 1950 6350 1950
-Wire Wire Line
-	6200 1350 6350 1350
-Wire Wire Line
-	6200 2950 6350 2950
-Wire Wire Line
-	6200 2350 6400 2350
-Wire Wire Line
-	6200 2250 6400 2250
 Wire Wire Line
 	3800 6250 3600 6250
 Wire Wire Line
 	3800 6350 3600 6350
-Wire Wire Line
-	6200 5050 6400 5050
-Wire Wire Line
-	6200 4950 6400 4950
-Text HLabel 6350 950  2    50   Input ~ 0
-TRANS_RX
-Text HLabel 6350 1050 2    50   Input ~ 0
-TRANS_TX
-Text HLabel 6350 1350 2    50   Input ~ 0
-v_measure
-Text HLabel 6400 1450 2    50   Input ~ 0
-clk_flash
-Wire Wire Line
-	6200 6250 6700 6250
-Wire Wire Line
-	6200 6650 6700 6650
-Text HLabel 6350 1550 2    50   Input ~ 0
-MISO_Flash
-Text HLabel 6400 1650 2    50   Input ~ 0
-MOSI_Flash
-Text HLabel 6350 1950 2    50   Input ~ 0
-USB_TX0
-Text HLabel 6350 2050 2    50   Input ~ 0
-USB_RXI
-Text HLabel 6400 2250 2    50   Input ~ 0
-SWDIO
-Text HLabel 6400 2350 2    50   Input ~ 0
-SWDCK
-Text HLabel 6350 2650 2    50   Input ~ 0
-gps_reset
-Text HLabel 6350 2750 2    50   Input ~ 0
-cs_flash
-Text HLabel 6350 2950 2    50   Input ~ 0
-A1
-Text HLabel 6450 3650 2    50   Input ~ 0
-QWIIC_SCL
-Text HLabel 6450 3750 2    50   Input ~ 0
-QWIIC_SDA
-Text HLabel 6350 4850 2    50   Input ~ 0
-buzzer
-Text HLabel 6400 4950 2    50   Input ~ 0
-9_SCL
-Text HLabel 6400 5050 2    50   Input ~ 0
-9_SDA
-Text HLabel 6700 6250 2    50   Input ~ 0
-PDMClock
-Text HLabel 6700 6650 2    50   Input ~ 0
-PDMData
 Text HLabel 3450 950  0    50   Input ~ 0
 RESET
-Text HLabel 8250 1500 2    50   Input ~ 0
-Pyro_A_Fire
-Text HLabel 8200 1200 2    50   Input ~ 0
-Pyro_A_Sense
-Wire Wire Line
-	8250 1500 8050 1500
-Wire Wire Line
-	8200 1200 8050 1200
-Text HLabel 8200 2150 2    50   Input ~ 0
-Pyro_B_Fire
-Text HLabel 8150 1850 2    50   Input ~ 0
-Pyro_B_Sense
-Wire Wire Line
-	8200 2150 8000 2150
-Wire Wire Line
-	8150 1850 8000 1850
-Text HLabel 8200 2700 2    50   Input ~ 0
-Pyro_C_Fire
-Text HLabel 8150 2400 2    50   Input ~ 0
-Pyro_C_Sense
-Wire Wire Line
-	8200 2700 8000 2700
-Wire Wire Line
-	8150 2400 8000 2400
-Text HLabel 8200 3300 2    50   Input ~ 0
-Pyro_D_Fire
-Text HLabel 8150 3000 2    50   Input ~ 0
-Pyro_DSense
-Wire Wire Line
-	8200 3300 8000 3300
-Wire Wire Line
-	8150 3000 8000 3000
 $Comp
 L Device:Crystal Y1
 U 1 1 5E9EAC49
@@ -550,16 +338,89 @@ Wire Wire Line
 Connection ~ 1100 2700
 Wire Wire Line
 	1100 2700 1100 2900
+Wire Wire Line
+	2400 2350 3800 2350
+Wire Wire Line
+	3200 2650 3200 2450
+Wire Wire Line
+	3200 2450 3800 2450
+Wire Wire Line
+	2400 2650 3200 2650
+Text HLabel 3700 4350 0    50   Input ~ 0
+Pressure_SDA
+Text HLabel 3700 4450 0    50   Input ~ 0
+Pressure_SCL
+Text HLabel 3600 6250 0    50   Input ~ 0
+GPS_TX
+Text HLabel 3600 6350 0    50   Input ~ 0
+GPS_RX
+Connection ~ 6200 3750
+Connection ~ 6200 1050
+Text HLabel 8150 4100 2    50   Input ~ 0
+Accel_CS
+Wire Wire Line
+	7900 3900 8100 3900
+Wire Wire Line
+	7900 3700 8100 3700
+Text HLabel 8100 3900 2    50   Input ~ 0
+Accel_SCL
+Text HLabel 8050 3700 2    50   Input ~ 0
+Accel_SDA
+Wire Wire Line
+	6200 5750 7250 5750
+Wire Wire Line
+	9600 4350 9600 4850
+Wire Wire Line
+	7250 4350 9600 4350
+Wire Wire Line
+	7250 5750 7250 4350
+Wire Wire Line
+	9000 5150 9650 5150
+Wire Wire Line
+	6200 5850 9650 5850
+Wire Wire Line
+	9650 5850 9650 5150
+Wire Wire Line
+	7700 5200 7700 5400
+Connection ~ 7700 5200
+Wire Wire Line
+	8050 5200 7700 5200
+Wire Wire Line
+	7700 4800 7700 5200
+Wire Wire Line
+	7700 4800 8050 4800
+Connection ~ 9000 4850
+Wire Wire Line
+	9000 4800 9000 4850
+Wire Wire Line
+	8550 4800 9000 4800
+Connection ~ 9000 5150
+Wire Wire Line
+	9000 5200 9000 5150
+Wire Wire Line
+	8550 5200 9000 5200
+Wire Wire Line
+	9600 4850 9000 4850
 $Comp
-L Device:Crystal Y3
-U 1 1 5E9EAC71
-P 9000 5000
-F 0 "Y3" V 8954 5131 50  0000 L CNN
-F 1 "8MHz" V 9045 5131 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering" H 9000 5000 50  0001 C CNN
-F 3 "~" H 9000 5000 50  0001 C CNN
-F 4 "NX3225GD-8.00M" V 9000 5000 50  0001 C CNN "Partno"
-	1    9000 5000
+L power:GND #PWR033
+U 1 1 5E9EAC83
+P 7700 5400
+F 0 "#PWR033" H 7700 5150 50  0001 C CNN
+F 1 "GND" H 7705 5227 50  0000 C CNN
+F 2 "" H 7700 5400 50  0001 C CNN
+F 3 "" H 7700 5400 50  0001 C CNN
+	1    7700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C24
+U 1 1 5E9EAC7D
+P 8300 5200
+F 0 "C24" V 7985 5200 50  0000 C CNN
+F 1 "8.2pf" V 8076 5200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8300 5200 50  0001 C CNN
+F 3 "~" H 8300 5200 50  0001 C CNN
+	1    8300 5200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -574,84 +435,224 @@ F 3 "~" H 8300 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pspice:CAP C24
-U 1 1 5E9EAC7D
-P 8300 5200
-F 0 "C24" V 7985 5200 50  0000 C CNN
-F 1 "8.2pf" V 8076 5200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8300 5200 50  0001 C CNN
-F 3 "~" H 8300 5200 50  0001 C CNN
-	1    8300 5200
+L Device:Crystal Y3
+U 1 1 5E9EAC71
+P 9000 5000
+F 0 "Y3" V 8954 5131 50  0000 L CNN
+F 1 "8MHz" V 9045 5131 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering" H 9000 5000 50  0001 C CNN
+F 3 "~" H 9000 5000 50  0001 C CNN
+F 4 "NX3225GD-8.00M" V 9000 5000 50  0001 C CNN "Partno"
+	1    9000 5000
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	8150 3000 8000 3000
+Wire Wire Line
+	8200 3300 8000 3300
+Text HLabel 8150 3000 2    50   Input ~ 0
+Pyro_DSense
+Text HLabel 8200 3300 2    50   Input ~ 0
+Pyro_D_Fire
+Wire Wire Line
+	8150 2400 8000 2400
+Wire Wire Line
+	8200 2700 8000 2700
+Text HLabel 8150 2400 2    50   Input ~ 0
+Pyro_C_Sense
+Text HLabel 8200 2700 2    50   Input ~ 0
+Pyro_C_Fire
+Wire Wire Line
+	8150 1850 8000 1850
+Wire Wire Line
+	8200 2150 8000 2150
+Text HLabel 8150 1850 2    50   Input ~ 0
+Pyro_B_Sense
+Text HLabel 8200 2150 2    50   Input ~ 0
+Pyro_B_Fire
+Wire Wire Line
+	8200 1200 8050 1200
+Wire Wire Line
+	8250 1500 8050 1500
+Text HLabel 8200 1200 2    50   Input ~ 0
+Pyro_A_Sense
+Text HLabel 8250 1500 2    50   Input ~ 0
+Pyro_A_Fire
+Text HLabel 6700 6650 2    50   Input ~ 0
+PDMData
+Text HLabel 6700 6250 2    50   Input ~ 0
+PDMClock
+Text HLabel 6400 5050 2    50   Input ~ 0
+9_SDA
+Text HLabel 6400 4950 2    50   Input ~ 0
+9_SCL
+Text HLabel 6350 4850 2    50   Input ~ 0
+buzzer
+Text HLabel 6450 3750 2    50   Input ~ 0
+QWIIC_SDA
+Text HLabel 6450 3650 2    50   Input ~ 0
+QWIIC_SCL
+Text HLabel 6350 2950 2    50   Input ~ 0
+A1
+Text HLabel 6350 2750 2    50   Input ~ 0
+cs_flash
+Text HLabel 6350 2650 2    50   Input ~ 0
+gps_reset
+Text HLabel 6400 2350 2    50   Input ~ 0
+SWDCK
+Text HLabel 6400 2250 2    50   Input ~ 0
+SWDIO
+Text HLabel 6350 2050 2    50   Input ~ 0
+USB_RXI
+Text HLabel 6350 1950 2    50   Input ~ 0
+USB_TX0
+Text HLabel 6400 1650 2    50   Input ~ 0
+MOSI_Flash
+Text HLabel 6350 1550 2    50   Input ~ 0
+MISO_Flash
+Wire Wire Line
+	6200 6650 6700 6650
+Wire Wire Line
+	6200 6250 6700 6250
+Text HLabel 6400 1450 2    50   Input ~ 0
+clk_flash
+Text HLabel 6350 1350 2    50   Input ~ 0
+v_measure
+Text HLabel 6350 1050 2    50   Input ~ 0
+TRANS_TX
+Text HLabel 6350 950  2    50   Input ~ 0
+TRANS_RX
+Wire Wire Line
+	6200 4950 6400 4950
+Wire Wire Line
+	6200 5050 6400 5050
+Wire Wire Line
+	6200 2250 6400 2250
+Wire Wire Line
+	6200 2350 6400 2350
+Wire Wire Line
+	6200 2950 6350 2950
+Wire Wire Line
+	6200 1350 6350 1350
+Wire Wire Line
+	6200 1950 6350 1950
+Wire Wire Line
+	6200 2050 6350 2050
+Wire Wire Line
+	6200 4850 6350 4850
+Wire Wire Line
+	6350 2650 6200 2650
+Wire Wire Line
+	6200 950  6350 950 
+Wire Wire Line
+	6200 1550 6350 1550
+Wire Wire Line
+	6200 2750 6350 2750
+Wire Wire Line
+	6200 1650 6400 1650
+Wire Wire Line
+	6200 1450 6400 1450
+Wire Wire Line
+	6200 3650 6450 3650
+Wire Wire Line
+	6200 3750 6450 3750
+Wire Wire Line
+	6200 1050 6350 1050
 $Comp
-L power:GND #PWR033
-U 1 1 5E9EAC83
-P 7700 5400
-F 0 "#PWR033" H 7700 5150 50  0001 C CNN
-F 1 "GND" H 7705 5227 50  0000 C CNN
-F 2 "" H 7700 5400 50  0001 C CNN
-F 3 "" H 7700 5400 50  0001 C CNN
-	1    7700 5400
+L Switch:SW_DIP_x02 SW3
+U 1 1 5EA164ED
+P 10400 1650
+F 0 "SW3" H 10400 2017 50  0000 C CNN
+F 1 "Boot mode" H 10400 1926 50  0000 C CNN
+F 2 "" H 10400 1650 50  0001 C CNN
+F 3 "~" H 10400 1650 50  0001 C CNN
+	1    10400 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 10700 1650
+Wire Wire Line
+	10700 1550 10700 1650
+Wire Wire Line
+	10700 1900 10700 1650
+$Comp
+L power:GND #PWR036
+U 1 1 5EA164E4
+P 10700 1900
+F 0 "#PWR036" H 10700 1650 50  0001 C CNN
+F 1 "GND" H 10705 1727 50  0000 C CNN
+F 2 "" H 10700 1900 50  0001 C CNN
+F 3 "" H 10700 1900 50  0001 C CNN
+	1    10700 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 1550 0    50   Input ~ 0
+BOOT0
+Text GLabel 9850 1650 0    50   Input ~ 0
+BOOT1
+Wire Wire Line
+	9850 1550 10000 1550
+Connection ~ 10000 1550
+Wire Wire Line
+	9850 1650 10000 1650
+Connection ~ 10000 1650
+$Comp
+L Device:R 10K1
+U 1 1 5EA164D8
+P 10000 1350
+F 0 "10K1" H 10070 1396 50  0000 L CNN
+F 1 "R" H 10070 1305 50  0000 L CNN
+F 2 "" V 9930 1350 50  0001 C CNN
+F 3 "~" H 10000 1350 50  0001 C CNN
+	1    10000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5EA164D2
+P 10000 1800
+F 0 "R10" H 10070 1846 50  0000 L CNN
+F 1 "10K" H 10070 1755 50  0000 L CNN
+F 2 "" V 9930 1800 50  0001 C CNN
+F 3 "~" H 10000 1800 50  0001 C CNN
+	1    10000 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 4850 9000 4850
+	10000 1650 10100 1650
+$Comp
+L power:+3.3V #PWR034
+U 1 1 5EA164CB
+P 10000 1100
+F 0 "#PWR034" H 10000 950 50  0001 C CNN
+F 1 "+3.3V" H 10015 1273 50  0000 C CNN
+F 2 "" H 10000 1100 50  0001 C CNN
+F 3 "" H 10000 1100 50  0001 C CNN
+	1    10000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR035
+U 1 1 5EA164C5
+P 10100 2250
+F 0 "#PWR035" H 10100 2100 50  0001 C CNN
+F 1 "+3.3V" H 10115 2423 50  0000 C CNN
+F 2 "" H 10100 2250 50  0001 C CNN
+F 3 "" H 10100 2250 50  0001 C CNN
+	1    10100 2250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8550 5200 9000 5200
+	10000 1500 10000 1550
 Wire Wire Line
-	9000 5200 9000 5150
-Connection ~ 9000 5150
+	10000 1550 10100 1550
 Wire Wire Line
-	8550 4800 9000 4800
+	10000 1200 10000 1100
 Wire Wire Line
-	9000 4800 9000 4850
-Connection ~ 9000 4850
+	10000 1950 10000 2250
 Wire Wire Line
-	7700 4800 8050 4800
+	10000 2250 10100 2250
+Text GLabel 6550 2850 2    50   Input ~ 0
+BOOT1
 Wire Wire Line
-	7700 4800 7700 5200
-Wire Wire Line
-	8050 5200 7700 5200
-Connection ~ 7700 5200
-Wire Wire Line
-	7700 5200 7700 5400
-Wire Wire Line
-	2400 2350 3800 2350
-Wire Wire Line
-	3200 2650 3200 2450
-Wire Wire Line
-	3200 2450 3800 2450
-Wire Wire Line
-	2400 2650 3200 2650
-Wire Wire Line
-	9650 5850 9650 5150
-Wire Wire Line
-	6200 5850 9650 5850
-Wire Wire Line
-	9000 5150 9650 5150
-Wire Wire Line
-	7250 5750 7250 4350
-Wire Wire Line
-	7250 4350 9600 4350
-Wire Wire Line
-	9600 4350 9600 4850
-Wire Wire Line
-	6200 5750 7250 5750
-Text HLabel 3700 4350 0    50   Input ~ 0
-Pressure_SDA
-Text HLabel 3700 4450 0    50   Input ~ 0
-Pressure_SCL
-Text HLabel 3600 6250 0    50   Input ~ 0
-GPS_TX
-Text HLabel 3600 6350 0    50   Input ~ 0
-GPS_RX
-Text HLabel 8050 3700 2    50   Input ~ 0
-Accel_SDA
-Text HLabel 8100 3900 2    50   Input ~ 0
-Accel_SCL
-Wire Wire Line
-	7900 3700 8100 3700
-Wire Wire Line
-	7900 3900 8100 3900
+	6200 2850 6550 2850
 $EndSCHEMATC

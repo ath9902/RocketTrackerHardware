@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 10
+Sheet 3 11
 Title ""
 Date ""
 Rev ""
@@ -29,19 +28,6 @@ F 2 "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical" H 5150 1700 50  0001 
 F 3 "~" H 5150 1700 50  0001 C CNN
 	1    5150 1700
 	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5150 2100 5150 2000
-$Comp
-L power:GND #PWR018
-U 1 1 5E75AA69
-P 5150 2100
-F 0 "#PWR018" H 5150 1850 50  0001 C CNN
-F 1 "GND" H 5155 1927 50  0000 C CNN
-F 2 "" H 5150 2100 50  0001 C CNN
-F 3 "" H 5150 2100 50  0001 C CNN
-	1    5150 2100
-	1    0    0    -1  
 $EndComp
 Connection ~ 6750 3950
 $Comp
@@ -216,7 +202,7 @@ F 4 "https://www.te.com/usa-en/product-1437575-1.html?te_bu=Cor&te_type=disp&te_
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 2800 5250 3100
+	5250 2800 5250 3000
 $Comp
 L power:GND #PWR0115
 U 1 1 5E7EBF3D
@@ -255,4 +241,24 @@ Wire Wire Line
 	5250 3600 5650 3600
 Wire Wire Line
 	5650 3600 5650 3450
+Text HLabel 3900 3000 0    50   Input ~ 0
+VBUS
+Connection ~ 5250 3000
+Wire Wire Line
+	5250 3000 5250 3100
+Wire Wire Line
+	3900 3000 5250 3000
+Wire Wire Line
+	5150 2100 5150 2000
+$Comp
+L power:GND #PWR018
+U 1 1 5E75AA69
+P 5150 2100
+F 0 "#PWR018" H 5150 1850 50  0001 C CNN
+F 1 "GND" H 5155 1927 50  0000 C CNN
+F 2 "" H 5150 2100 50  0001 C CNN
+F 3 "" H 5150 2100 50  0001 C CNN
+	1    5150 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

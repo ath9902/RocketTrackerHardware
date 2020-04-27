@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -511,4 +512,89 @@ Wire Wire Line
 	5500 3450 7100 3450
 Wire Wire Line
 	7100 3550 5500 3550
+Text HLabel 4250 4000 2    50   Input ~ 0
+Accel2_SDA
+Wire Wire Line
+	4250 4000 4150 4000
+$Comp
+L SamacSys_Parts:ADXL375BCCZ IC?
+U 1 1 5EB47FDF
+P 2150 4000
+AR Path="/5E9E34E6/5EB47FDF" Ref="IC?"  Part="1" 
+AR Path="/5E70BD5E/5EB47FDF" Ref="IC?"  Part="1" 
+F 0 "IC?" H 3150 4981 50  0000 C CNN
+F 1 "ADXL375BCCZ" H 3150 4890 50  0000 C CNN
+F 2 "CC-14-1" H 4000 4600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ADXL375BCCZ.pdf" H 4000 4500 50  0001 L CNN
+F 4 "ADXL375BCCZ Analog Devices, 3-Axis Accelerometer, I2C, Serial-3 Wire, Serial-4 Wire, Serial-SPI, 14-Pin LGA" H 4000 4400 50  0001 L CNN "Description"
+F 5 "" H 4000 4300 50  0001 L CNN "Height"
+F 6 "584-ADXL375BCCZ" H 4000 4200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-ADXL375BCCZ" H 4000 4100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Analog Devices" H 4000 4000 50  0001 L CNN "Manufacturer_Name"
+F 9 "ADXL375BCCZ" H 4000 3900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2650 3150 3200
+Wire Wire Line
+	2150 4100 1950 4100
+Wire Wire Line
+	1950 4100 1950 4300
+Wire Wire Line
+	1950 4400 2150 4400
+Wire Wire Line
+	1950 4300 2150 4300
+Connection ~ 1950 4300
+Wire Wire Line
+	1950 4300 1950 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5EB47FEC
+P 1800 4300
+AR Path="/5E9E34E6/5EB47FEC" Ref="#PWR?"  Part="1" 
+AR Path="/5E70BD5E/5EB47FEC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1800 4050 50  0001 C CNN
+F 1 "GND" H 1805 4127 50  0000 C CNN
+F 2 "" H 1800 4300 50  0001 C CNN
+F 3 "" H 1800 4300 50  0001 C CNN
+	1    1800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4300 1950 4300
+Wire Wire Line
+	2150 4000 1500 4000
+Wire Wire Line
+	1200 4000 1200 4500
+Wire Wire Line
+	1200 4500 2150 4500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB47FF6
+P 1500 4000
+AR Path="/5E9E34E6/5EB47FF6" Ref="#PWR?"  Part="1" 
+AR Path="/5E70BD5E/5EB47FF6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 3850 50  0001 C CNN
+F 1 "+3.3V" H 1515 4173 50  0000 C CNN
+F 2 "" H 1500 4000 50  0001 C CNN
+F 3 "" H 1500 4000 50  0001 C CNN
+	1    1500 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 4000
+Wire Wire Line
+	1500 4000 1200 4000
+NoConn ~ 4150 4300
+NoConn ~ 4150 4400
+NoConn ~ 4150 4500
+NoConn ~ 2150 4200
+Text HLabel 3400 5250 2    50   Input ~ 0
+Accel2_CS
+Wire Wire Line
+	3150 5100 3150 5250
+Wire Wire Line
+	3150 5250 3400 5250
+NoConn ~ 4150 4100
+NoConn ~ 4150 4200
 $EndSCHEMATC

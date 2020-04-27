@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -13,8 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4600 1650 4600 1900
 Text GLabel 4600 1650 1    50   Input ~ 0
 BOOT0
 $Comp
@@ -22,33 +21,14 @@ L pspice:CAP C?
 U 1 1 5EA95109
 P 6950 2800
 AR Path="/5E9FE63A/5EA95109" Ref="C?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95109" Ref="C?"  Part="1" 
-F 0 "C?" H 7128 2846 50  0000 L CNN
+AR Path="/5EA0B5A0/5EA95109" Ref="C30"  Part="1" 
+F 0 "C30" H 7128 2846 50  0000 L CNN
 F 1 "2.2uF" H 7128 2755 50  0000 L CNN
 F 2 "" H 6950 2800 50  0001 C CNN
 F 3 "~" H 6950 2800 50  0001 C CNN
 	1    6950 2800
 	0    1    1    0   
 $EndComp
-$Comp
-L pspice:CAP C?
-U 1 1 5EA95110
-P 6200 5950
-AR Path="/5E9FE63A/5EA95110" Ref="C?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95110" Ref="C?"  Part="1" 
-F 0 "C?" H 6378 5996 50  0000 L CNN
-F 1 "2.2uF" H 6378 5905 50  0000 L CNN
-F 2 "" H 6200 5950 50  0001 C CNN
-F 3 "~" H 6200 5950 50  0001 C CNN
-	1    6200 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 3900 3700 3900
-Wire Wire Line
-	3700 2700 3500 2700
-Wire Wire Line
-	3700 2600 3500 2600
 Text HLabel 3350 3900 0    50   Input ~ 0
 RESET
 $Comp
@@ -56,8 +36,8 @@ L Device:Crystal Y?
 U 1 1 5EA95158
 P 2300 3450
 AR Path="/5E9FE63A/5EA95158" Ref="Y?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95158" Ref="Y?"  Part="1" 
-F 0 "Y?" V 2254 3581 50  0000 L CNN
+AR Path="/5EA0B5A0/5EA95158" Ref="Y4"  Part="1" 
+F 0 "Y4" V 2254 3581 50  0000 L CNN
 F 1 "32.786 KHz" V 2345 3581 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering" H 2300 3450 50  0001 C CNN
 F 3 "~" H 2300 3450 50  0001 C CNN
@@ -70,8 +50,8 @@ L pspice:CAP C?
 U 1 1 5EA9515E
 P 1600 3250
 AR Path="/5E9FE63A/5EA9515E" Ref="C?"  Part="1" 
-AR Path="/5EA0B5A0/5EA9515E" Ref="C?"  Part="1" 
-F 0 "C?" V 1285 3250 50  0000 C CNN
+AR Path="/5EA0B5A0/5EA9515E" Ref="C25"  Part="1" 
+F 0 "C25" V 1285 3250 50  0000 C CNN
 F 1 "5.1pf" V 1376 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 3250 50  0001 C CNN
 F 3 "~" H 1600 3250 50  0001 C CNN
@@ -83,8 +63,8 @@ L pspice:CAP C?
 U 1 1 5EA95164
 P 1600 3650
 AR Path="/5E9FE63A/5EA95164" Ref="C?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95164" Ref="C?"  Part="1" 
-F 0 "C?" V 1285 3650 50  0000 C CNN
+AR Path="/5EA0B5A0/5EA95164" Ref="C26"  Part="1" 
+F 0 "C26" V 1285 3650 50  0000 C CNN
 F 1 "5.1pf" V 1376 3650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 3650 50  0001 C CNN
 F 3 "~" H 1600 3650 50  0001 C CNN
@@ -96,8 +76,8 @@ L power:GND #PWR?
 U 1 1 5EA9516A
 P 1000 3850
 AR Path="/5E9FE63A/5EA9516A" Ref="#PWR?"  Part="1" 
-AR Path="/5EA0B5A0/5EA9516A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1000 3600 50  0001 C CNN
+AR Path="/5EA0B5A0/5EA9516A" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 1000 3600 50  0001 C CNN
 F 1 "GND" H 1005 3677 50  0000 C CNN
 F 2 "" H 1000 3850 50  0001 C CNN
 F 3 "" H 1000 3850 50  0001 C CNN
@@ -124,30 +104,24 @@ Connection ~ 1000 3650
 Wire Wire Line
 	1000 3650 1000 3850
 Wire Wire Line
-	2300 3300 3700 3300
-Wire Wire Line
 	3100 3600 3100 3400
 Wire Wire Line
-	3100 3400 3700 3400
-Wire Wire Line
 	2300 3600 3100 3600
-Text HLabel 6850 3900 2    50   Input ~ 0
+Text HLabel 4400 1900 1    50   Input ~ 0
 Pressure_SDA
-Text HLabel 6850 4000 2    50   Input ~ 0
+Text HLabel 5600 8850 2    50   Input ~ 0
 Pressure_SCL
 Text HLabel 3500 2700 0    50   Input ~ 0
 GPS_TX
 Text HLabel 3500 2600 0    50   Input ~ 0
 GPS_RX
-Text HLabel 10300 5550 2    50   Input ~ 0
+Text HLabel 6900 4600 2    50   Input ~ 0
 Accel_CS
 Wire Wire Line
-	6700 4200 6900 4200
-Wire Wire Line
-	6700 4100 6900 4100
-Text HLabel 6900 4200 2    50   Input ~ 0
+	6700 4700 6900 4700
+Text HLabel 6900 4800 2    50   Input ~ 0
 Accel_SCL
-Text HLabel 6850 4100 2    50   Input ~ 0
+Text HLabel 6900 4700 2    50   Input ~ 0
 Accel_SDA
 Wire Wire Line
 	2400 6750 3050 6750
@@ -175,8 +149,8 @@ L power:GND #PWR?
 U 1 1 5EA9519D
 P 1100 7000
 AR Path="/5E9FE63A/5EA9519D" Ref="#PWR?"  Part="1" 
-AR Path="/5EA0B5A0/5EA9519D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1100 6750 50  0001 C CNN
+AR Path="/5EA0B5A0/5EA9519D" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 1100 6750 50  0001 C CNN
 F 1 "GND" H 1105 6827 50  0000 C CNN
 F 2 "" H 1100 7000 50  0001 C CNN
 F 3 "" H 1100 7000 50  0001 C CNN
@@ -188,8 +162,8 @@ L pspice:CAP C?
 U 1 1 5EA951A3
 P 1700 6800
 AR Path="/5E9FE63A/5EA951A3" Ref="C?"  Part="1" 
-AR Path="/5EA0B5A0/5EA951A3" Ref="C?"  Part="1" 
-F 0 "C?" V 1385 6800 50  0000 C CNN
+AR Path="/5EA0B5A0/5EA951A3" Ref="C28"  Part="1" 
+F 0 "C28" V 1385 6800 50  0000 C CNN
 F 1 "8.2pf" V 1476 6800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 6800 50  0001 C CNN
 F 3 "~" H 1700 6800 50  0001 C CNN
@@ -201,8 +175,8 @@ L pspice:CAP C?
 U 1 1 5EA951A9
 P 1700 6400
 AR Path="/5E9FE63A/5EA951A9" Ref="C?"  Part="1" 
-AR Path="/5EA0B5A0/5EA951A9" Ref="C?"  Part="1" 
-F 0 "C?" V 1385 6400 50  0000 C CNN
+AR Path="/5EA0B5A0/5EA951A9" Ref="C27"  Part="1" 
+F 0 "C27" V 1385 6400 50  0000 C CNN
 F 1 "8.2pf" V 1476 6400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 6400 50  0001 C CNN
 F 3 "~" H 1700 6400 50  0001 C CNN
@@ -214,8 +188,8 @@ L Device:Crystal Y?
 U 1 1 5EA951B0
 P 2400 6600
 AR Path="/5E9FE63A/5EA951B0" Ref="Y?"  Part="1" 
-AR Path="/5EA0B5A0/5EA951B0" Ref="Y?"  Part="1" 
-F 0 "Y?" V 2354 6731 50  0000 L CNN
+AR Path="/5EA0B5A0/5EA951B0" Ref="Y5"  Part="1" 
+F 0 "Y5" V 2354 6731 50  0000 L CNN
 F 1 "8MHz" V 2445 6731 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering" H 2400 6600 50  0001 C CNN
 F 3 "~" H 2400 6600 50  0001 C CNN
@@ -223,103 +197,39 @@ F 4 "NX3225GD-8.00M" V 2400 6600 50  0001 C CNN "Partno"
 	1    2400 6600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10300 4450 10150 4450
-Wire Wire Line
-	10350 4750 10150 4750
-Text HLabel 10300 4450 2    50   Input ~ 0
-Pyro_DSense
-Text HLabel 10350 4750 2    50   Input ~ 0
-Pyro_D_Fire
-Wire Wire Line
-	10300 3850 10150 3850
-Wire Wire Line
-	10350 4150 10150 4150
-Text HLabel 10300 3850 2    50   Input ~ 0
-Pyro_C_Sense
-Text HLabel 10350 4150 2    50   Input ~ 0
-Pyro_C_Fire
-Wire Wire Line
-	10300 3300 10150 3300
-Wire Wire Line
-	10350 3600 10150 3600
-Text HLabel 10300 3300 2    50   Input ~ 0
-Pyro_B_Sense
-Text HLabel 10350 3600 2    50   Input ~ 0
-Pyro_B_Fire
-Wire Wire Line
-	10350 2650 10200 2650
-Wire Wire Line
-	10400 2950 10200 2950
-Text HLabel 10350 2650 2    50   Input ~ 0
-Pyro_A_Sense
-Text HLabel 10400 2950 2    50   Input ~ 0
-Pyro_A_Fire
-Text HLabel 10350 6100 2    50   Input ~ 0
-PDMData
-Text HLabel 10350 5700 2    50   Input ~ 0
-PDMClock
-Text HLabel 7500 3700 2    50   Input ~ 0
-9_SDA
-Text HLabel 7500 3800 2    50   Input ~ 0
-9_SCL
-Text HLabel 8200 5550 2    50   Input ~ 0
+Text HLabel 5500 5700 3    50   Input ~ 0
 buzzer
-Text HLabel 8200 3650 2    50   Input ~ 0
-A1
+Text HLabel 5100 1900 1    50   Input ~ 0
+SW0
 Text HLabel 4300 5850 3    50   Input ~ 0
 cs_flash
-Text HLabel 8200 3350 2    50   Input ~ 0
+Text HLabel 3550 2800 0    50   Input ~ 0
 gps_reset
 Text HLabel 6400 1750 1    50   Input ~ 0
 SWDCK
 Text HLabel 7350 2900 2    50   Input ~ 0
 SWDIO
 Text HLabel 7100 3100 2    50   Input ~ 0
-USB_RXI
-Text HLabel 7100 3200 2    50   Input ~ 0
-USB_TX0
+USB_RX
 Text HLabel 4600 5700 3    50   Input ~ 0
 MOSI_Flash
 Text HLabel 4500 5700 3    50   Input ~ 0
 MISO_Flash
-Wire Wire Line
-	9850 6100 10350 6100
-Wire Wire Line
-	9850 5700 10350 5700
 Text HLabel 4400 5700 3    50   Input ~ 0
 clk_flash
-Text HLabel 8200 2050 2    50   Input ~ 0
+Text HLabel 5000 5700 3    50   Input ~ 0
 v_measure
 Text HLabel 3300 4900 0    50   Input ~ 0
 TRANS_TX
 Text HLabel 3300 4800 0    50   Input ~ 0
 TRANS_RX
 $Comp
-L Switch:SW_DIP_x02 SW?
-U 1 1 5EA951EE
-P 9950 1800
-AR Path="/5E9FE63A/5EA951EE" Ref="SW?"  Part="1" 
-AR Path="/5EA0B5A0/5EA951EE" Ref="SW?"  Part="1" 
-F 0 "SW?" H 9950 2167 50  0000 C CNN
-F 1 "Boot mode" H 9950 2076 50  0000 C CNN
-F 2 "" H 9950 1800 50  0001 C CNN
-F 3 "~" H 9950 1800 50  0001 C CNN
-	1    9950 1800
-	1    0    0    -1  
-$EndComp
-Connection ~ 10250 1800
-Wire Wire Line
-	10250 1700 10250 1800
-Wire Wire Line
-	10250 2050 10250 1800
-$Comp
 L power:GND #PWR?
 U 1 1 5EA951F7
 P 10250 2050
 AR Path="/5E9FE63A/5EA951F7" Ref="#PWR?"  Part="1" 
-AR Path="/5EA0B5A0/5EA951F7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10250 1800 50  0001 C CNN
+AR Path="/5EA0B5A0/5EA951F7" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 10250 1800 50  0001 C CNN
 F 1 "GND" H 10255 1877 50  0000 C CNN
 F 2 "" H 10250 2050 50  0001 C CNN
 F 3 "" H 10250 2050 50  0001 C CNN
@@ -328,21 +238,16 @@ F 3 "" H 10250 2050 50  0001 C CNN
 $EndComp
 Text GLabel 9400 1700 0    50   Input ~ 0
 BOOT0
-Text GLabel 9400 1800 0    50   Input ~ 0
-BOOT1
 Wire Wire Line
 	9400 1700 9550 1700
 Connection ~ 9550 1700
-Wire Wire Line
-	9400 1800 9550 1800
-Connection ~ 9550 1800
 $Comp
 L Device:R 10K?
 U 1 1 5EA95203
 P 9550 1500
 AR Path="/5E9FE63A/5EA95203" Ref="10K?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95203" Ref="10K?"  Part="1" 
-F 0 "10K?" H 9620 1546 50  0000 L CNN
+AR Path="/5EA0B5A0/5EA95203" Ref="10K1"  Part="1" 
+F 0 "10K1" H 9620 1546 50  0000 L CNN
 F 1 "R" H 9620 1455 50  0000 L CNN
 F 2 "" V 9480 1500 50  0001 C CNN
 F 3 "~" H 9550 1500 50  0001 C CNN
@@ -350,44 +255,16 @@ F 3 "~" H 9550 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5EA95209
-P 9550 1950
-AR Path="/5E9FE63A/5EA95209" Ref="R?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95209" Ref="R?"  Part="1" 
-F 0 "R?" H 9620 1996 50  0000 L CNN
-F 1 "10K" H 9620 1905 50  0000 L CNN
-F 2 "" V 9480 1950 50  0001 C CNN
-F 3 "~" H 9550 1950 50  0001 C CNN
-	1    9550 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 1800 9650 1800
-$Comp
 L power:+3.3V #PWR?
 U 1 1 5EA95210
 P 9550 1250
 AR Path="/5E9FE63A/5EA95210" Ref="#PWR?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95210" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9550 1100 50  0001 C CNN
+AR Path="/5EA0B5A0/5EA95210" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 9550 1100 50  0001 C CNN
 F 1 "+3.3V" H 9565 1423 50  0000 C CNN
 F 2 "" H 9550 1250 50  0001 C CNN
 F 3 "" H 9550 1250 50  0001 C CNN
 	1    9550 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5EA95216
-P 9650 2400
-AR Path="/5E9FE63A/5EA95216" Ref="#PWR?"  Part="1" 
-AR Path="/5EA0B5A0/5EA95216" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9650 2250 50  0001 C CNN
-F 1 "+3.3V" H 9665 2573 50  0000 C CNN
-F 2 "" H 9650 2400 50  0001 C CNN
-F 3 "" H 9650 2400 50  0001 C CNN
-	1    9650 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -396,18 +273,6 @@ Wire Wire Line
 	9550 1700 9650 1700
 Wire Wire Line
 	9550 1350 9550 1250
-Wire Wire Line
-	9550 2100 9550 2400
-Wire Wire Line
-	9550 2400 9650 2400
-Text GLabel 7050 1750 2    50   Input ~ 0
-BOOT1
-Wire Wire Line
-	6700 1750 7050 1750
-Wire Wire Line
-	6850 3900 6700 3900
-Wire Wire Line
-	6850 4000 6700 4000
 Text GLabel 3100 6450 2    50   Input ~ 0
 OSC_IN
 Text GLabel 3050 6750 2    50   Input ~ 0
@@ -418,24 +283,22 @@ Text GLabel 3350 3700 0    50   Input ~ 0
 OSC_IN
 Text GLabel 3350 3800 0    50   Input ~ 0
 OSC_OUT
-Wire Wire Line
-	3350 3700 3700 3700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR035
 U 1 1 5EAE5E03
-P 6200 6200
-F 0 "#PWR?" H 6200 5950 50  0001 C CNN
-F 1 "GND" H 6205 6027 50  0000 C CNN
-F 2 "" H 6200 6200 50  0001 C CNN
-F 3 "" H 6200 6200 50  0001 C CNN
-	1    6200 6200
+P 6300 5700
+F 0 "#PWR035" H 6300 5450 50  0001 C CNN
+F 1 "GND" H 6305 5527 50  0000 C CNN
+F 2 "" H 6300 5700 50  0001 C CNN
+F 3 "" H 6300 5700 50  0001 C CNN
+	1    6300 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR037
 U 1 1 5EAEA983
 P 7200 2800
-F 0 "#PWR?" H 7200 2550 50  0001 C CNN
+F 0 "#PWR037" H 7200 2550 50  0001 C CNN
 F 1 "GND" H 7205 2627 50  0000 C CNN
 F 2 "" H 7200 2800 50  0001 C CNN
 F 3 "" H 7200 2800 50  0001 C CNN
@@ -445,35 +308,42 @@ $EndComp
 Wire Wire Line
 	6700 3100 7100 3100
 Wire Wire Line
-	6700 3200 7100 3200
-Wire Wire Line
-	3300 4800 3700 4800
-Wire Wire Line
-	3250 4900 3700 4900
-Wire Wire Line
 	6700 2900 7350 2900
+Text HLabel 4800 1650 1    50   Input ~ 0
+QWIIC_SCL
+Text HLabel 4700 1650 1    50   Input ~ 0
+QWIIC_SDA
 Wire Wire Line
-	6700 3700 7500 3700
+	10250 1700 10250 1800
 Wire Wire Line
-	6700 3800 7500 3800
-Connection ~ 6400 1900
+	4600 1650 4600 1900
+Wire Wire Line
+	6700 3000 7100 3000
+Text HLabel 7100 3000 2    50   Input ~ 0
+USB_TX
 Wire Wire Line
 	6400 1900 6400 1750
 Wire Wire Line
-	6400 1950 6400 1900
+	3250 4900 3700 4900
 Wire Wire Line
-	6700 3500 6950 3500
+	3300 4800 3700 4800
 Wire Wire Line
-	6700 3400 6950 3400
-Text HLabel 6950 3400 2    50   Input ~ 0
-QWIIC_SCL
-Text HLabel 6950 3500 2    50   Input ~ 0
-QWIIC_SDA
+	3350 3900 3700 3900
+Wire Wire Line
+	3350 3700 3700 3700
+Wire Wire Line
+	3100 3400 3700 3400
+Wire Wire Line
+	2300 3300 3700 3300
+Wire Wire Line
+	3700 2700 3500 2700
+Wire Wire Line
+	3700 2600 3500 2600
 $Comp
-L SamacSys_Parts:STM32F413VGT6 IC?
+L SamacSys_Parts:STM32F413VGT6 IC2
 U 1 1 5EA0F0B3
 P 3700 2600
-F 0 "IC?" H 6744 1446 50  0000 L CNN
+F 0 "IC2" H 6744 1446 50  0000 L CNN
 F 1 "STM32F413VGT6" H 6744 1355 50  0000 L CNN
 F 2 "QFP50P1600X1600X160-100N" H 6550 3100 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/STM32F413VGT6.pdf" H 6550 3000 50  0001 L CNN
@@ -486,4 +356,269 @@ F 9 "STM32F413VGT6" H 6550 2400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3700 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EA95110
+P 6200 6150
+AR Path="/5E9FE63A/5EA95110" Ref="C?"  Part="1" 
+AR Path="/5EA0B5A0/5EA95110" Ref="C29"  Part="1" 
+F 0 "C29" H 6400 6200 50  0000 L CNN
+F 1 "2.2uF" H 6378 6105 50  0000 L CNN
+F 2 "" H 6200 6150 50  0001 C CNN
+F 3 "~" H 6200 6150 50  0001 C CNN
+	1    6200 6150
+	-1   0    0    1   
+$EndComp
+Text HLabel 6100 5700 3    50   Input ~ 0
+Pressure_SCL
+Text GLabel 5100 5700 3    50   Input ~ 0
+BOOT1
+$Comp
+L Device:R 10K?
+U 1 1 5EAF1BAE
+P 9550 1950
+AR Path="/5E9FE63A/5EAF1BAE" Ref="10K?"  Part="1" 
+AR Path="/5EA0B5A0/5EAF1BAE" Ref="10K?"  Part="1" 
+F 0 "10K?" H 9620 1996 50  0000 L CNN
+F 1 "R" H 9620 1905 50  0000 L CNN
+F 2 "" V 9480 1950 50  0001 C CNN
+F 3 "~" H 9550 1950 50  0001 C CNN
+	1    9550 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EAF1BB4
+P 9550 2200
+AR Path="/5E9FE63A/5EAF1BB4" Ref="#PWR?"  Part="1" 
+AR Path="/5EA0B5A0/5EAF1BB4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9550 2050 50  0001 C CNN
+F 1 "+3.3V" H 9565 2373 50  0000 C CNN
+F 2 "" H 9550 2200 50  0001 C CNN
+F 3 "" H 9550 2200 50  0001 C CNN
+	1    9550 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 2100 9550 2200
+$Comp
+L Switch:SW_DIP_x02 SW?
+U 1 1 5EAF28CC
+P 9950 1800
+F 0 "SW?" H 9950 2167 50  0000 C CNN
+F 1 "SW_DIP_x02" H 9950 2076 50  0000 C CNN
+F 2 "" H 9950 1800 50  0001 C CNN
+F 3 "~" H 9950 1800 50  0001 C CNN
+	1    9950 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 9400 1800 0    50   Input ~ 0
+BOOT1
+Wire Wire Line
+	9400 1800 9550 1800
+Wire Wire Line
+	10250 1800 10250 2050
+Connection ~ 10250 1800
+Connection ~ 9550 1800
+Wire Wire Line
+	9550 1800 9650 1800
+Wire Wire Line
+	3550 2800 3700 2800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB19606
+P 6400 5700
+F 0 "#PWR?" H 6400 5550 50  0001 C CNN
+F 1 "+3.3V" H 6415 5873 50  0000 C CNN
+F 2 "" H 6400 5700 50  0001 C CNN
+F 3 "" H 6400 5700 50  0001 C CNN
+	1    6400 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB1A30A
+P 4100 5700
+F 0 "#PWR?" H 4100 5450 50  0001 C CNN
+F 1 "GND" H 4105 5527 50  0000 C CNN
+F 2 "" H 4100 5700 50  0001 C CNN
+F 3 "" H 4100 5700 50  0001 C CNN
+	1    4100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB1A310
+P 4200 5700
+F 0 "#PWR?" H 4200 5550 50  0001 C CNN
+F 1 "+3.3V" H 4215 5873 50  0000 C CNN
+F 2 "" H 4200 5700 50  0001 C CNN
+F 3 "" H 4200 5700 50  0001 C CNN
+	1    4200 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EB1FB89
+P 7250 2700
+F 0 "#PWR?" H 7250 2450 50  0001 C CNN
+F 1 "GND" H 7255 2527 50  0000 C CNN
+F 2 "" H 7250 2700 50  0001 C CNN
+F 3 "" H 7250 2700 50  0001 C CNN
+	1    7250 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB1FB8F
+P 7250 2450
+F 0 "#PWR?" H 7250 2300 50  0001 C CNN
+F 1 "+3.3V" H 7265 2623 50  0000 C CNN
+F 2 "" H 7250 2450 50  0001 C CNN
+F 3 "" H 7250 2450 50  0001 C CNN
+	1    7250 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2700 7250 2700
+Wire Wire Line
+	6700 2600 7150 2600
+Wire Wire Line
+	7150 2600 7150 2450
+Wire Wire Line
+	7150 2450 7250 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5EB279CF
+P 4100 1600
+F 0 "#PWR?" H 4100 1350 50  0001 C CNN
+F 1 "GND" H 4105 1427 50  0000 C CNN
+F 2 "" H 4100 1600 50  0001 C CNN
+F 3 "" H 4100 1600 50  0001 C CNN
+	1    4100 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB279D5
+P 4000 1800
+F 0 "#PWR?" H 4000 1650 50  0001 C CNN
+F 1 "+3.3V" H 4015 1973 50  0000 C CNN
+F 2 "" H 4000 1800 50  0001 C CNN
+F 3 "" H 4000 1800 50  0001 C CNN
+	1    4000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2150 4100 1600
+Wire Wire Line
+	4000 1900 4000 1800
+Wire Wire Line
+	6200 5700 6200 5900
+$Comp
+L power:GND #PWR?
+U 1 1 5EB2B596
+P 6200 6400
+F 0 "#PWR?" H 6200 6150 50  0001 C CNN
+F 1 "GND" H 6205 6227 50  0000 C CNN
+F 2 "" H 6200 6400 50  0001 C CNN
+F 3 "" H 6200 6400 50  0001 C CNN
+	1    6200 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3800 3700 3800
+Wire Wire Line
+	4800 1650 4800 1900
+Connection ~ 6200 5900
+Wire Wire Line
+	6200 5900 6200 5950
+Wire Wire Line
+	6700 4900 6900 4900
+Wire Wire Line
+	6700 4800 6900 4800
+Text HLabel 7100 3400 2    50   Input ~ 0
+BNO055_SCL
+Text HLabel 7100 3600 2    50   Input ~ 0
+BNO055_Interrupt
+Text HLabel 7100 3900 2    50   Input ~ 0
+BNO055_Reset
+Text HLabel 6900 5000 2    50   Input ~ 0
+murata_tx
+Text HLabel 6900 4900 2    50   Input ~ 0
+murata_rx
+Wire Wire Line
+	6700 5000 6900 5000
+Wire Wire Line
+	6700 4600 6900 4600
+Text HLabel 6900 4500 2    50   Input ~ 0
+murata_cts
+Text HLabel 6900 4400 2    50   Input ~ 0
+murata_rts
+Wire Wire Line
+	6700 4500 6900 4500
+Wire Wire Line
+	6700 4400 6900 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5EB5E14F
+P 3150 4500
+F 0 "#PWR?" H 3150 4250 50  0001 C CNN
+F 1 "GND" H 3155 4327 50  0000 C CNN
+F 2 "" H 3150 4500 50  0001 C CNN
+F 3 "" H 3150 4500 50  0001 C CNN
+	1    3150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB5E155
+P 3650 4400
+F 0 "#PWR?" H 3650 4250 50  0001 C CNN
+F 1 "+3.3V" H 3665 4573 50  0000 C CNN
+F 2 "" H 3650 4400 50  0001 C CNN
+F 3 "" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 4500 3150 4500
+Wire Wire Line
+	3700 4400 3650 4400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB62623
+P 3700 4700
+F 0 "#PWR?" H 3700 4550 50  0001 C CNN
+F 1 "+3.3V" V 3715 4828 50  0000 L CNN
+F 2 "" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EB62F7B
+P 3700 4600
+F 0 "#PWR?" H 3700 4450 50  0001 C CNN
+F 1 "+3.3V" V 3715 4728 50  0000 L CNN
+F 2 "" H 3700 4600 50  0001 C CNN
+F 3 "" H 3700 4600 50  0001 C CNN
+	1    3700 4600
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4500 1850 1    50   Input ~ 0
+BNO055_SDA
+Wire Wire Line
+	4500 1850 4500 1900
+Wire Wire Line
+	4700 1900 4700 1650
+Wire Wire Line
+	4300 5850 4300 5700
+Wire Wire Line
+	6700 3600 7100 3600
+Wire Wire Line
+	6700 3900 7100 3900
+Wire Wire Line
+	6700 3400 7100 3400
 $EndSCHEMATC

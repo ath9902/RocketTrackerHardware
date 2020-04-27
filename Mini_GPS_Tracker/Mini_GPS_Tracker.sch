@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Mini_GPS_Tracker-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -149,6 +150,7 @@ F9 "accel_sdo" I L 9000 2300 50
 F10 "BNO055_SCL" I L 9000 2400 50 
 F11 "BNO055_SDA" I L 9000 2500 50 
 F12 "BNO055_RESET" I L 9000 2600 50 
+F13 "BNO055_INTERRUPT" I L 9000 2700 50 
 $EndSheet
 Wire Wire Line
 	10450 2200 10500 2200
@@ -190,6 +192,10 @@ F0 "Transmitter" 50
 F1 "Transmitter.sch" 50
 F2 "TX" I R 10400 4950 50 
 F3 "RX" I R 10400 5050 50 
+F4 "murata_tx" I L 9050 4900 50 
+F5 "murata_rx" I L 9050 5000 50 
+F6 "murata_rts" I L 9050 5100 50 
+F7 "murata_cts" I L 9050 5200 50 
 $EndSheet
 Text GLabel 10600 3500 2    50   Input ~ 0
 v_measure
@@ -335,49 +341,49 @@ Wire Wire Line
 $Comp
 L Mini_GPS_Tracker-rescue:CSS-J4D20-SMT-Sparkfun_Artemis-Mini_GPS_Tracker-rescue LS1
 U 1 1 5E7E01A2
-P 6250 5400
-F 0 "LS1" H 6355 5446 50  0000 L CNN
-F 1 "CSS-J4D20-SMT" H 6355 5355 50  0000 L CNN
-F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 6250 5400 50  0001 L BNN
-F 3 "CUI" H 6250 5400 50  0001 L BNN
-F 4 "None" H 6250 5400 50  0001 L BNN "Field4"
-F 5 "CSS-J4D20-SMT" H 6250 5400 50  0001 L BNN "Field5"
-F 6 "Unavailable" H 6250 5400 50  0001 L BNN "Field6"
-F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 6250 5400 50  0001 L BNN "Field7"
-F 8 "None" H 6250 5400 50  0001 L BNN "Field8"
-	1    6250 5400
+P 6500 6250
+F 0 "LS1" H 6605 6296 50  0000 L CNN
+F 1 "CSS-J4D20-SMT" H 6605 6205 50  0000 L CNN
+F 2 "Sparkfun-Artemis:CUI_CSS-J4D20-SMT" H 6500 6250 50  0001 L BNN
+F 3 "CUI" H 6500 6250 50  0001 L BNN
+F 4 "None" H 6500 6250 50  0001 L BNN "Field4"
+F 5 "CSS-J4D20-SMT" H 6500 6250 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 6500 6250 50  0001 L BNN "Field6"
+F 7 "8.5 mm, 3.6 V, 90 dB, Surface Mount _SMT_, Magnetic Audio Transducer Buzzer" H 6500 6250 50  0001 L BNN "Field7"
+F 8 "None" H 6500 6250 50  0001 L BNN "Field8"
+	1    6500 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5E7E2738
-P 6250 4950
-F 0 "R7" H 6320 4996 50  0000 L CNN
-F 1 "0 ohm" H 6320 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 4950 50  0001 C CNN
-F 3 "~" H 6250 4950 50  0001 C CNN
-	1    6250 4950
+P 6500 5800
+F 0 "R7" H 6570 5846 50  0000 L CNN
+F 1 "0 ohm" H 6570 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 5800 50  0001 C CNN
+F 3 "~" H 6500 5800 50  0001 C CNN
+	1    6500 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5E7E36E3
-P 6250 5700
-F 0 "#PWR0116" H 6250 5450 50  0001 C CNN
-F 1 "GND" H 6255 5527 50  0000 C CNN
-F 2 "" H 6250 5700 50  0001 C CNN
-F 3 "" H 6250 5700 50  0001 C CNN
-	1    6250 5700
+P 6500 6550
+F 0 "#PWR0116" H 6500 6300 50  0001 C CNN
+F 1 "GND" H 6505 6377 50  0000 C CNN
+F 2 "" H 6500 6550 50  0001 C CNN
+F 3 "" H 6500 6550 50  0001 C CNN
+	1    6500 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 5600 6250 5700
+	6500 6450 6500 6550
 Wire Wire Line
-	6250 5200 6250 5100
-Text GLabel 6250 4650 1    50   Input ~ 0
+	6500 6050 6500 5950
+Text GLabel 6500 5500 1    50   Input ~ 0
 buzzer
 Wire Wire Line
-	6250 4650 6250 4800
+	6500 5500 6500 5650
 $Comp
 L power:PWR_FLAG #FLG0104
 U 1 1 5E8392C8
@@ -429,7 +435,7 @@ SWDIO
 Text GLabel 5650 6300 2    50   Input ~ 0
 RESET
 Text GLabel 5700 6700 2    50   Input ~ 0
-A1
+SWO
 Wire Wire Line
 	5050 7250 5050 7300
 Connection ~ 5050 7250
@@ -486,9 +492,9 @@ RTS
 Wire Wire Line
 	4200 5050 4350 5050
 Text GLabel 4550 4950 2    50   Input ~ 0
-USB_RXI
+USB_RX
 Text GLabel 4550 4850 2    50   Input ~ 0
-USB_TX0
+USB_TX
 Wire Wire Line
 	4200 4850 4550 4850
 Wire Wire Line
@@ -548,26 +554,6 @@ Wire Wire Line
 Connection ~ 2550 4850
 Wire Wire Line
 	2550 4850 2550 3950
-$Sheet
-S 9750 1100 500  150 
-U 5EA9D17A
-F0 "MIchrophone" 50
-F1 "Michrophone.sch" 50
-F2 "PDMClock" I L 9750 1150 50 
-F3 "PDMData" I L 9750 1200 50 
-$EndSheet
-Text GLabel 9550 1150 0    50   Input ~ 0
-PDMClock
-Text GLabel 9550 1250 0    50   Input ~ 0
-PDMData
-Wire Wire Line
-	9550 1150 9750 1150
-Wire Wire Line
-	9550 1250 9700 1250
-Wire Wire Line
-	9700 1250 9700 1200
-Wire Wire Line
-	9700 1200 9750 1200
 $Comp
 L SparkFun_SchematicComponents:Qwiic_Connector J5
 U 1 1 5EAC73F8
@@ -615,32 +601,6 @@ Wire Wire Line
 	7750 4850 7800 4850
 Wire Wire Line
 	7750 4950 7800 4950
-$Sheet
-S 7550 1750 500  200 
-U 5EB407AD
-F0 "Sheet5EB407AC" 50
-F1 "Pyros.sch" 50
-F2 "Pyro_A_Fire" I L 7550 1900 50 
-F3 "Pyro_A_Sense" I L 7550 1750 50 
-F4 "Pyro_B_Fire" I L 7550 1800 50 
-F5 "Pyro_B_Sense" I L 7550 1850 50 
-F6 "Pyro_C_Fire" I L 7550 1900 50 
-$EndSheet
-$Sheet
-S 4650 2200 800  650 
-U 5E9FE63A
-F0 "MCU" 50
-F1 "MCU.sch" 50
-$EndSheet
-$Sheet
-S 7800 3250 750  650 
-U 5E9E34E6
-F0 "Accel" 50
-F1 "Accel.sch" 50
-F2 "Accel_SDA" I L 7800 3400 50 
-F3 "Accel_SCL" I L 7800 3500 50 
-F4 "Accel_CS" I L 7800 3600 50 
-$EndSheet
 Wire Wire Line
 	900  5550 900  5600
 Wire Wire Line
@@ -655,10 +615,10 @@ Wire Wire Line
 Wire Wire Line
 	1300 4950 1800 4950
 $Comp
-L Connector:USB_B_Micro J?
+L Connector:USB_B_Micro J1
 U 1 1 5EA00C58
 P 1000 5150
-F 0 "J?" H 1057 5617 50  0000 C CNN
+F 0 "J1" H 1057 5617 50  0000 C CNN
 F 1 "USB_B_Micro" H 1057 5526 50  0000 C CNN
 F 2 "" H 1150 5100 50  0001 C CNN
 F 3 "~" H 1150 5100 50  0001 C CNN
@@ -666,10 +626,10 @@ F 3 "~" H 1150 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 5EA017A3
 P 1300 5650
-F 0 "#PWR?" H 1300 5400 50  0001 C CNN
+F 0 "#PWR01" H 1300 5400 50  0001 C CNN
 F 1 "GND" H 1305 5477 50  0000 C CNN
 F 2 "" H 1300 5650 50  0001 C CNN
 F 3 "" H 1300 5650 50  0001 C CNN
@@ -695,9 +655,41 @@ Wire Wire Line
 Wire Wire Line
 	1500 5250 1300 5250
 $Sheet
-S 3400 1350 1000 2300
+S 3100 700  4400 2950
 U 5EA0B5A0
 F0 "MCU100" 50
 F1 "MCU100.sch" 50
+F2 "RESET" I L 3100 950 50 
+F3 "Pressure_SDA" I L 3100 1050 50 
+F4 "Pressure_SCL" I L 3100 1150 50 
+F5 "GPS_TX" I L 3100 1250 50 
+F6 "GPS_RX" I L 3100 1350 50 
+F7 "Accel_CS" I L 3100 3350 50 
+F8 "Accel_SCL" I L 3100 3450 50 
+F9 "Accel_SDA" I L 3100 3550 50 
+F10 "buzzer" I L 3100 1950 50 
+F11 "SW0" I L 3100 2050 50 
+F12 "cs_flash" I L 3100 2700 50 
+F13 "gps_reset" I L 3100 1450 50 
+F14 "SWDCK" I L 3100 2150 50 
+F15 "SWDIO" I L 3100 2250 50 
+F16 "MOSI_Flash" I L 3100 2500 50 
+F17 "MISO_Flash" I L 3100 2600 50 
+F18 "USB_RX" I L 3100 2800 50 
+F19 "clk_flash" I L 3100 2400 50 
+F20 "v_measure" I L 3100 3100 50 
+F21 "TRANS_TX" I R 7500 1050 50 
+F22 "TRANS_RX" I R 7500 1150 50 
+F23 "QWIIC_SCL" I R 7500 1800 50 
+F24 "QWIIC_SDA" I R 7500 1900 50 
+F25 "USB_TX" I L 3100 2900 50 
+F26 "BNO055_SCL" I R 7500 2300 50 
+F27 "BNO055_SDA" I R 7500 2400 50 
+F28 "BNO055_Interrupt" I R 7500 2550 50 
+F29 "BNO055_Reset" I R 7500 2700 50 
+F30 "murata_tx" I R 7500 3000 50 
+F31 "murata_rx" I R 7500 3100 50 
+F32 "murata_cts" I R 7500 3200 50 
+F33 "murata_rts" I R 7500 3300 50 
 $EndSheet
 $EndSCHEMATC

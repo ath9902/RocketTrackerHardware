@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 13
 Title ""
 Date ""
 Rev ""
@@ -177,86 +177,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 1100 3750 1300
 $Comp
-L Mini_GPS_Tracker-rescue:LBEE5KL1DX-TEMP-Sparkfun_Artemis U10
-U 1 1 5E8A8D4C
-P 8250 3700
-F 0 "U10" H 8250 5167 50  0000 C CNN
-F 1 "LBEE5KL1DX-TEMP" H 8250 5076 50  0000 C CNN
-F 2 "Sparkfun-Artemis:XCVR_LBEE5KL1DX-TEMP" H 8250 3700 50  0001 L BNN
-F 3 "12.26 USD" H 8250 3700 50  0001 L BNN
-F 4 "LBEE5KL1DX-TEMP" H 8250 3700 50  0001 L BNN "Field4"
-F 5 "None" H 8250 3700 50  0001 L BNN "Field5"
-F 6 "Unavailable" H 8250 3700 50  0001 L BNN "Field6"
-F 7 "" H 8250 3700 50  0001 L BNN "Field7"
-F 8 "Murata" H 8250 3700 50  0001 L BNN "Field8"
-	1    8250 3700
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6950 3900
-NoConn ~ 6950 4000
-NoConn ~ 6950 4100
-NoConn ~ 6950 3700
-NoConn ~ 6950 3800
-$Comp
-L power:GND #PWR0129
-U 1 1 5E8ABDFC
-P 9700 4900
-F 0 "#PWR0129" H 9700 4650 50  0001 C CNN
-F 1 "GND" H 9705 4727 50  0000 C CNN
-F 2 "" H 9700 4900 50  0001 C CNN
-F 3 "" H 9700 4900 50  0001 C CNN
-	1    9700 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 4800 9700 4800
-Wire Wire Line
-	9700 4800 9700 4900
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5E8ACFDF
-P 6750 3600
-F 0 "TP4" V 6945 3672 50  0000 C CNN
-F 1 "TestPoint" V 6854 3672 50  0000 C CNN
-F 2 "" H 6950 3600 50  0001 C CNN
-F 3 "~" H 6950 3600 50  0001 C CNN
-	1    6750 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5E8AEBF2
-P 6750 3100
-F 0 "TP3" V 6945 3172 50  0000 C CNN
-F 1 "TestPoint" V 6854 3172 50  0000 C CNN
-F 2 "" H 6950 3100 50  0001 C CNN
-F 3 "~" H 6950 3100 50  0001 C CNN
-	1    6750 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5E8AFDE5
-P 9650 3100
-F 0 "TP5" V 9604 3288 50  0000 L CNN
-F 1 "TestPoint" V 9695 3288 50  0000 L CNN
-F 2 "" H 9850 3100 50  0001 C CNN
-F 3 "~" H 9850 3100 50  0001 C CNN
-	1    9650 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5E8B43E2
-P 6250 3500
-F 0 "TP2" V 6445 3572 50  0000 C CNN
-F 1 "TestPoint" V 6354 3572 50  0000 C CNN
-F 2 "" H 6450 3500 50  0001 C CNN
-F 3 "~" H 6450 3500 50  0001 C CNN
-	1    6250 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:TestPoint TP1
 U 1 1 5E8B53B7
 P 5800 3400
@@ -267,30 +187,4 @@ F 3 "~" H 6000 3400 50  0001 C CNN
 	1    5800 3400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6750 3100 6950 3100
-Wire Wire Line
-	6750 3600 6950 3600
-Wire Wire Line
-	6250 3500 6950 3500
-Wire Wire Line
-	5800 3400 6950 3400
-Text HLabel 6400 2900 0    50   Input ~ 0
-murata_tx
-Text HLabel 9750 2900 2    50   Input ~ 0
-murata_rx
-Text HLabel 6400 3000 0    50   Input ~ 0
-murata_rts
-Text HLabel 9750 3000 2    50   Input ~ 0
-murata_cts
-Wire Wire Line
-	9550 2900 9750 2900
-Wire Wire Line
-	9550 3000 9750 3000
-Wire Wire Line
-	9550 3100 9650 3100
-Wire Wire Line
-	6950 2900 6400 2900
-Wire Wire Line
-	6950 3000 6400 3000
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 13
 Title ""
 Date ""
 Rev ""
@@ -104,115 +104,12 @@ F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&
 	1    2500 6300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Sensor_Motion:ADXL343 U1
-U 1 1 5E8940BD
-P 2500 1950
-F 0 "U1" H 3044 1996 50  0000 L CNN
-F 1 "ADXL343" H 3044 1905 50  0000 L CNN
-F 2 "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y" H 2500 1950 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf" H 2500 1950 50  0001 C CNN
-	1    2500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5E8951BC
-P 2500 2950
-F 0 "#PWR0117" H 2500 2700 50  0001 C CNN
-F 1 "GND" H 2505 2777 50  0000 C CNN
-F 2 "" H 2500 2950 50  0001 C CNN
-F 3 "" H 2500 2950 50  0001 C CNN
-	1    2500 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 2450 2500 2550
-Text HLabel 1450 2150 0    50   Input ~ 0
+Text HLabel 3400 5250 2    50   Input ~ 0
 accel_cs
-Text HLabel 1450 2050 0    50   Input ~ 0
+Text HLabel 3150 2650 1    50   Input ~ 0
 accel_scl
-Text HLabel 1450 1950 0    50   Input ~ 0
-accel_sda
-Text HLabel 1450 1850 0    50   Input ~ 0
-accel_sdo
 Wire Wire Line
-	1450 2050 2000 2050
-Wire Wire Line
-	1450 2150 2000 2150
-Wire Wire Line
-	1450 1950 2000 1950
-Wire Wire Line
-	1450 1850 2000 1850
-$Comp
-L pspice:CAP C5
-U 1 1 5E89F2A3
-P 3700 1950
-F 0 "C5" H 3878 1996 50  0000 L CNN
-F 1 "0.1uF" H 3878 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 1950 50  0001 C CNN
-F 3 "~" H 3700 1950 50  0001 C CNN
-	1    3700 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:CAP C8
-U 1 1 5E89F917
-P 4200 1950
-F 0 "C8" H 4378 1996 50  0000 L CNN
-F 1 "0.1uF" H 4378 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 1950 50  0001 C CNN
-F 3 "~" H 4200 1950 50  0001 C CNN
-	1    4200 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 1450 3700 1450
-Wire Wire Line
-	3700 1450 3700 1700
-Wire Wire Line
-	3700 2200 3700 2550
-Wire Wire Line
-	3700 2550 2500 2550
-Connection ~ 2500 2550
-Wire Wire Line
-	2500 2550 2500 2800
-$Comp
-L pspice:CAP C14
-U 1 1 5E8A3F23
-P 4700 1950
-F 0 "C14" H 4878 1996 50  0000 L CNN
-F 1 "10uF" H 4878 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4700 1950 50  0001 C CNN
-F 3 "~" H 4700 1950 50  0001 C CNN
-	1    4700 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 2800 4200 2800
-Wire Wire Line
-	4700 2800 4700 2200
-Connection ~ 2500 2800
-Wire Wire Line
-	2500 2800 2500 2950
-Wire Wire Line
-	4200 2200 4200 2800
-Connection ~ 4200 2800
-Wire Wire Line
-	4200 2800 4700 2800
-Wire Wire Line
-	2500 1400 4200 1400
-Wire Wire Line
-	4700 1400 4700 1700
-Wire Wire Line
-	2500 1400 2500 1450
-Wire Wire Line
-	4200 1700 4200 1400
-Connection ~ 4200 1400
-Wire Wire Line
-	4200 1400 4700 1400
-NoConn ~ 2300 1450
-NoConn ~ 2700 2450
+	3150 2650 3150 3200
 $Comp
 L power:GND #PWR0118
 U 1 1 5E8806F6
@@ -512,17 +409,13 @@ Wire Wire Line
 	5500 3450 7100 3450
 Wire Wire Line
 	7100 3550 5500 3550
-Text HLabel 4250 4000 2    50   Input ~ 0
-Accel2_SDA
-Wire Wire Line
-	4250 4000 4150 4000
 $Comp
 L SamacSys_Parts:ADXL375BCCZ IC?
 U 1 1 5EB47FDF
 P 2150 4000
 AR Path="/5E9E34E6/5EB47FDF" Ref="IC?"  Part="1" 
-AR Path="/5E70BD5E/5EB47FDF" Ref="IC?"  Part="1" 
-F 0 "IC?" H 3150 4981 50  0000 C CNN
+AR Path="/5E70BD5E/5EB47FDF" Ref="IC1"  Part="1" 
+F 0 "IC1" H 3150 4981 50  0000 C CNN
 F 1 "ADXL375BCCZ" H 3150 4890 50  0000 C CNN
 F 2 "CC-14-1" H 4000 4600 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ADXL375BCCZ.pdf" H 4000 4500 50  0001 L CNN
@@ -535,8 +428,6 @@ F 9 "ADXL375BCCZ" H 4000 3900 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2150 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3150 2650 3150 3200
 Wire Wire Line
 	2150 4100 1950 4100
 Wire Wire Line
@@ -553,8 +444,8 @@ L power:GND #PWR?
 U 1 1 5EB47FEC
 P 1800 4300
 AR Path="/5E9E34E6/5EB47FEC" Ref="#PWR?"  Part="1" 
-AR Path="/5E70BD5E/5EB47FEC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1800 4050 50  0001 C CNN
+AR Path="/5E70BD5E/5EB47FEC" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 1800 4050 50  0001 C CNN
 F 1 "GND" H 1805 4127 50  0000 C CNN
 F 2 "" H 1800 4300 50  0001 C CNN
 F 3 "" H 1800 4300 50  0001 C CNN
@@ -574,8 +465,8 @@ L power:+3.3V #PWR?
 U 1 1 5EB47FF6
 P 1500 4000
 AR Path="/5E9E34E6/5EB47FF6" Ref="#PWR?"  Part="1" 
-AR Path="/5E70BD5E/5EB47FF6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1500 3850 50  0001 C CNN
+AR Path="/5E70BD5E/5EB47FF6" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 1500 3850 50  0001 C CNN
 F 1 "+3.3V" H 1515 4173 50  0000 C CNN
 F 2 "" H 1500 4000 50  0001 C CNN
 F 3 "" H 1500 4000 50  0001 C CNN
@@ -589,12 +480,13 @@ NoConn ~ 4150 4300
 NoConn ~ 4150 4400
 NoConn ~ 4150 4500
 NoConn ~ 2150 4200
-Text HLabel 3400 5250 2    50   Input ~ 0
-Accel2_CS
 Wire Wire Line
 	3150 5100 3150 5250
 Wire Wire Line
 	3150 5250 3400 5250
-NoConn ~ 4150 4100
 NoConn ~ 4150 4200
+Text HLabel 4150 4000 2    50   Input ~ 0
+accel_sda
+Text HLabel 4150 4100 2    50   Input ~ 0
+accel_sdo
 $EndSCHEMATC

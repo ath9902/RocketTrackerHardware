@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 13
 Title ""
 Date ""
 Rev ""
@@ -24,7 +24,7 @@ L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E7654CA
 P 5150 1700
 F 0 "J2" V 5114 1512 50  0000 R CNN
-F 1 "Screw_Terminal_01x02" V 5023 1512 50  0000 R CNN
+F 1 "LiPo 2S" V 5023 1512 50  0000 R CNN
 F 2 "Connector_AMASS:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical" H 5150 1700 50  0001 C CNN
 F 3 "~" H 5150 1700 50  0001 C CNN
 	1    5150 1700
@@ -262,4 +262,16 @@ F 3 "" H 5150 2100 50  0001 C CNN
 	1    5150 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+7.5V #PWR052
+U 1 1 5EB2F129
+P 6050 2150
+F 0 "#PWR052" H 6050 2000 50  0001 C CNN
+F 1 "+7.5V" H 6065 2323 50  0000 C CNN
+F 2 "" H 6050 2150 50  0001 C CNN
+F 3 "" H 6050 2150 50  0001 C CNN
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 2150
 $EndSCHEMATC

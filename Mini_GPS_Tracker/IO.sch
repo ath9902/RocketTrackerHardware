@@ -161,14 +161,6 @@ Wire Wire Line
 	4700 3700 4850 3700
 Wire Wire Line
 	4700 3500 4800 3500
-Text GLabel 4850 3700 2    50   Input ~ 0
-SWDCK
-Text GLabel 4850 3800 2    50   Input ~ 0
-SWDIO
-Text GLabel 4800 3500 2    50   Input ~ 0
-RESET
-Text GLabel 4850 3900 2    50   Input ~ 0
-SWO
 $Comp
 L power:GND #PWR?
 U 1 1 5EB22A87
@@ -214,18 +206,10 @@ Wire Wire Line
 	5800 3650 5800 3850
 Wire Wire Line
 	5650 3550 6250 3550
-Text GLabel 5700 3350 2    50   Input ~ 0
-QWIIC_SCL
-Text GLabel 5700 3450 2    50   Input ~ 0
-QWIIC_SDA
 Wire Wire Line
 	5650 3350 5700 3350
 Wire Wire Line
 	5650 3450 5700 3450
-Text GLabel 6250 4350 0    50   Input ~ 0
-RTS
-Text GLabel 7700 4350 2    50   Input ~ 0
-RESET
 $Comp
 L pspice:CAP C?
 U 1 1 5EB26F1E
@@ -352,4 +336,20 @@ F 3 "" H 6250 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6250 3500 6250 3550
+Text HLabel 4800 3500 2    50   Input ~ 0
+RESET
+Text HLabel 4850 3700 2    50   Input ~ 0
+SWDCK
+Text HLabel 4850 3800 2    50   Input ~ 0
+SWDIO
+Text HLabel 4850 3900 2    50   Input ~ 0
+SWO
+Text HLabel 5700 3350 2    50   Input ~ 0
+QWIIC_SCL
+Text HLabel 5700 3450 2    50   Input ~ 0
+QWIIC_SDA
+Text HLabel 7700 4350 2    50   Input ~ 0
+RESET
+Text HLabel 6250 4350 0    50   Input ~ 0
+RTS
 $EndSCHEMATC

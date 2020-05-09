@@ -80,14 +80,8 @@ Wire Wire Line
 Wire Wire Line
 	4650 5600 4650 5450
 Connection ~ 4550 5600
-Text GLabel 5400 4550 2    50   Input ~ 0
-RTS
 Wire Wire Line
 	5250 4550 5400 4550
-Text GLabel 5600 4450 2    50   Input ~ 0
-USB_RX
-Text GLabel 5600 4350 2    50   Input ~ 0
-USB_TX
 Wire Wire Line
 	5250 4350 5600 4350
 Wire Wire Line
@@ -157,8 +151,6 @@ Wire Wire Line
 	1950 5050 1950 5100
 Wire Wire Line
 	1950 5100 2050 5100
-Text GLabel 2950 4450 2    50   Input ~ 0
-VBUS
 Wire Wire Line
 	2850 3750 2850 4450
 Connection ~ 2850 4450
@@ -210,4 +202,12 @@ Wire Wire Line
 	2550 5100 2550 4750
 Wire Wire Line
 	2550 4750 2350 4750
+Text HLabel 5600 4350 2    50   Input ~ 0
+USB_TX
+Text HLabel 5600 4450 2    50   Input ~ 0
+USB_RX
+Text HLabel 5400 4550 2    50   Input ~ 0
+RTS
+Text HLabel 2950 4450 2    50   Input ~ 0
+VBUS
 $EndSCHEMATC
